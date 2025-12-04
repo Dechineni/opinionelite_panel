@@ -1,0 +1,2878 @@
+Question ID,Name,Question,Answers,Precode
+42,AGE,What is your age?,,
+,,,,
+43,GENDER,What is your gender?,,
+,,,Male,1
+,,,Female,2
+,,,,
+45,ZIP,What is your zip code?,,
+,,,,
+47,HISPANIC,"Are you of Hispanic, Latino, or Spanish origin?",,
+,,,"No , not of Hispanic, Latino, or Spanish origin",1
+,,,"Yes, Mexican, Mexican American, Chicano",2
+,,,"Yes, Cuban",3
+,,,"Yes, another Hispanic, Latino, or Spanish origin *** Argentina ",4
+,,,"Yes, another Hispanic, Latino, or Spanish origin *** Colombia ",5
+,,,"Yes, another Hispanic, Latino, or Spanish origin *** Ecuador ",6
+,,,"Yes, another Hispanic, Latino, or Spanish origin *** El Salvadore ",7
+,,,"Yes, another Hispanic, Latino, or Spanish origin *** Guatemala ",8
+,,,"Yes, another Hispanic, Latino, or Spanish origin *** Nicaragua ",9
+,,,"Yes, another Hispanic, Latino, or Spanish origin *** Panama ",10
+,,,"Yes, another Hispanic, Latino, or Spanish origin *** Peru ",11
+,,,"Yes, another Hispanic, Latino, or Spanish origin *** Spain ",12
+,,,"Yes, another Hispanic, Latino, or Spanish origin *** Venezuela ",13
+,,,"Yes, another Hispanic, Latino, or Spanish origin *** Other Country",14
+,,,Prefer not to answer,15
+,,,"Yes, Puerto Rican",16
+,,,,
+96,STATE,What is your state?,,
+,,,ALABAMA,1
+,,,ALASKA,2
+,,,American Samoa,53
+,,,ARIZONA,3
+,,,ARKANSAS,4
+,,,CALIFORNIA,5
+,,,COLORADO,6
+,,,CONNECTICUT,7
+,,,DELAWARE,8
+,,,DISTRICT OF COLUMBIA,9
+,,,Federated States of Micronesia,54
+,,,FLORIDA,10
+,,,GEORGIA,11
+,,,Guam,55
+,,,HAWAII,12
+,,,IDAHO,13
+,,,ILLINOIS,14
+,,,INDIANA,15
+,,,IOWA,16
+,,,KANSAS,17
+,,,KENTUCKY,18
+,,,LOUISIANA,19
+,,,MAINE,20
+,,,Marshall Islands,56
+,,,MARYLAND,21
+,,,MASSACHUSETTS,22
+,,,MICHIGAN,23
+,,,MINNESOTA,24
+,,,MISSISSIPPI,25
+,,,MISSOURI,26
+,,,MONTANA,27
+,,,NEBRASKA,28
+,,,NEVADA,29
+,,,NEW HAMPSHIRE,30
+,,,NEW JERSEY,31
+,,,NEW MEXICO,32
+,,,NEW YORK,33
+,,,NORTH CAROLINA,34
+,,,NORTH DAKOTA,35
+,,,Northern Mariana Islands,57
+,,,NOT APPLICABLE,0
+,,,NOT APPLICABLE,52
+,,,OHIO,36
+,,,OKLAHOMA,37
+,,,OREGON,38
+,,,Palau,58
+,,,PENNSYLVANIA,39
+,,,Puerto Rico,59
+,,,RHODE ISLAND,40
+,,,SOUTH CAROLINA,41
+,,,SOUTH DAKOTA,42
+,,,TENNESSEE,43
+,,,TEXAS,44
+,,,UTAH,45
+,,,VERMONT,46
+,,,Virgin Islands,60
+,,,VIRGINIA,47
+,,,WASHINGTON,48
+,,,WEST VIRGINIA,49
+,,,WISCONSIN,50
+,,,WYOMING,51
+,,,,
+97,DMA,What is your DMA?,,
+,,,ABILENE-SWEETWATER,662
+,,,"ALBANY, GA",525
+,,,ALBANY-SCHENECTADY-TROY,532
+,,,ALBUQUERQUE-SANTA FE,790
+,,,"ALEXANDRIA, LA",644
+,,,ALPENA,583
+,,,AMARILLO,634
+,,,ANCHORAGE,743
+,,,ATLANTA,524
+,,,AUGUSTA-AIKEN,520
+,,,AUSTIN,635
+,,,BAKERSFIELD,800
+,,,BALTIMORE,512
+,,,BANGOR,537
+,,,BATON ROUGE,716
+,,,BEAUMONT-PORT ARTHUR,692
+,,,"BEND, OR",821
+,,,BILLINGS,756
+,,,BILOXI-GULFPORT,746
+,,,BINGHAMTON,502
+,,,BIRMINGHAM (ANN AND TUSC),630
+,,,BLUEFIELD-BECKLEY-OAK HILL,559
+,,,BOISE,757
+,,,BOSTON (MANCHESTER),506
+,,,BOWLING GREEN,736
+,,,BUFFALO,514
+,,,BURLINGTON-PLATTSBURGH,523
+,,,BUTTE-BOZEMAN,754
+,,,CASPER-RIVERTON,767
+,,,CEDAR RAPIDS-WTRLO-IWC&DUB,637
+,,,CHAMPAIGN&SPRNGFLD-DECATUR,648
+,,,"CHARLESTON, SC",519
+,,,CHARLESTON-HUNTINGTON,564
+,,,CHARLOTTE,517
+,,,CHARLOTTESVILLE,584
+,,,CHATTANOOGA,575
+,,,CHEYENNE-SCOTTSBLUF,759
+,,,CHICAGO,602
+,,,CHICO-REDDING,868
+,,,CINCINNATI,515
+,,,CLARKSBURG-WESTON,598
+,,,CLEVELAND-AKRON (CANTON),510
+,,,COLORADO SPRINGS-PUEBLO,752
+,,,"COLUMBIA, SC",546
+,,,COLUMBIA-JEFFERSON CITY,604
+,,,"COLUMBUS, GA (OPELIKA, AL)",522
+,,,"COLUMBUS, OH",535
+,,,COLUMBUS-TUPELO-W PNT-HSTN,673
+,,,CORPUS CHRISTI,600
+,,,DALLAS-FT. WORTH,623
+,,,DAVENPORT-R.ISLAND-MOLINE,682
+,,,DAYTON,542
+,,,DENVER,751
+,,,DES MOINES-AMES,679
+,,,DETROIT,505
+,,,DOTHAN,606
+,,,DULUTH-SUPERIOR,676
+,,,EL PASO (LAS CRUCES),765
+,,,ELMIRA (CORNING),565
+,,,ERIE,516
+,,,EUGENE,801
+,,,EUREKA,802
+,,,EVANSVILLE,649
+,,,FAIRBANKS,745
+,,,FARGO-VALLEY CITY,724
+,,,FLINT-SAGINAW-BAY CITY,513
+,,,FRESNO-VISALIA,866
+,,,FT. MYERS-NAPLES,571
+,,,FT. SMITH-FAY-SPRNGDL-RGRS,670
+,,,FT. WAYNE,509
+,,,GAINESVILLE,592
+,,,GLENDIVE,798
+,,,GRAND JUNCTION-MONTROSE,773
+,,,GRAND RAPIDS-KALMZOO-B.CRK,563
+,,,GREAT FALLS,755
+,,,GREEN BAY-APPLETON,658
+,,,GREENSBORO-H.POINT-W.SALEM,518
+,,,GREENVILLE-N.BERN-WASHNGTN,545
+,,,GREENVLL-SPART-ASHEVLL-AND,567
+,,,GREENWOOD-GREENVILLE,647
+,,,HARLINGEN-WSLCO-BRNSVL-MCA,636
+,,,HARRISBURG-LNCSTR-LEB-YORK,566
+,,,HARRISONBURG,569
+,,,HARTFORD & NEW HAVEN,533
+,,,HATTIESBURG-LAUREL,710
+,,,HELENA,766
+,,,HONOLULU,744
+,,,HOUSTON,618
+,,,HUNTSVILLE-DECATUR (FLOR),691
+,,,IDAHO FALS-POCATLLO(JCKSN),758
+,,,INDIANAPOLIS,527
+,,,"JACKSON, MS",718
+,,,"JACKSON, TN",639
+,,,JACKSONVILLE,561
+,,,JOHNSTOWN-ALTOONA-ST COLGE,574
+,,,JONESBORO,734
+,,,JOPLIN-PITTSBURG,603
+,,,JUNEAU,747
+,,,KANSAS CITY,616
+,,,KNOXVILLE,557
+,,,LA CROSSE-EAU CLAIRE,702
+,,,"LAFAYETTE, IN",582
+,,,"LAFAYETTE, LA",642
+,,,LAKE CHARLES,643
+,,,LANSING,551
+,,,LAREDO,749
+,,,LAS VEGAS,839
+,,,LEXINGTON,541
+,,,LIMA,558
+,,,LINCOLN & HASTINGS-KRNY,722
+,,,LITTLE ROCK-PINE BLUFF,693
+,,,LOS ANGELES,803
+,,,LOUISVILLE,529
+,,,LUBBOCK,651
+,,,MACON,503
+,,,MADISON,669
+,,,MANKATO,737
+,,,MARQUETTE,553
+,,,MEDFORD-KLAMATH FALLS,813
+,,,MEMPHIS,640
+,,,MERIDIAN,711
+,,,MIAMI-FT. LAUDERDALE,528
+,,,MILWAUKEE,617
+,,,MINNEAPOLIS-ST. PAUL,613
+,,,MINOT-BISMARCK-DICKINSON,687
+,,,MISSOULA,762
+,,,MOBILE-PENSACOLA (FT WALT),686
+,,,MONROE-EL DORADO,628
+,,,MONTEREY-SALINAS,828
+,,,MONTGOMERY-SELMA,698
+,,,MYRTLE BEACH-FLORENCE,570
+,,,NASHVILLE,659
+,,,NEW ORLEANS,622
+,,,NEW YORK,501
+,,,NORFOLK-PORTSMTH-NEWPT NWS,544
+,,,NORTH PLATTE,740
+,,,ODESSA-MIDLAND,633
+,,,OKLAHOMA CITY,650
+,,,OMAHA,652
+,,,ORLANDO-DAYTONA BCH-MELBRN,534
+,,,OTTUMWA-KIRKSVILLE,631
+,,,PADUCAH-CAPE GIRARD-HARSBG,632
+,,,PALM SPRINGS,804
+,,,PANAMA CITY,656
+,,,PARKERSBURG,597
+,,,PEORIA-BLOOMINGTON,675
+,,,PHILADELPHIA,504
+,,,PHOENIX (PRESCOTT),753
+,,,PITTSBURGH,508
+,,,"PORTLAND, OR",820
+,,,PORTLAND-AUBURN,500
+,,,PRESQUE ISLE,552
+,,,PROVIDENCE-NEW BEDFORD,521
+,,,QUINCY-HANNIBAL-KEOKUK,717
+,,,RALEIGH-DURHAM (FAYETVLLE),560
+,,,RAPID CITY,764
+,,,RENO,811
+,,,RICHMOND-PETERSBURG,556
+,,,ROANOKE-LYNCHBURG,573
+,,,"ROCHESTER, NY",538
+,,,ROCHESTR-MASON CITY-AUSTIN,611
+,,,ROCKFORD,610
+,,,SACRAMNTO-STKTON-MODESTO,862
+,,,SALISBURY,576
+,,,SALT LAKE CITY,770
+,,,SAN ANGELO,661
+,,,SAN ANTONIO,641
+,,,SAN DIEGO,825
+,,,SAN FRANCISCO-OAK-SAN JOSE,807
+,,,SANTABARBRA-SANMAR-SANLUOB,855
+,,,SAVANNAH,507
+,,,SEATTLE-TACOMA,819
+,,,SHERMAN-ADA,657
+,,,SHREVEPORT,612
+,,,SIOUX CITY,624
+,,,SIOUX FALLS(MITCHELL),725
+,,,SOUTH BEND-ELKHART,588
+,,,SPOKANE,881
+,,,"SPRINGFIELD, MO",619
+,,,SPRINGFIELD-HOLYOKE,543
+,,,ST. JOSEPH,638
+,,,ST. LOUIS,609
+,,,SYRACUSE,555
+,,,TALLAHASSEE-THOMASVILLE,530
+,,,TAMPA-ST. PETE (SARASOTA),539
+,,,TERRE HAUTE,581
+,,,TOLEDO,547
+,,,TOPEKA,605
+,,,TRAVERSE CITY-CADILLAC,540
+,,,"TRI-CITIES, TN-VA",531
+,,,TUCSON (SIERRA VISTA),789
+,,,TULSA,671
+,,,TWIN FALLS,760
+,,,TYLER-LONGVIEW(LFKN&NCGD),709
+,,,UTICA,526
+,,,VICTORIA,626
+,,,WACO-TEMPLE-BRYAN,625
+,,,"WASHINGTON, DC (HAGRSTWN)",511
+,,,WATERTOWN,549
+,,,WAUSAU-RHINELANDER,705
+,,,WEST PALM BEACH-FT. PIERCE,548
+,,,WHEELING-STEUBENVILLE,554
+,,,WICHITA FALLS & LAWTON,627
+,,,WICHITA-HUTCHINSON PLUS,678
+,,,WILKES BARRE-SCRANTON,577
+,,,WILMINGTON,550
+,,,YAKIMA-PASCO-RCHLND-KNNWCK,810
+,,,YOUNGSTOWN,536
+,,,YUMA-EL CENTRO,771
+,,,ZANESVILLE,596
+,,,,
+101,DIVISION,What is your Division?,,
+,,,East North Central,3
+,,,East South Central,6
+,,,Middle Atlantic,2
+,,,Mountain,8
+,,,New England,1
+,,,Pacific,9
+,,,South Atlantic,5
+,,,West North Central,4
+,,,West South Central,7
+,,,,
+113,ETHNICITY,What is your race?,,
+,,,White ,1
+,,,"Black, or African American",2
+,,,American Indian or Alaska Native ,3
+,,,Asian *** Asian Indian ,4
+,,,Asian *** Chinese ,5
+,,,Asian *** Filipino ,6
+,,,Asian *** Japanese ,7
+,,,Asian *** Korean ,8
+,,,Asian *** Vietnamese ,9
+,,,Asian *** Other ,10
+,,,Pacific Islander *** Native Hawaiian ,11
+,,,Pacific Islander *** Guamanian ,12
+,,,Pacific Islander *** Samoan ,13
+,,,Pacific Islander *** Other Pacific Islander,14
+,,,Some other race ,15
+,,,Prefer not to answer ,16
+,,,,
+120,MSA,what is your MSA?,,
+,,,,
+122,REGION,What is your REGION ?,,
+,,,Midwest,2
+,,,Northeast,1
+,,,South,3
+,,,West,4
+,,,,
+632,STANDARD_RELATIONSHIP,What is your relationship status?,,
+,,,"Single, never married",1
+,,,Married,2
+,,,"Separated, divorced or widowed",3
+,,,Domestic partnership/living with someone,4
+,,,Prefer not to answer,5
+,,,,
+633,STANDARD_EDUCATION,What is the highest level of education you have completed?,,
+,,,3rd Grade or less,1
+,,,Middle School - Grades 4 - 8,2
+,,,Completed some high school,3
+,,,High school graduate,4
+,,,Other post high school vocational training,5
+,,,"Completed some college, but no degree",6
+,,,Associate Degree,7
+,,,"College Degree (such as B.A., B.S.)",8
+,,,"Completed some graduate, but no degree",9
+,,,Masters degree,10
+,,,Doctorate degree,11
+,,,None of the Above,12
+,,,,
+634,STANDARD_VOTE,Are you registered to vote?,,
+,,,Yes,1
+,,,No,2
+,,,,
+638,STANDARD_PRIMARY_DECISION_MAKER,"In your household, are you the person who makes most of the daily purchasing decisions?
+",,
+,,,Yes,1
+,,,No,2
+,,,Share decisions equally,3
+,,,,
+639,STANDARD_PETS,"Which of the following pets are present in your household?
+",,
+,,,Cat(s),1
+,,,Dog(s),2
+,,,Bird(s),3
+,,,Fish,4
+,,,"Amphibians (frogs, toads, etc.)",5
+,,,"Small animals or rodents (hamsters, mice, rabbits, ferrets, etc.)",6
+,,,"Reptiles (turtles, snakes, lizards, etc.)",7
+,,,Horse(s),8
+,,,I do not have any pets,9
+,,,Other,10
+,,,,
+640,STANDARD_SEXUAL_ORIENTATION,"What is your sexual orientation?
+",,
+,,,Heterosexual,1
+,,,Homosexual,2
+,,,Bisexual,3
+,,,Prefer not to answer,5
+,,,,
+641,STANDARD_TOTAL_HOUSEHOLD,"How many people live in your household including yourself?
+",,
+,,,1 person,1
+,,,2 persons,2
+,,,3 persons,3
+,,,4 persons,4
+,,,5 persons,5
+,,,More than 5 persons,6
+,,,Prefer not to answer,7
+,,,,
+642,STANDARD_HOUSEHOLD_TYPE,What best describes your current household?,,
+,,,Rented apartment,1
+,,,Owned apartment,2
+,,,Rented house,3
+,,,Owned house,4
+,,,Farm,5
+,,,University Residence,6
+,,,Living with parents,7
+,,,Other,8
+,,,,
+643,STANDARD_INDUSTRY,"Do you, or does anyone in your household, work in any of the following industries?
+",,
+,,,Accounting,1
+,,,Advertising,2
+,,,Agriculture/Fishing,3
+,,,Architecture,4
+,,,Automotive,5
+,,,Aviation,6
+,,,Banking/Financial,7
+,,,Bio-Tech,8
+,,,Brokerage,9
+,,,Carpenting/Electrical installations/VVS,10
+,,,Chemicals/Plastics/Rubber,11
+,,,Communications/Information,12
+,,,Computer Hardware,13
+,,,Computer Reseller (software/hardware),14
+,,,Computer Software,15
+,,,Construction,16
+,,,Consulting,17
+,,,Consumer Electronics,18
+,,,Consumer Packaged Goods,19
+,,,Education,20
+,,,Energy/Utilities/Oil and Gas,21
+,,,Engineering,22
+,,,Environmental Services,23
+,,,Fashion/Apparel,24
+,,,Food/Beverage,25
+,,,Government/Public Sector,26
+,,,Healthcare,27
+,,,Hospitality/Tourism,28
+,,,Human Resources,29
+,,,Information Technology/IT,30
+,,,Insurance,31
+,,,Internet,32
+,,,Legal/Law,33
+,,,Manufacturing,34
+,,,Market Research,35
+,,,Marketing/Sales,36
+,,,Media/Entertainment,37
+,,,Military,38
+,,,Non Profit/Social services,39
+,,,Personal Services,40
+,,,Pharmaceuticals,41
+,,,Printing Publishing,42
+,,,Public Relations,43
+,,,Real Estate/Property,44
+,,,Retail/Wholesale trade,45
+,,,Security,46
+,,,Shipping/Distribution,47
+,,,Telecommunications,48
+,,,Transportation,49
+,,,Other,50
+,,,I don't work,51
+,,,,
+645,STANDARD_COMPANY_REVENUE,"Approximately what is the annual revenue for your organization?
+",,
+,,,"Under $100,000",1
+,,,"$100,000 - $249,999",2
+,,,"$250,000 - $499,999",3
+,,,"$500,000 - $999,999",4
+,,,$1 Million - $4.99 Million,5
+,,,$5 Million - $9.99 Million,6
+,,,$10 Million - $24.99 Million,7
+,,,$25 Million - $49.99  Million,8
+,,,$50 Million - $99.99 Million,9
+,,,$100 Million - $249.99 Million,10
+,,,$250 Million - $499.99 Million,11
+,,,$500 Million - $999.99 Million,12
+,,,$1 Billion or more,13
+,,,I don't work / I don't know,14
+,,,,
+646,STANDARD_COMPANY_DEPARTMENT,"Which department do you primarily work within at your organization?
+",,
+,,,Administration/General Staff,1
+,,,Customer Service/Client Service,2
+,,,Executive Leadership,3
+,,,Finance/Accounting ,4
+,,,Human Resources,5
+,,,Legal/Law,6
+,,,Marketing,7
+,,,Operations,8
+,,,Procurement,9
+,,,Sales/Business Development,10
+,,,Technology Development Hardware (not only IT),11
+,,,Technology Development Software (not only IT),12
+,,,Technology Implementation ,13
+,,,Other,14
+,,,I don't work,15
+,,,,
+647,STANDARD_CAR_USE,"Do you drive a car regularly?
+",,
+,,,"Yes, I own a car/cars",1
+,,,"Yes, I have access to a car/cars",2
+,,,"Yes, I lease/have a company car",3
+,,,"No, I don't have access to a car",4
+,,,,
+648,STANDARD_AUTO_DECISION_MAKER,Are you the primary decision maker in your household for automotive-related purchases?,,
+,,,Yes,1
+,,,I contribute equally in automotive decisions,2
+,,,No,3
+,,,,
+649,STANDARD_AUTO_BRANDS,"If you own/lease a car(s), which brand(s) are they?",,
+,,,Acura,1
+,,,Alfa Romeo,2
+,,,Aston Martin,49
+,,,Audi,3
+,,,Bentley,50
+,,,BMW,4
+,,,Buick,5
+,,,Cadillac,6
+,,,Chevrolet,7
+,,,Chrysler,8
+,,,Dodge,44
+,,,Ferrari,9
+,,,Fiat,10
+,,,Ford,11
+,,,Genesis,51
+,,,GMC,12
+,,,Honda,13
+,,,Hummer,14
+,,,Hyundai,15
+,,,Infiniti,16
+,,,Isuzu,17
+,,,Jaguar,18
+,,,Jeep,19
+,,,Kia,20
+,,,Lamborghini,21
+,,,Land Rover,22
+,,,Lexus,23
+,,,Lincoln,45
+,,,Maserati,24
+,,,Mazda,25
+,,,McLaren,52
+,,,Mercedes,26
+,,,Mercury,53
+,,,MG,27
+,,,Mini,28
+,,,Mitsubishi,29
+,,,Nissan,30
+,,,Pontiac,31
+,,,Porsche,32
+,,,Ram,46
+,,,Rolls Royce,54
+,,,Rover,33
+,,,Saab,34
+,,,Saturn,35
+,,,Scion,47
+,,,Smart,36
+,,,Subaru,37
+,,,Suzuki,38
+,,,Tesla,48
+,,,Toyota,39
+,,,Volkswagen,40
+,,,Volvo,41
+,,,Other,42
+,,,I don't own/lease a car,43
+,,,,
+650,STANDARD_AUTO_TYPE,How would you describe the vehicle(s) you own/lease?,,
+,,,Micro/City Car (e.g. Smart Fortwo),1
+,,,Sub Compact (e.g. Toyota Yaris),2
+,,,Compact Sedan/Stationwagon/Hatch (e.g. VW Golf),3
+,,,Mid Size (e.g. Mazda 6),4
+,,,Full size Sedan/Stationwagon/Hatch (e.g. Toyota Avalon),5
+,,,Luxury/Prestige (e.g. BMW/Mercedes),6
+,,,Hybrid/Electric/Biogas (e.g. Toyota Prius),7
+,,,Sports/Performance Car (e.g. Audi TT),8
+,,,MPV/Minivan (e.g. Dodge Caravan),9
+,,,SUV/Cross Over/4x4 (e.g. Honda CR-V),10
+,,,Pick up (e.g. Ford F-150),11
+,,,Van (e.g. Ford E-Series),12
+,,,RV/Motor Home or Camper Van,13
+,,,Other,14
+,,,I don't own/lease a car,15
+,,,,
+715,STANDARD_AUTO_MANUFACTURE_DATE,What year was your main vehicle (owned or leased) manufactured?,,
+,,,Before 1995,1
+,,,1995,3
+,,,1996,4
+,,,1997,5
+,,,1998,6
+,,,1999,7
+,,,2000,8
+,,,2001,9
+,,,2002,10
+,,,2003,11
+,,,2004,12
+,,,2005,13
+,,,2006,14
+,,,2007,15
+,,,2008,16
+,,,2009,17
+,,,2010,18
+,,,2011,19
+,,,2012,20
+,,,2013,21
+,,,2014,22
+,,,2015,24
+,,,2016,25
+,,,2017,26
+,,,2018,27
+,,,2019,28
+,,,2020,29
+,,,I don't own/lease a car,23
+,,,,
+716,STANDARD_AUTO_PURCHASE_DATE,In which year did you purchase/lease your main vehicle?,,
+,,,Before 1995,1
+,,,I don't own/lease a car,23
+,,,1995,3
+,,,1996,4
+,,,1997,5
+,,,1998,6
+,,,1999,7
+,,,2000,8
+,,,2001,9
+,,,2002,10
+,,,2003,11
+,,,2004,12
+,,,2005,13
+,,,2006,14
+,,,2007,15
+,,,2008,16
+,,,2009,17
+,,,2010,18
+,,,2011,19
+,,,2012,20
+,,,2013,21
+,,,2014,22
+,,,2015,24
+,,,2016,25
+,,,2017,26
+,,,2018,27
+,,,2019,28
+,,,2020,29
+,,,2021,30
+,,,None of the above,-3105
+,,,,
+717,STANDARD_AUTO_PURCHASE_TYPE,Did you purchase/lease your primary vehicle new or used?,,
+,,,New,1
+,,,Used,2
+,,,I don't own/lease a car,3
+,,,,
+719,STANDARD_AUTO_MOTORCYCLE,"Do you own a motorcycle?
+",,
+,,,Yes,1
+,,,No,2
+,,,,
+721,STANDARD_FAST_FOOD_VISIT,"Which fast food (quick service) restaurants have you visited ever?
+",,
+,,,A&W Restaurants,1
+,,,Arby's,2
+,,,Blimpies,3
+,,,Bojangles' Famous Chicken 'n Biscuits,4
+,,,Burger King,5
+,,,Camille's Sidewalk Cafe,6
+,,,Captain D's,7
+,,,Charley's Grilled Subs,8
+,,,Checkers,9
+,,,Chester's International,10
+,,,Church's Chicken,11
+,,,Dairy Queen,12
+,,,Del Taco,13
+,,,Dunkin' Donuts,14
+,,,Hardee's,15
+,,,Hesburger,16
+,,,Hungry Jacks,17
+,,,In-N-Out Burger,18
+,,,Jack in the Box,19
+,,,KFC,20
+,,,Krispy Kreme,21
+,,,Krystal,22
+,,,Long John Silver's,23
+,,,McDonald's,24
+,,,Mister Donut,25
+,,,Moe's Southwest Grill,26
+,,,Noble Roman's,27
+,,,Panda Express,28
+,,,Pizza Hut,29
+,,,Pollo Tropical,30
+,,,Popeyes Chicken & Biscuits,31
+,,,Pret A Manger,32
+,,,Qdoba Mexican Grill,33
+,,,Quiznos,34
+,,,Raising Cane's Chicken Fingers,35
+,,,Red Rooster,36
+,,,Shakey's Pizza,37
+,,,Sonic Drive-In,38
+,,,Steak n Shake,39
+,,,Subway,40
+,,,Taco Bell,41
+,,,Taco Bueno,42
+,,,Taco del Mar,43
+,,,Taco Tico,44
+,,,Taco Time,45
+,,,TCBY,46
+,,,The Pizza Company,47
+,,,Tim Hortons,48
+,,,Wendy's,49
+,,,Whataburger,50
+,,,White Castle,51
+,,,Wimpy,52
+,,,Other,53
+,,,I don't eat at fast food restaurants,54
+,,,,
+722,STANDARD_BEVERAGE_P4W,"Which, if any, of these drinks have you consumed in the past four weeks?
+",,
+,,,Beer,1
+,,,Wine,2
+,,,Flavored malt beverages or wine coolers,3
+,,,Spirits/Liquor,4
+,,,Pre-mixed packaged spirits/flavored alcoholic beverages,5
+,,,Energy drinks,6
+,,,Coffee,7
+,,,Tea,8
+,,,Carbonated soft drinks,9
+,,,Fruit drinks/juices,10
+,,,Bottled water,11
+,,,None of these,12
+,,,,
+723,STANDARD_BEVERAGE_REGULARLY,"Which of the following beverages do you regularly consume?
+",,
+,,,Coffee,1
+,,,Tea,2
+,,,Regular soda,3
+,,,Diet soda,4
+,,,Energy drinks,5
+,,,Sports Drink,6
+,,,Bottled water still,7
+,,,Bottled water sparkling,8
+,,,Juice,9
+,,,Domestic beer,10
+,,,Imported beer,11
+,,,Red wine,12
+,,,White wine,13
+,,,Rosé wine,14
+,,,Dessert wine,15
+,,,Champagne,16
+,,,Sparkling wine,17
+,,,Vodka,18
+,,,Rum,19
+,,,Whiskey/Scotch/Bourbon,20
+,,,Cognac,21
+,,,Gin,22
+,,,Tequila,23
+,,,Brandy,24
+,,,Port/Fortified Wine,25
+,,,Cider,26
+,,,"Alcopops (e.g. Breezers, Smirnoff Ice)",27
+,,,"Flavored liquor (e.g. Absinthe, Bitters)",28
+,,,"Liqueurs (e.g. Kahlúa, Midori)",29
+,,,None of the above,30
+,,,,
+724,STANDARD_ALCOHOL_FREQUENCY,"On average, how many alcoholic drinks do you consume in a week?",,
+,,,Less than one drink per week,1
+,,,1 to 3 drinks,2
+,,,4 to 5 drinks,3
+,,,Six or More,4
+,,,I don't drink alcohol,5
+,,,,
+725,STANDARD_HOBBIES,What are your hobbies and interests?,,
+,,,Arts and crafts,1
+,,,Boating,2
+,,,Camping,3
+,,,Cooking,4
+,,,Extreme sports,5
+,,,Golf,6
+,,,Health and fitness,7
+,,,Gardening,8
+,,,Horses,9
+,,,Hunting/Fishing,10
+,,,Interior decorating/Renovating,11
+,,,Motor caravaning,12
+,,,Participating in athletics,13
+,,,Playing music,14
+,,,Playing video/computer games,15
+,,,Reading,16
+,,,Skiing,17
+,,,Technology/Computers,18
+,,,Travel,19
+,,,Watching sports on TV,20
+,,,Other,21
+,,,,
+726,STANDARD_MOVIE_FREQUENCY,How often do you go to the movie theater?,,
+,,,Less than once a month,1
+,,,One time per month,2
+,,,Two times per month,3
+,,,Three times per month,4
+,,,Four times per month,5
+,,,Five or more times per month,6
+,,,I don't go to movie theaters,7
+,,,Prefer not to answer,8
+,,,,
+727,STANDARD_MOVIE_GENRE,What kinds of movies do you watch when you go to the movie theater?,,
+,,,Action ,1
+,,,Animated ,2
+,,,Children's films ,3
+,,,Comedy,4
+,,,Documentary,5
+,,,Drama,6
+,,,Dramedy,7
+,,,Foreign/Artistic/Cultural,8
+,,,Horror,9
+,,,Musicals ,10
+,,,Mystery ,11
+,,,Science Fiction ,12
+,,,Thriller,13
+,,,Other,14
+,,,I don't go to movie theaters,15
+,,,,
+728,STANDARD_MOVIE_HOME_WATCHING,How frequently do you rent or download movies for home viewing (on average)?,,
+,,,Less than once a month,1
+,,,One time per month,2
+,,,Two times per month,3
+,,,Three times per month,4
+,,,Four times per month,5
+,,,Five or more times per month,6
+,,,I don't rent or download movies,7
+,,,,
+730,STANDARD_EXERCISE_HOURS,How many hours a week do you exercise/participate in sports?,,
+,,,Less than one hour per week,1
+,,,1 to 2 hours per week,2
+,,,3 to 4 hours per week,3
+,,,5 to 6 hours per week,4
+,,,7 to 8 hours per week,5
+,,,9 to 10 hours per week,6
+,,,11 hours or more per week,7
+,,,I don't exercise/participate in any sports,8
+,,,,
+731,STANDARD_SPORTS,"What sports do you regularly participate in?
+",,
+,,,Archery,1
+,,,Badminton,2
+,,,Baseball,3
+,,,Basketball,4
+,,,Bicycling,5
+,,,Canoeing or Kayaking,6
+,,,Cricket,7
+,,,Fishing,8
+,,,Football,9
+,,,Golf,10
+,,,Hiking,11
+,,,Hockey - field,12
+,,,Hockey - ice,13
+,,,Hunting,14
+,,,Jogging,15
+,,,Raquetball,16
+,,,Rock Climbing,17
+,,,Rowing,18
+,,,Rugby,19
+,,,Sailing,20
+,,,Skate boarding,21
+,,,Skiing - cross country,22
+,,,Skiing - downhill,23
+,,,Snowboarding,24
+,,,Soccer,25
+,,,Squash,26
+,,,Swimming,27
+,,,Tennis,28
+,,,Wrestling,29
+,,,Other,30
+,,,I don't participate regularly in sports,31
+,,,,
+732,STANDARD_GAMBLING,What kind of gambling do you participate in?,,
+,,,Online sports betting,1
+,,,Online lottery/scratchcard,2
+,,,Online poker/casino gaming,3
+,,,Offline sports betting,4
+,,,Offline lottery/scratchcard,5
+,,,Bingo,6
+,,,Casino poker/BlackJack/Roulette/etc,7
+,,,Casino Slot Machines,8
+,,,Horse Track Betting,9
+,,,Car Race Betting,10
+,,,Other,11
+,,,I don't gamble at all,-3105
+,,,,
+733,STANDARD_ELECTRONICS,Which of the following electronic products do you own?,,
+,,,"Smart home device (e.g. Alexa, Google Home, Nest)",26
+,,,Blu-ray/DVD player,1
+,,,Flat Screen TV,2
+,,,3D TV,3
+,,,Portable game console (e.g. Sony PSP GO),4
+,,,Stationary game console (e.g. Nintendo Wii),5
+,,,Video Camera/Camcorder,6
+,,,Digital Camera,7
+,,,Digital SLR Camera,8
+,,,PC/Mac stationary or desktop,9
+,,,PC/Mac laptop or portable,10
+,,,Cell Phone,11
+,,,Cordless Phone,12
+,,,MP3 player/iPod,13
+,,,Projector,14
+,,,Scanner,15
+,,,Cable TV/Satellite TV,16
+,,,Digital TV receiver,17
+,,,Printer,18
+,,,"Multi-purpose printer (fax, printer, phone, etc.)",19
+,,,Home Network/Wireless Internet,20
+,,,Surround System/Home Cinema,21
+,,,"Digital Media Receiver (e.g. Apple TV, Vudu)",22
+,,,Tablet (e.g. iPad),23
+,,,E-book reader (e.g. Kindle),24
+,,,None of the above,-3105
+,,,,
+734,STANDARD_EARLY_ADOPTER,Would you consider yourself to be an early adopter of new technology (the first to buy new gadgets/electronics/etc)?,,
+,,,Yes,1
+,,,No,2
+,,,,
+736,STANDARD_CELL_PLAN,What type of mobile phone plan do you have?,,
+,,,Pre-paid,1
+,,,Contract,2
+,,,I don't have a mobile phone,3
+,,,I don't know,4
+,,,,
+737,STANDARD_SMART_PHONE,Do you use a smart phone?,,
+,,,"Yes, for business",1
+,,,"Yes, for personal",2
+,,,"Yes, for both",3
+,,,I don't own a smartphone,4
+,,,,
+738,STANDARD_INTERNET_TYPE,What kind of internet connection(s) do you use at home?,,
+,,,Modem/Dial-up,1
+,,,DSL,2
+,,,Cable,3
+,,,Satellite,4
+,,,Wireless,5
+,,,I have no internet connection at home,6
+,,,,
+739,STANDARD_MOVIE_DOWNLOAD,"Do you have access to download movies through gaming console, digital receiver, Blu-ray/DVD player or similar devices?
+",,
+,,,Yes,1
+,,,No,2
+,,,I don't know,3
+,,,,
+740,STANDARD_GAMING_PLATFORMS,Which gaming platforms do you regularly use?,,
+,,,Microsoft Xbox One,22
+,,,Nintendo Switch,24
+,,,Sony PlayStation 4,23
+,,,Windows based desktop/laptop,1
+,,,Apple based desktop/laptop,2
+,,,Apple based mobile device (iPod/iPad/iPhone),3
+,,,Microsoft Xbox,4
+,,,Microsoft Xbox 360,5
+,,,Nintendo DS/Lite,6
+,,,Nintendo DSI/DSI XL,7
+,,,Nintendo 3DS,8
+,,,Nintendo Game Boy Advance/SP,9
+,,,Nintendo Game Boy/Color,10
+,,,Nintendo 64,11
+,,,Nintendo GameCube,12
+,,,Nintendo Wii,13
+,,,Sega Dreamcast,14
+,,,Sony PlayStation,15
+,,,Sony PlayStation 2,16
+,,,Sony PlayStation 3/Slim,17
+,,,Sony PSP,18
+,,,Sony PSP Go,19
+,,,Other,20
+,,,I don't play video/computer games,21
+,,,,
+741,STANDARD_GAMING_TYPE,What kind(s) of video/computer games do you play?,,
+,,,First Person Shooter/Action (e.g. Call of Duty),1
+,,,3rd Person Shooter/Action (e.g. Gears of War),2
+,,,3rd Person Adventure (e.g. Super Mario Galaxy),3
+,,,Point & Click Adventure (e.g. Myst),4
+,,,Life Simulations (e.g. The Sims),5
+,,,Music and Dance (e.g. Rockband),6
+,,,Sports (e.g. FIFA),7
+,,,Real Time Strategy/RTS (e.g. Command & Conquer),8
+,,,Role Playing Game/RPG (e.g. Final Fantasy),9
+,,,Massively Multiplayer Online/MMO (e.g. Warcraft),10
+,,,Vehicle Racing (e.g. Need for Speed),11
+,,,Flight Simulation (e.g. MS Flight Simulator),12
+,,,Fighting (e.g. Street Fighter),13
+,,,Puzzle (e.g. Professor Layton),14
+,,,Party Games (e.g. Wii Sports),15
+,,,Casual (e.g. Facebook games),16
+,,,Other,17
+,,,I don't play video/computer games,18
+,,,,
+742,STANDARD_GAMING_HOURS,"How many hours per week do you spend playing video/computer games?
+",,
+,,,Less than 1 hour,1
+,,,1 to 3 hours,2
+,,,4 to 10 hours,3
+,,,11 to 15 hours,4
+,,,16 to 20 hours,5
+,,,21 to 25 hours,6
+,,,More than 25 hours,7
+,,,None,8
+,,,,
+743,STANDARD_GAMING_PARTNERS,How do you play video/computer games?,,
+,,,Alone,1
+,,,With others in the same room/house,2
+,,,With others through an Internet connection,3
+,,,I don't play video/computer games,4
+,,,,
+744,STANDARD_GAMING_DEVICE,"Which of the following devices do you use to play games?
+",,
+,,,Games Console,1
+,,,Computer or Laptop,2
+,,,Portable Gaming Device,3
+,,,Cellphone/Smartphone or other Handheld Organizer,4
+,,,Other ,5
+,,,I don't play video/computer games,6
+,,,,
+745,STANDARD_GAMING_PURCHASE,"On average, how many computer/video games a month do you purchase?
+",,
+,,,Less than 1 game,1
+,,,1 to 2 games,2
+,,,3 to 5 games,3
+,,,6 to 8 games,4
+,,,9 to 10 games,5
+,,,More than 10 games,6
+,,,I don't buy any video/computer games,7
+,,,,
+746,STANDARD_GAMING_ONLINE,Do you play video games with others online? (e.g. Xbox Live or World of Warcraft)?,,
+,,,Yes,1
+,,,"No, I don't",2
+,,,,
+747,STANDARD_TELEVISION_FREQUENCY,"On average, how many hours of television do you watch per week?
+",,
+,,,5 hours or less,1
+,,,6 to 10 hours,2
+,,,11 to 20 hours,3
+,,,More than 20 hours,4
+,,,I don't watch TV,5
+,,,,
+748,STANDARD_RADIO_FREQUENCY,"On average, how many hours of radio do you listen to per week?
+",,
+,,,5 hours or less,1
+,,,6 to 10 hours,2
+,,,11 to 20 hours,3
+,,,More than 20 hours,4
+,,,I don't listen to radio,5
+,,,,
+749,STANDARD_PUBLICATIONS,"Which types of publications do you read?
+",,
+,,,Newspaper,1
+,,,Arts & crafts magazines,2
+,,,Automotive magazines,3
+,,,Computers & Electronics magazines,4
+,,,Cooking & Food magazines,5
+,,,Entertainment & TV magazines,6
+,,,"Fashion, Style or Beauty magazines",7
+,,,Financial & Business magazines,8
+,,,"Health, Fitness or Sports magazines",9
+,,,House & Gardening magazines,10
+,,,Music magazines,11
+,,,"Science, Nature or Medical magazines",12
+,,,Technology magazines,13
+,,,Teen magazines,14
+,,,Travel magazines,15
+,,,Other weekly/monthly magazines,16
+,,,I don't read newspapers or magazines,17
+,,,,
+750,STANDARD_FLIGHT_PURPOSE,"For which purposes do you travel by plane?
+",,
+,,,Business,1
+,,,Leisure,2
+,,,"Both, Leisure and Business",3
+,,,"Neither, I don't travel by plane",4
+,,,,
+751,STANDARD_FLIGHT_DESTINATION,"When you fly, which types of flights do you take?
+",,
+,,,Domestic,1
+,,,International,2
+,,,Both domestic and international,3
+,,,"Neither, I don't travel by plane",4
+,,,,
+752,STANDARD_DOMESTIC_AIRLINES,"Which  domestic airlines have you flown with during the last 12 months?
+",,
+,,,AirTran,1
+,,,Alaska Airlines,2
+,,,American Airlines,3
+,,,Continental Airlines,4
+,,,Delta Air Lines,5
+,,,Jet Blue,6
+,,,Northwest Airlines,7
+,,,Southwest Airlines,8
+,,,United Airlines,9
+,,,US Airways,10
+,,,Virgin Atlantic,11
+,,,Other,12
+,,,I don't travel by plane,13
+,,,,
+753,STANDARD_INTERNATIONAL_AIRLINES,"Which international airlines have you flown with during the last 12 months?
+",,
+,,,None of the above,-3105
+,,,Aegean Aviation,1
+,,,Aer Lingus,2
+,,,Aero Asia,3
+,,,Aeroflot,4
+,,,Aerolineas Argentinas,5
+,,,Aeromexico,6
+,,,Air Algerie,7
+,,,Air Berlin,8
+,,,Air Canada,9
+,,,Air China,10
+,,,Air Europa,11
+,,,Air France,12
+,,,Air India,13
+,,,Air New Zealand,14
+,,,Air One,15
+,,,AirAsia,16
+,,,All Nippon,17
+,,,Austrian Airlines Group,18
+,,,British Airways,19
+,,,Cathay Pacific,20
+,,,China Airlines,21
+,,,easyJet,22
+,,,EgyptAir,23
+,,,El Al,24
+,,,Emirates,25
+,,,EVA Air,26
+,,,Finnair Group,27
+,,,Japan Airlines,28
+,,,Kenya Airways,29
+,,,Kingfisher Red,30
+,,,KLM,31
+,,,Korean Air,32
+,,,LAN Airlines,33
+,,,Lufthansa,34
+,,,Mexican de Aviacion,35
+,,,Mexicana,36
+,,,Norwegian,37
+,,,Olympic Airlines,38
+,,,Philippine Airlines,39
+,,,Qantas Airways,40
+,,,Royal Jordanian,41
+,,,Ryanair,42
+,,,Saudi Arabian Airlines,43
+,,,Scandinavian Airlines (SAS),44
+,,,Singapore Airlines,45
+,,,Skywest Airlines,46
+,,,South African Airways,47
+,,,Swissair,48
+,,,Tunisair,49
+,,,Volaris,50
+,,,Other,51
+,,,,
+754,STANDARD_COUNTRIES_VISITED,"Which of the following countries/regions have you travelled to in the last 12 months?
+",,
+,,,North America,1
+,,,Central America,2
+,,,South America,3
+,,,Asia,4
+,,,Australia or the rest of Oceania,5
+,,,Europe,6
+,,,Middle East,7
+,,,I haven't traveled abroad in the last 12 months,9
+,,,Africa,8
+,,,,
+755,STANDARD_HOTEL_TYPE,"Of these hotel chains, which one(s) have you stayed at during the last 12 months?
+",,
+,,,1 star hotel,1
+,,,2 star hotel,2
+,,,3 star hotel,3
+,,,4 star hotel,4
+,,,5 star hotel,5
+,,,Bed and Breakfast,7
+,,,I have not stayed at a hotel in the last 12 months,8
+,,,Other,9
+,,,Better than a 5 star hotel,6
+,,,,
+756,STANDARD_SMOKING,"Do you smoke?
+",,
+,,,"No, I don't smoke but use a vape/electronic cigarettes",6
+,,,"Yes, I smoke",1
+,,,"Yes, I smoke now and then",2
+,,,"Yes, I smoke but I'm planning to quit",3
+,,,"No, I don't smoke",4
+,,,"No, I don’t smoke, but use other tobacco products",5
+,,,,
+757,STANDARD_CIGARETTE_FREQUENCY,"On average, how many cigarettes do you smoke in a day?
+",,
+,,,1 to 3 cigarettes,2
+,,,4 to 6 cigarettes,3
+,,,7 to 10 cigarettes,4
+,,,More than 10 cigarettes,5
+,,,I don't smoke cigarettes,6
+,,,"Less than one a day
+",1
+,,,,
+758,STANDARD_SMOKING_QUIT_TYPE,"Have you tried to quit smoking using any of these products/methods?
+",,
+,,,Acupuncture,1
+,,,Buproprion,2
+,,,Chamomille,3
+,,,Chantix/Champix ,4
+,,,Cold Turkey,5
+,,,Inhalers ,6
+,,,Kava,7
+,,,Nicoderm CQ,8
+,,,Nicotine Anonymous,9
+,,,Nicotine gum,10
+,,,Nicotine lozenge,11
+,,,Nicotine Patch ,12
+,,,Nicotine replacement therapy,13
+,,,Smoking cessation,14
+,,,Transdermal patch,15
+,,,Wellbutrin ,16
+,,,Other products/methods,17
+,,,I don't smoke/haven't tried to quit,18
+,,,,
+769,STANDARD_EYEWEAR,"Do you use glasses or contact lenses?
+",,
+,,,Glasses,1
+,,,Contact lenses,2
+,,,Both Glasses and Contact lenses,3
+,,,I don't use Glasses/Contact lenses,4
+,,,Prefer not to answer,5
+,,,,
+1035,MS_browser_type_Non_Wurfl,What browser are you currently using?,,
+,,,,
+1047,MS_os_type_Non_Wurfl,What operating system are you currently using?,,
+,,,,
+1249,Age_and_Gender_of_Child,Please indicate the age and gender of your child or children:,,
+,,,None of the above,-3105
+,,,Boy under age 1,1
+,,,Girl under age 1,2
+,,,Boy age 1,3
+,,,Girl age 1,4
+,,,Boy age 2,5
+,,,Girl age 2,6
+,,,Boy age 3,7
+,,,Girl age 3,8
+,,,Boy age 4,9
+,,,Girl age 4,10
+,,,Boy age 5,11
+,,,Girl age 5,12
+,,,Boy age 6,13
+,,,Girl age 6,14
+,,,Boy age 7,15
+,,,Girl age 7,16
+,,,Boy age 8,17
+,,,Girl age 8,18
+,,,Boy age 9,19
+,,,Girl age 9,20
+,,,Boy age 10,21
+,,,Girl age 10,22
+,,,Boy age 11,23
+,,,Girl age 11,24
+,,,Boy age 12,25
+,,,Girl age 12,26
+,,,Male teen age 13,27
+,,,Female teen age 13,28
+,,,Male teen age 14,29
+,,,Female teen age 14,30
+,,,Male teen age 15,31
+,,,Female teen age 15,32
+,,,Male teen age 16,33
+,,,Female teen age 16,34
+,,,Male teen age 17,35
+,,,Female teen age 17,36
+,,,,
+2189,STANDARD_EMPLOYMENT,What is your current employment status?,,
+,,,Employed full-time,1
+,,,Employed part-time,2
+,,,Self-employed full-time,3
+,,,Self-employed part-time,4
+,,,Active military,5
+,,,Inactive military/Veteran,6
+,,,Temporarily unemployed,7
+,,,Full-time homemaker,8
+,,,Retired,9
+,,,Student,10
+,,,Disabled,11
+,,,Prefer not to answer,12
+,,,,
+2204,Panel_Recruit,"Are you willing to consider joining an online panel community? If you qualify to join the panel, you will be asked to provide your name and e-mail address so that we can complete your registration. ",,
+,,,Yes,1
+,,,No,2
+,,,,
+2216,STANDARD_HOME_OWNER,Which of the following describes your current living situation?,,
+,,,Rent,1
+,,,Own,2
+,,,Other,3
+,,,,
+3546,STANDARD_B2B_DECISION_MAKER,Please choose which departments/products you have influence or decision making authority over regarding spending/purchasing.,,
+,,,IT Hardware,1
+,,,IT Software,2
+,,,Printers and copiers,3
+,,,Financial Department,4
+,,,Human Resources,5
+,,,Office supplies,6
+,,,Corporate travel,7
+,,,Telecommunications,8
+,,,Sales,9
+,,,Shipping,10
+,,,Operations,11
+,,,Legal services,12
+,,,Marketing/Advertising,13
+,,,Security,14
+,,,Food services,15
+,,,Auto leasing/purchasing,16
+,,,Procurement,19
+,,,Other,17
+,,,I don’t have influence or decision making authority,18
+,,,,
+3708,KIDS_STANDARD,How many children do you have under the age of 18? ,,
+,,,,
+3727,CAR_MODEL_US_STANDARD,Please select the model of the car you own.,,
+,,,Acura ILX,285
+,,,Acura MDX,1
+,,,Acura NSX,286
+,,,Acura RDX,2
+,,,Acura Rl Sedan,3
+,,,Acura RLX Sedan,287
+,,,Acura RSX Coupe,4
+,,,Acura Tl Sedan,5
+,,,Acura TLX Sedan,288
+,,,Acura TSX Sedan,6
+,,,Alfa Romeo 4C,289
+,,,Alfa Romeo Guilia,290
+,,,Audi A3 Wagon/5-Door,7
+,,,Audi A4 Coupe/Convertible,8
+,,,Audi A4 Sedan,9
+,,,Audi A5/S5 Sedan,291
+,,,Audi A6 Sedan,10
+,,,Audi A7/S7 Sedan,292
+,,,Audi A8 Sedan,11
+,,,Audi Q3,293
+,,,Audi Q5,294
+,,,Audi Q7,12
+,,,Audi Q8,295
+,,,Audi R8,296
+,,,Audi TT,297
+,,,BMW 2-Series,298
+,,,BMW 3-Series Convertible,13
+,,,BMW 3-Series Coupe,14
+,,,BMW 3-Series Sedan,15
+,,,BMW 3-Series Wagon,299
+,,,BMW 4-Series,300
+,,,BMW 5-Series Sedan,16
+,,,BMW 5-Series Wagon,301
+,,,BMW 6-Series,302
+,,,BMW 7-Series Sedan,17
+,,,BMW i3,303
+,,,BMW i8,304
+,,,BMW X2,305
+,,,BMW X3,18
+,,,BMW X4,306
+,,,BMW X5,19
+,,,BMW X6,307
+,,,Buick Cascada,308
+,,,Buick Enclave,20
+,,,Buick Encore,309
+,,,Buick Evision,310
+,,,Buick Lacrosse Sedan,21
+,,,Buick Lesabre Sedan,22
+,,,Buick Lucerne Sedan,23
+,,,Buick Regal,311
+,,,Buick Rendezvous,24
+,,,Buick Terraza,25
+,,,Buick Verano,312
+,,,Cadilac XTS,313
+,,,Cadillac ATS,314
+,,,Cadillac CT6,315
+,,,Cadillac CTS Coupe,316
+,,,Cadillac CTS Sedan,26
+,,,Cadillac Deville Sedan,27
+,,,Cadillac DTS Sedan,28
+,,,Cadillac ELR,317
+,,,Cadillac Escalade,29
+,,,Cadillac Escalade ESV,30
+,,,Cadillac Escalade Ext,31
+,,,Cadillac SRX,32
+,,,Cadillac STS Sedan,33
+,,,Cadillac XT5,318
+,,,Chevrolet Avalanche Crew Cab,34
+,,,Chevrolet Aveo Sedan,35
+,,,Chevrolet Aveo Wagon/5-Door,36
+,,,Chevrolet Bolt,319
+,,,Chevrolet Camaro,320
+,,,Chevrolet Caprice,321
+,,,Chevrolet City Express,322
+,,,Chevrolet Cobalt Coupe,37
+,,,Chevrolet Cobalt Sedan,38
+,,,Chevrolet Colorado Crew Cab,39
+,,,Chevrolet Colorado Ext Cab,40
+,,,Chevrolet Colorado Reg Cab,41
+,,,Chevrolet Corvette,323
+,,,Chevrolet Equinox,42
+,,,Chevrolet Express Van,324
+,,,Chevrolet HHR,43
+,,,Chevrolet Impala Sedan,44
+,,,Chevrolet Malibu Sedan,45
+,,,Chevrolet Malibu Wagon/5-Door,46
+,,,Chevrolet Monte Carlo Coupe,47
+,,,Chevrolet Silverado Crew Cab,48
+,,,Chevrolet Silverado Ext Cab,49
+,,,Chevrolet Silverado Reg Cab,50
+,,,Chevrolet Sonic,325
+,,,Chevrolet Spark,326
+,,,Chevrolet SS,327
+,,,Chevrolet Suburban,51
+,,,Chevrolet Tahoe,52
+,,,Chevrolet Trailblazer,53
+,,,Chevrolet Trailblazer Ext,54
+,,,Chevrolet Traverse,55
+,,,Chevrolet Trax,328
+,,,Chevrolet Uplander,56
+,,,Chrysler 200,329
+,,,Chrysler 300/300M Sedan,57
+,,,Chrysler Aspen,58
+,,,Chrysler Pacifica,59
+,,,Chrysler PT Cruiser,60
+,,,Chrysler Sebring Convertible,61
+,,,Chrysler Sebring Sedan,62
+,,,Chrysler Town & Country,63
+,,,Dodge Avenger Sedan,64
+,,,Dodge Caliber Wagon/5-Door,65
+,,,Dodge Caravan,66
+,,,Dodge Challenger,330
+,,,Dodge Charger Sedan,67
+,,,Dodge Dakota Crew Cab,68
+,,,Dodge Dakota Ext Cab,69
+,,,Dodge Dart,331
+,,,Dodge Durango,70
+,,,Dodge Journey,71
+,,,Dodge Magnum Wagon/5-Door,72
+,,,Dodge Neon Coupe,332
+,,,Dodge Neon Sedan,73
+,,,Dodge Nitro,74
+,,,Dodge Ram Crew Cab,75
+,,,Dodge Ram Extended Cab,333
+,,,Dodge Ram Reg Cab,76
+,,,Dodge Viper,334
+,,,Fiat 500,335
+,,,Fiat 500L,336
+,,,Fiat 500X,337
+,,,Fiat Spider,338
+,,,Ford C-MAX,339
+,,,Ford E-Series Van,341
+,,,Ford EcoSport,340
+,,,Ford Edge,77
+,,,Ford Escape,78
+,,,Ford Excursion,79
+,,,Ford Expedition,80
+,,,Ford Explorer,81
+,,,Ford Explorer Sport Trac,82
+,,,Ford F Series Crew Cab,83
+,,,Ford F Series Ext Cab,84
+,,,Ford F Series Reg Cab,85
+,,,Ford Fiesta,342
+,,,Ford Five Hundred Sedan,86
+,,,Ford Flex,87
+,,,Ford Focus Coupe,88
+,,,Ford Focus Sedan,89
+,,,Ford Focus Wagon/5-Door,90
+,,,Ford Freestar,91
+,,,Ford Freestyle,92
+,,,Ford Fusion Sedan,93
+,,,Ford GT,343
+,,,Ford Ranger Crew Cab,344
+,,,Ford Ranger Ext Cab,94
+,,,Ford Ranger Reg Cab,95
+,,,Ford Taurus Sedan,96
+,,,Ford Transit,345
+,,,Ford Transit Connect,346
+,,,Genesis G70,347
+,,,Genesis G80,348
+,,,Genesis G90,349
+,,,GMC Acadia,97
+,,,GMC Canyon Crew Cab,98
+,,,GMC Canyon Ext Cab,99
+,,,GMC Envoy,100
+,,,GMC Envoy Denali,101
+,,,GMC Envoy Xl,102
+,,,GMC Savana,350
+,,,GMC Sierra Crew Cab,103
+,,,GMC Sierra Ext Cab,104
+,,,GMC Sierra Reg Cab,105
+,,,GMC Terrain,351
+,,,GMC Yukon,106
+,,,GMC Yukon Denali,107
+,,,GMC Yukon Denali Xl,108
+,,,GMC Yukon Xl,109
+,,,Honda Accord Coupe,110
+,,,Honda Accord Sedan,111
+,,,Honda Civic Coupe,112
+,,,Honda Civic Sedan,113
+,,,Honda Clarity,352
+,,,Honda CR-V,114
+,,,Honda CR-Z,354
+,,,Honda Crosstour,353
+,,,Honda Element,115
+,,,Honda Fit Wagon/5-Door,116
+,,,Honda HR-V,355
+,,,Honda Insight,356
+,,,Honda Odyssey,117
+,,,Honda Pilot,118
+,,,Honda Ridgeline Crew Cab,119
+,,,Hummer H1,357
+,,,Hummer H2 Sut,120
+,,,Hummer H2 SUV,121
+,,,Hummer H3,122
+,,,Hyundai Accent Coupe,123
+,,,Hyundai Accent Sedan,124
+,,,Hyundai Azera Sedan,125
+,,,Hyundai Elantra Sedan,126
+,,,Hyundai Entourage,127
+,,,Hyundai Equus,358
+,,,Hyundai Genesis Coupe,359
+,,,Hyundai Genesis Sedan,360
+,,,Hyundai Ioniq,361
+,,,Hyundai Kona,362
+,,,Hyundai Nexo,363
+,,,Hyundai Santa Fe,128
+,,,Hyundai Santa Fe Sport,364
+,,,Hyundai Sonata Sedan,129
+,,,Hyundai Tucson,130
+,,,Hyundai Veloster,365
+,,,Hyundai Veracruz,131
+,,,Infiniti FX35,132
+,,,Infiniti G35 Coupe,133
+,,,Infiniti G35 Sedan,134
+,,,Infiniti G37 Coupe,135
+,,,Infiniti G37 Sedan,136
+,,,Infiniti JX,284
+,,,Infiniti M35 Sedan,137
+,,,Infiniti Q50,366
+,,,Infiniti Q60,367
+,,,Infiniti Q70,368
+,,,Infiniti QX30,369
+,,,Infiniti QX50,370
+,,,Infiniti QX56,138
+,,,Infiniti QX60,283
+,,,Infiniti QX70,371
+,,,Infiniti QX80,372
+,,,Jaguar E-Pace,373
+,,,Jaguar F-Pace,374
+,,,Jaguar F-Type,375
+,,,Jaguar Vanden Plas Sedan,139
+,,,Jaguar XE,376
+,,,Jaguar XF,377
+,,,Jaguar XJ LWB Sedan,140
+,,,Jeep Cherokee,378
+,,,Jeep Commander,141
+,,,Jeep Compass,142
+,,,Jeep Grand Cherokee,143
+,,,Jeep Liberty,144
+,,,Jeep Patriot,145
+,,,Jeep Renegade,379
+,,,Jeep Wrangler,146
+,,,Kia Cadenza,380
+,,,Kia Forte,381
+,,,Kia K900,382
+,,,Kia Niro,383
+,,,Kia Optima Sedan,147
+,,,Kia Rio Sedan,148
+,,,Kia Rio Wagon/5-Door,149
+,,,Kia Rondo,150
+,,,Kia Sedona,151
+,,,Kia Sorento,152
+,,,Kia Soul,384
+,,,Kia Spectra Sedan,153
+,,,Kia Sportage,154
+,,,Kia Stinger,385
+,,,Land Rover Discovery,386
+,,,Land Rover Evoque,387
+,,,Land Rover LR3,155
+,,,Land Rover LR4,388
+,,,Land Rover Range Rover,156
+,,,Land Rover Range Rover Sport,157
+,,,Land Rover Velar,389
+,,,Lexus ES Sedan,158
+,,,Lexus GS Sedan,159
+,,,Lexus GX,160
+,,,Lexus IS Sedan,161
+,,,Lexus LC,390
+,,,Lexus LFA,391
+,,,Lexus LS,162
+,,,Lexus LX,163
+,,,Lexus NX,392
+,,,Lexus RC,393
+,,,Lexus RX,164
+,,,Lincoln Aviator,394
+,,,Lincoln Continental,395
+,,,Lincoln Corsair,396
+,,,Lincoln LS Sedan,165
+,,,Lincoln Mark LT,166
+,,,Lincoln MKC,397
+,,,Lincoln MKS Sedan,167
+,,,Lincoln MKT,398
+,,,Lincoln MKX,168
+,,,Lincoln MKZ Sedan,169
+,,,Lincoln Nautilus,399
+,,,Lincoln Navigator,170
+,,,Lincoln Town Car Sedan,171
+,,,Lincoln Zephyr Sedan,172
+,,,Maserati Ghibli Sedan,400
+,,,Maserati Gran Turismo Coupe,401
+,,,Maserati GT Sport Convertible,402
+,,,Maserati Levante,403
+,,,Maserati Quattroporte Sedan,404
+,,,Mazda 3 Sedan,173
+,,,Mazda 3 Wagon/5-Door,174
+,,,Mazda 5,175
+,,,Mazda 6 Sedan,176
+,,,Mazda B2300 Reg Cab,177
+,,,Mazda CX-3,405
+,,,Mazda CX-5,406
+,,,Mazda Cx-7,178
+,,,Mazda Cx-9,179
+,,,Mazda MX-5/Miata,407
+,,,Mazda Tribute,180
+,,,McLaren Sports Series,408
+,,,McLaren Super Series,409
+,,,Mercedes Benz GT/AMG GT,410
+,,,Mercedes Benz GT/AMG GT 4-Door Coupe,411
+,,,Mercedes Benz GT/AMG GT Convertible,412
+,,,Mercedes-Benz A-Class,413
+,,,Mercedes-Benz B-Class,414
+,,,Mercedes-Benz C-Class Convertible,415
+,,,Mercedes-Benz C-Class Sedan,181
+,,,Mercedes-Benz Cl-Class Coupe,182
+,,,Mercedes-Benz CLA,416
+,,,Mercedes-Benz Clk-Class Convertible,183
+,,,Mercedes-Benz Clk-Class Coupe,184
+,,,Mercedes-Benz CLS-Class Sedan,185
+,,,Mercedes-Benz E-Class Cabriolet,417
+,,,Mercedes-Benz E-Class Sedan,186
+,,,Mercedes-Benz E-Class Wagon,418
+,,,Mercedes-Benz G-Class,419
+,,,Mercedes-Benz GL-Class,187
+,,,Mercedes-Benz GLA,420
+,,,Mercedes-Benz GLC Coupe,421
+,,,Mercedes-Benz GLC/GLK,422
+,,,Mercedes-Benz GLE,423
+,,,Mercedes-Benz GLE Coupe,424
+,,,Mercedes-Benz GLS,425
+,,,Mercedes-Benz M-Class,188
+,,,Mercedes-Benz Maybach Sedan,426
+,,,Mercedes-Benz Metris,427
+,,,Mercedes-Benz R-Class,189
+,,,Mercedes-Benz S-Class Cabriolet,428
+,,,Mercedes-Benz S-Class Coupe,429
+,,,Mercedes-Benz S-Class Sedan,190
+,,,Mercedes-Benz SL,430
+,,,Mercedes-Benz SLC/SLK,431
+,,,Mercedes-Benz Sprinter,432
+,,,Mercury Grand Marquis Sedan,191
+,,,Mercury Mariner,192
+,,,Mercury Milan Sedan,193
+,,,Mercury Montego Sedan,194
+,,,Mercury Mountaineer,195
+,,,Mercury Sable Sedan,196
+,,,Mini Clubman,433
+,,,Mini Cooper Convertible,197
+,,,Mini Cooper Coupe,198
+,,,Mini Countryman,434
+,,,Mini Paceman,435
+,,,Mitsubishi Eclipse Cross,436
+,,,Mitsubishi Endeavor,199
+,,,Mitsubishi Galant Sedan,200
+,,,Mitsubishi Lancer Sedan,201
+,,,Mitsubishi Mirage/G4,437
+,,,Mitsubishi Outlander,202
+,,,Mitsubishi Outlander Sport,438
+,,,Nissan 350Z/370Z Coupe/Convertible,439
+,,,Nissan Altima Coupe,203
+,,,Nissan Altima Sedan,204
+,,,Nissan Armada,205
+,,,Nissan Frontier Crew Cab,206
+,,,Nissan Frontier Ext Cab,207
+,,,Nissan GT-R,440
+,,,Nissan Juke,441
+,,,Nissan Kicks,442
+,,,Nissan Leaf,443
+,,,Nissan Maxima Sedan,208
+,,,Nissan Murano,209
+,,,Nissan NV,444
+,,,Nissan NV200,445
+,,,Nissan Pathfinder,210
+,,,Nissan Quest,211
+,,,Nissan Rogue,212
+,,,Nissan Rogue Sport,446
+,,,Nissan Sentra Sedan,213
+,,,Nissan Titan Crew Cab,214
+,,,Nissan Titan Ext Cab,215
+,,,Nissan Versa Sedan,216
+,,,Nissan Versa Wagon/5-Door,217
+,,,Nissan Xterra,218
+,,,Pontiac G5 Coupe,219
+,,,Pontiac G6 Coupe/Convertible,220
+,,,Pontiac G6 Sedan,221
+,,,Pontiac G8 Sedan,222
+,,,Pontiac Grand Prix Sedan,223
+,,,Pontiac Torrent,224
+,,,Pontiac Vibe Wagon/5-Door,225
+,,,Porcsche Boxter,447
+,,,Porsche Cayenne,226
+,,,Porsche Cayman/718,448
+,,,Porsche Macan,449
+,,,Porsche Panamera,450
+,,,Porshe 911,451
+,,,Ram Pickup Crew Cab,452
+,,,Ram Pickup Extended Cab,453
+,,,Ram Pickup Regular Cab,454
+,,,Ram ProMaster,455
+,,,Ram ProMaster City,456
+,,,Saab 9-2X,458
+,,,Saab 9-3 Sedan,227
+,,,Saab 9-3 Wagon,459
+,,,Saab 9-5 Sedan,460
+,,,Saab 9-7X,461
+,,,Saab 904X,457
+,,,Saturn Aura Sedan,228
+,,,Saturn Ion Sedan,229
+,,,Saturn Outlook,230
+,,,Saturn Vue,231
+,,,Scion FR-S,462
+,,,Scion Tc Coupe,232
+,,,Scion Xa Wagon/5-Door,233
+,,,Scion Xb,234
+,,,Scion XD Wagon/5-Door,235
+,,,Subaru Ascent,463
+,,,Subaru B9 Tribeca,236
+,,,Subaru BRZ,464
+,,,Subaru Crosstrek,465
+,,,Subaru Forester,237
+,,,Subaru Impreza Sedan,238
+,,,Subaru Impreza Wagon/5-Door,239
+,,,Subaru Legacy Sedan,240
+,,,Subaru Legacy Wagon/5-Door,241
+,,,Subaru Outback Sport Wagon/5-Door,466
+,,,Subaru Outback Wagon/5-Door,242
+,,,Subaru WRX,467
+,,,Subaru WRX STi,468
+,,,Suzuki Aerio Wagon/5-Door,243
+,,,Suzuki Forenza Sedan,244
+,,,Suzuki Grand Vitara,245
+,,,Suzuki Sx4 Wagon/5-Door,246
+,,,Suzuki Xl7,247
+,,,Toyota 4Runner,248
+,,,Toyota 86,469
+,,,Toyota Avalon Sedan,249
+,,,Toyota C-HR,470
+,,,Toyota Camry Sedan,250
+,,,Toyota Corolla Hatchback,471
+,,,Toyota Corolla Sedan,251
+,,,Toyota Fj Cruiser,252
+,,,Toyota Highlander,253
+,,,Toyota Land Cruiser,254
+,,,Toyota Matrix Wagon/5-Door,255
+,,,Toyota Mirai,472
+,,,Toyota Prius c,473
+,,,Toyota Prius Wagon/5-Door,256
+,,,Toyota RAV4,257
+,,,Toyota Sequoia,258
+,,,Toyota Sienna,259
+,,,Toyota Solara Convertible,260
+,,,Toyota Solara Coupe,261
+,,,Toyota Tacoma Crew Cab,262
+,,,Toyota Tacoma Ext Cab,263
+,,,Toyota Tacoma Reg Cab,264
+,,,Toyota Tundra Crew Cab,265
+,,,Toyota Tundra Ext Cab,266
+,,,Toyota Tundra Reg Cab,267
+,,,Toyota Venza,268
+,,,Toyota Yaris Coupe,269
+,,,Toyota Yaris iA,474
+,,,Toyota Yaris Sedan,270
+,,,Volkswagen Arteon,475
+,,,Volkswagen Atlas,476
+,,,Volkswagen CC,477
+,,,Volkswagen EOS,478
+,,,Volkswagen Jetta Sedan,271
+,,,Volkswagen New Beetle Convertible,272
+,,,Volkswagen New Beetle Coupe,273
+,,,Volkswagen Passat Sedan,274
+,,,Volkswagen Tiguan,479
+,,,Volkswagen Tiguan Limited,480
+,,,Volkswagen Touareg,275
+,,,Volvo S40 Sedan,276
+,,,Volvo S60 Sedan,277
+,,,Volvo S80 Sedan,278
+,,,Volvo S90 Sedan,481
+,,,Volvo V60,482
+,,,Volvo V70,279
+,,,Volvo V90,483
+,,,Volvo XC40,484
+,,,Volvo XC60,485
+,,,Volvo XC70,280
+,,,Volvo XC90,281
+,,,None of the above,-3105
+,,,,
+4098,RECONTACT_PID_1,Recontact_PID_1,,
+,,,,
+4099,RECONTACT_RID_1,Recontact_RID_1,,
+,,,,
+4100,RECONTACT_PARAMS_1,Recontact_Params_1,,
+,,,,
+4138,RECONTACT_PARAMS_2,RECONTACT_PARAMS_2,,
+,,,,
+4139,RECONTACT_PID_2,Recontact_PID_2,,
+,,,,
+4183,SUPPLIER_ID,test,,
+,,,,
+4284,RECONTACT_RID_2,Recontact_RID_2,,
+,,,,
+4285,RECONTACT_PARAMS_3,Recontact_Params_3,,
+,,,,
+5729,STANDARD_INDUSTRY_PERSONAL,"Which of the following best describes the industry that you, personally, work in?",,
+,,,Accounting,1
+,,,Advertising,2
+,,,Agriculture/Fishing,3
+,,,Architecture,4
+,,,Automotive,5
+,,,Aviation,6
+,,,Banking/Financial,7
+,,,Bio-Tech,8
+,,,Brokerage,9
+,,,Carpentry/Electrical installations,10
+,,,Chemicals/Plastics/Rubber,11
+,,,Communications/Information,12
+,,,Computer Hardware,13
+,,,Computer Reseller (software/hardware),14
+,,,Computer Software,15
+,,,Construction,16
+,,,Consulting,17
+,,,Consumer Electronics,18
+,,,Consumer Packaged Goods,19
+,,,Education,20
+,,,Energy/Utilities/Oil and Gas,21
+,,,Engineering,22
+,,,Environmental Services,23
+,,,Fashion/Apparel,24
+,,,Food/Beverage,25
+,,,Government/Public Sector,26
+,,,Healthcare,27
+,,,Hospitality/Tourism,28
+,,,Human Resources,29
+,,,Information Technology/IT,30
+,,,Insurance,31
+,,,Internet,32
+,,,Legal/Law,33
+,,,Manufacturing,34
+,,,Marketing,52
+,,,Market Research,35
+,,,Media/Entertainment,37
+,,,Military,38
+,,,Non Profit/Social services,39
+,,,Personal Services,40
+,,,Pharmaceuticals,41
+,,,Printing Publishing,42
+,,,Public Relations,43
+,,,Real Estate/Property,44
+,,,Retail/Wholesale trade,45
+,,,Sales,53
+,,,Security,46
+,,,Shipping/Distribution,47
+,,,Telecommunications,48
+,,,Transportation,49
+,,,Other,50
+,,,I don't work,51
+,,,,
+6259,Standard_Internet_Frequency,"How often do you go online on a computer (desktop, laptop, netbook, or tablet)? This includes access to the Internet from home, work, or elsewhere (including weekdays and weekends). ",,
+,,,Several times a day,1
+,,,At least daily,2
+,,,At least weekly,3
+,,,At least monthly,4
+,,,Less than monthly,5
+,,,Never,6
+,,,,
+7062,MS_device_type_Non_Wurfl,What is the device type?,,
+,,,,
+7064,Parental_Status_Standard,Please choose the options that best describe your household:,,
+,,,I am pregnant/expecting a child within the next 9 months,1
+,,,I have one or more children under the age of 18 living in my household,2
+,,,I have one or more children aged 18 or older living in my household,3
+,,,I have no children living in my household and I am not pregnant/expecting a child within the next 9 months,4
+,,,,
+8210,MS_brand_name,What is the device brand name?,,
+,,,,
+8211,MS_model_name,What is the device model name?,,
+,,,,
+8213,MS_is_tablet,Are you using a tablet?,,
+,,,Fill in the blank,xx
+,,,TRUE,TRUE
+,,,,
+8214,MS_is_mobile,Are you using a mobile device?,,
+,,,Fill in the blank,xx
+,,,TRUE,TRUE
+,,,,
+8215,MS_device_os,ms_device_os,,
+,,,,
+8219,MS_full_flash_support,Is flash enabled?,,
+,,,,
+14785,STANDARD_HHI_US,How much total combined annual income do all members of your household earn before taxes?,,
+,,,"Less than $5,000",1
+,,,"$5,000 to $9,999",2
+,,,"$10,000 to $14,999",3
+,,,"$15,000 to $19,999",4
+,,,"$20,000 to $24,999",5
+,,,"$25,000 to $29,999",6
+,,,"$30,000 to $34,999",7
+,,,"$35,000 to $39,999",8
+,,,"$40,000 to $44,999",9
+,,,"$45,000 to $49,999",10
+,,,"$50,000 to $54,999",11
+,,,"$55,000 to $59,999",12
+,,,"$60,000 to $64,999",13
+,,,"$65,000 to $69,999",14
+,,,"$70,000 to $74,999",15
+,,,"$75,000 to $79,999",16
+,,,"$80,000 to $84,999",17
+,,,"$85,000 to $89,999",18
+,,,"$90,000 to $94,999",19
+,,,"$95,000 to $99,999",20
+,,,"$100,000 to $124,999",21
+,,,"$125,000 to $149,999",22
+,,,"$150,000 to $174,999",23
+,,,"$175,000 to $199,999",24
+,,,"$200,000 to $249,999",25
+,,,"$250,000 and above",26
+,,,Prefer not to answer,27
+,,,,
+15297,STANDARD_JOB_TITLE,"What is your job title, level or responsibility?",,
+,,,"C-Level (e.g. CEO, CFO), Owner, Partner, President      ",1
+,,,"Vice President (EVP, SVP, AVP, VP) ",2
+,,,"Director (Group Director, Sr. Director, Director)                                                        ",3
+,,,"Manager (Group Manager, Sr. Manager, Manager, Program Manager)                        ",4
+,,,Analyst                                             ,5
+,,,Assistant or Associate                                     ,6
+,,,Administrative (Clerical or Support Staff),7
+,,,Consultant,8
+,,,Intern,9
+,,,Volunteer,10
+,,,None of the above,11
+,,,,
+20373,STANDARD_SEXUAL_ORIENTATION_EN,What is your sexual orientation?,,
+,,,Heterosexual,1
+,,,Lesbian,2
+,,,Gay,3
+,,,Bisexual,4
+,,,Prefer not to answer,6
+,,,,
+20613,STANDARD_AUTO_FUTURE_PURCHASE_20,When do you estimate that you will purchase/lease your next car?,,
+,,,2020,7
+,,,2021,9
+,,,2022,10
+,,,2023,11
+,,,2024,12
+,,,Undecided/Don't know,8
+,,,,
+22405,PIDCheck,Stores PIDs,,
+,,,,
+22467,STANDARD_NO_OF_EMPLOYEES,"Approximately how many employees work at your organization (all locations)?
+",,
+,,,1,1
+,,,10-Feb,2
+,,,Nov-50,3
+,,,51-100,4
+,,,101-500,5
+,,,501-1000,6
+,,,1001-5000,7
+,,,Greater than 5000,8
+,,,I don't work/I don't know,9
+,,,,
+23415,STANDARD_RELIGION,Which of the following religions do you most closely identify with?,,
+,,,Agnostic ,1
+,,,Atheist ,2
+,,,Buddhist ,3
+,,,Christian (all denominations) ,4
+,,,Hindu ,5
+,,,Jewish ,6
+,,,Muslim ,7
+,,,Other ,8
+,,,None of the above,-3105
+,,,,
+23643,SUPPLIER_CODE,SUPPLIER_CODE,,
+,,,,
+25640,Financial_Product,"Which of the following financial products do you own?
+",,
+,,,Credit Card,1
+,,,Checking account,2
+,,,Savings account,3
+,,,Personal loan,4
+,,,Mortgage,5
+,,,None of the above,-3105
+,,,,
+26691,P4W_GROCERY_PURCHASING,Which of the following groceries have you purchased in the last four weeks?,,
+,,,Toilet paper,1
+,,,White bread,2
+,,,Milk modifier,3
+,,,Cereal,4
+,,,Salty snacks,5
+,,,Gum,6
+,,,Boxed bread,7
+,,,Seasonings,8
+,,,Tortilla chips,9
+,,,Infant formula,10
+,,,Deodorant/Anti-Perspirants,11
+,,,Hair Conditioners,12
+,,,Shampoo,13
+,,,Instant Coffee,14
+,,,Soft drinks  ,15
+,,,Napkins,16
+,,,Babycare Products ,17
+,,,Pantyliners,18
+,,,Mouthwash ,19
+,,,Tampons,20
+,,,Sunscreen,21
+,,,Moisturizers,22
+,,,Chocolates or other packaged sweets,23
+,,,Frozen pre prepared food,24
+,,,Processed sliced meats,25
+,,,Yogurts,26
+,,,,
+28289,STANDARD_BIG_PURCHASES,"Which of the following products have you purchased in the last 2 years, or intend to buy in the next 12 months?",,
+,,,Household Appliances,1
+,,,TV,2
+,,,Mobile phone,3
+,,,Laptop,4
+,,,Car,5
+,,,Flight ticket,6
+,,,House,7
+,,,None of the above,-3105
+,,,,
+28975,DRIVER_LICENSE,Do you possess a driver's license?,,
+,,,Yes,1
+,,,No,2
+,,,,
+29226,STANDARD_APP_DOWNLOAD,"In order to qualify for this survey you may be asked to download an app or plug-in.
+
+Would you like to continue?",,
+,,,Yes,1
+,,,No,2
+,,,,
+29228,STANDARD_PII,In order to qualify for this survey you may be asked to provide personally-identifiable information (PII). Would you like to continue?,,
+,,,Yes,1
+,,,No,2
+,,,,
+30226,STANDARD_TEEN_PARTICIPATE,You have indicated that you have a teenage child in the household between the ages of 13 and 17. Is your teenage child available to come to the computer and participate in a survey with your assistance?,,
+,,,Yes,1
+,,,No,2
+,,,,
+30282,Standard_Travel_DM,Which of the following best describes what role you play when making traveling decisions for you and your household?,,
+,,,I am the sole decision-maker in airline and travel choices,1
+,,,I am joint decision maker or at least have some influence on the airline and travel choices,2
+,,,Someone else makes the airline and travel choices,3
+,,,I don’t travel,4
+,,,,
+30319,STANDARD_CHILD_PARTICIPATE,You have indicated that you have a child in the household under the age of 18. Is your child available to come to the computer and participate in a survey with your assistance?,,
+,,,Yes,1
+,,,No,2
+,,,,
+30321,STANDARD_TEEN_ANSWER_FORWARD,"Thank you for agreeing to participate. At this point, please pass the computer over to your child and have them answer the following questions from his or her perspective. The next questions will be for your teen.",,
+,,,Continue,1
+,,,I've changed my mind - my teen cannot participate,2
+,,,,
+30396,STANDARD_GROCERY_SHOPPER,Are you the primary decision maker in your household for grocery purchases?,,
+,,,Yes,1
+,,,No,2
+,,,Share decisions equally,3
+,,,,
+31530,AT_SITE_ID,AT_SITE_ID,,
+,,,,
+31531,AT_CREATIVE_ID,AT_CREATIVE_ID,,
+,,,,
+31532,AT_PLACEMENT_ID,AT_PLACEMENT_ID,,
+,,,,
+31533,AT_DAYS_SINCE_IMPRESSION,AT_DAYS_SINCE_IMPRESSION,,
+,,,,
+31538,AT_IMPRESSION_TIME,AT_IMPRESSION_TIME,,
+,,,,
+32350,STANDARD_POLITICAL_PARTY,"In politics today, do you consider yourself a Democrat, Republican, or Independent?",,
+,,,Democrat,1
+,,,Republican,2
+,,,Independent,3
+,,,Prefer not to answer,4
+,,,,
+32352,STANDARD_HISPANIC_ACCULTURATION,Would you say that in your household you speak…? / ¿Diría que en su hogar usted habla…?,,
+,,,Spanish all the time / Español todo el tiempo,1
+,,,Spanish more than half of the time / Español más de la mitad del tiempo,2
+,,,Spanish and English equally / Español e inglés por igual,3
+,,,English more than half of the time / Inglés más de la mitad del tiempo,4
+,,,English all the time / Inglés todo el tiempo,5
+,,,,
+32355,STANDARD_AUTO_MAKER,When do you estimate that you will purchase/lease your next car?,,
+,,,This year,1
+,,,Next year,2
+,,,Two years from now,3
+,,,Three years from now,4
+,,,Four years from now,5
+,,,Five years from now,6
+,,,Six years from now,7
+,,,Undecided/Don't know,8
+,,,,
+33865,AT_R&D_Q3,"For each of the following, please choose your most preferred:",,
+,,,,
+43501,STANDARD_WEBCAM,Do you have a webcam and are you willing to use it for an online research opportunity?,,
+,,,I have a webcam and I am willing to use it for an online research opportunity.,1
+,,,I have a webcam but I am not willing to use it for an online research opportunity.,2
+,,,I do not have a webcam.,3
+,,,,
+48741,STANDARD_EDUCATION_v2,What is the highest level of education you have completed?,,
+,,,Some high school or less,1
+,,,High school graduate,2
+,,,Other post high school vocational training,3
+,,,"Completed some college, but no degree",4
+,,,Associate's degree,5
+,,,Bachelor's degree,6
+,,,Master's or professional degree,7
+,,,Doctorate degree,8
+,,,None of the above,-3105
+,,,,
+61076,STANDARD_HHI,What is your current annual household income before taxes?,,
+,,,"Less than $14,999",1
+,,,"$15,000 to $19,999",2
+,,,"$20,000 to $24,999",3
+,,,"$25,000 to $29,999",4
+,,,"$30,000 to $34,999",5
+,,,"$35,000 to $39,999",6
+,,,"$40,000 to $44,999",7
+,,,"$45,000 to $49,999",8
+,,,"$50,000 to $54,999",9
+,,,"$55,000 to $59,999",10
+,,,"$60,000 to $64,999",11
+,,,"$65,000 to $69,999",12
+,,,"$70,000 to $74,999",13
+,,,"$75,000 to $79,999",14
+,,,"$80,000 to $84,999",15
+,,,"$85,000 to $89,999",16
+,,,"$90,000 to $94,999",17
+,,,"$95,000 to $99,999",18
+,,,"$100,000 to $124,999",19
+,,,"$125,000 to $149,999",20
+,,,"$150,000 to $174,999",21
+,,,"$175,000 to $199,999",22
+,,,"$200,000 to $249,999",23
+,,,"$250,000 and above",24
+,,,Prefer not to answer,-3105
+,,,,
+61190,STANDARD_HH_ASSETS,What are your household investable assets (not including homeownership)?,,
+,,,"Less than $50,000",1
+,,,"$50,000 - $74,999",2
+,,,"$75,000 - $99,999",3
+,,,"$100,000 - $149,999",4
+,,,"$150,000 - $199,999",5
+,,,"$200,000 - $499,999",6
+,,,"$500,000 - $999,999",7
+,,,"$1,000,000 or more",8
+,,,No investable assets,9
+,,,Prefer not to say,-3105
+,,,,
+61195,STANDARD_HH_RESPONSIBILITY,"In your household, which of the following things are you responsible or partially responsible for making decisions about? ",,
+,,,Internet,1
+,,,Television,2
+,,,Banking,3
+,,,Grocery Shopping,4
+,,,Automobile,5
+,,,Mortgage,6
+,,,Finance,7
+,,,Clothing,8
+,,,None of the above,-3105
+,,,,
+61200,STANDARD_INTERNET_PROVIDER_US,Which of the following is your primary home internet service provider?,,
+,,,Comcast/Cablevision,1
+,,,Spectrum/Time Warner Cable,2
+,,,Verizon (Fios),3
+,,,AT& T (U-Verse),4
+,,,Cox,5
+,,,Charter,6
+,,,SuddenLink,7
+,,,Cable One,8
+,,,CenturyLink,9
+,,,Frontier Communication,10
+,,,Bright House Networks,11
+,,,Other Provider,12
+,,,I do not have home internet,-3105
+,,,,
+61255,STANDARD_CELL_CARRIER_US,Which of these is your carrier for your primary mobile / cell phone?,,
+,,,AT&T,1
+,,,Boost Mobile,2
+,,,C Spire,3
+,,,Cellular One,4
+,,,Cricket,5
+,,,Go Phone,6
+,,,Nextel,7
+,,,Sprint,8
+,,,T-Mobile,9
+,,,US Cellular,11
+,,,Verizon,12
+,,,Virgin Mobile,13
+,,,"Alltel
+",16
+,,,"Cellcom
+",17
+,,,"Centennial Wireless
+",18
+,,,"Cincinnati Bell Wireless
+",19
+,,,"Consumer Cellular
+",20
+,,,"Credo Mobile
+",21
+,,,"FreedomPop
+",22
+,,,"Freewheel
+",23
+,,,"GIV Mobile
+",24
+,,,"Google
+",25
+,,,"Helio
+",26
+,,,"H2O Wireless
+",27
+,,,"i-wireless
+",28
+,,,"MetroPCS
+",29
+,,,"Net10
+",30
+,,,"nTelos
+",31
+,,,"Page Plus Cellular
+",32
+,,,"Republic Wireless
+",33
+,,,"Simple Mobile
+",34
+,,,"SouthernLINC
+",35
+,,,"Straight Talk Wireless
+",36
+,,,"Ting
+",37
+,,,"TracFone
+",38
+,,,"Ultra-Mobile
+",39
+,,,"UppWireless
+",40
+,,,"Zact Mobile
+",41
+,,,I don't have a mobile phone,14
+,,,Other,15
+,,,None of the above,-3105
+,,,,
+61283,STANDARD_CELL_TYPE,Which type of mobile phone do you own?,,
+,,,Mobile Phone with no Internet Browsing Capabilities,1
+,,,Smart Phone,2
+,,,,
+61295,STANDARD_SOCIAL_MEDIA,Which of the following social media platforms do you use or actively participate in?,,
+,,,Facebook,1
+,,,Twitter,2
+,,,LinkedIn,3
+,,,Pinterest,4
+,,,Tumblr,5
+,,,Instagram,6
+,,,YouTube,7
+,,,Snapchat,8
+,,,Whatsapp,9
+,,,TikTok,10
+,,,Other,11
+,,,None of the above,-3105
+,,,,
+61306,STANDARD_SOCIAL_MEDIA_USAGE,"About how often do you access social media services (Facebook, Twitter, Instagram, Pinterest,  YouTube, etc.)? ",,
+,,,Several times a day,1
+,,,About once a day,2
+,,,Several times a week,3
+,,,About once a week,4
+,,,A few times a month,5
+,,,Never,-3105
+,,,,
+61318,STANDARD_ACCOMMODATION_TYPE,In which type of accommodation have you stayed in the past year?,,
+,,,AirBnB or other short-term rental,1
+,,,Hotel,2
+,,,Hostel,3
+,,,Bed & Breakfast,4
+,,,Campground/RV Park,5
+,,,Timeshare,6
+,,,Personal Vacation Home,7
+,,,None of the above,-3105
+,,,,
+61322,STANDARD_BUSINESS_FLIGHTS,How often do you fly for business?,,
+,,,Once a month or more,1
+,,,Once every 2-4 months,2
+,,,Twice a year,3
+,,,Once a year,4
+,,,None of the above,-3105
+,,,,
+61332,STANDARD_NEXT_CAR_PURCHASE,When do you estimate that you will purchase/lease your next car?,,
+,,,Within 0-3 months,1
+,,,Within 4-6 months,2
+,,,Within 7-12 months,3
+,,,Within 13-24 months,4
+,,,Within 2-5 years,5
+,,,5+ Years from now,6
+,,,Undecided/Don't know,-3105
+,,,,
+61442,STANDARD_FAST_FOOD_FREQUENCY_v2,"On average, how often do you eat fast food?
+",,
+,,,More than seven times per week,1
+,,,Four to six times per week,2
+,,,One to three times per week,3
+,,,Once every two weeks,4
+,,,Once every month,5
+,,,Once every three months,6
+,,,I don't eat at fast food restaurants,-3105
+,,,,
+61554,AT_CUSTOM1,AT_CUSTOM1,,
+,,,,
+61555,AT_CUSTOM2,AT_CUSTOM2,,
+,,,,
+61556,AT_CUSTOM3,AT_CUSTOM3,,
+,,,,
+61557,AT_CUSTOM4,AT_CUSTOM4,,
+,,,,
+61559,AT_CUSTOM5,AT_CUSTOM5,,
+,,,,
+61678,STANDARD_HH_INVESTMENTS_US,"What kinds of savings and/or investment accounts do you have?
+",,
+,,,I don't have any savings/investments,1
+,,,Employer Matching 401k,2
+,,,IRA/Roth,3
+,,,Bonds ,4
+,,,Certificate of Deposit ,5
+,,,Mutual Funds,6
+,,,Real Estate,7
+,,,Savings Account,8
+,,,Stocks/Shares,9
+,,,Other,10
+,,,Prefer not to say,-3105
+,,,,
+69779,STANDARD_AIRLINE_LOYALTY,"Do you belong to any of the following airline loyalty programs?
+",,
+,,,Delta Air Lines SkyMiles,1
+,,,American Airlines/American Eagle Aadvantage,2
+,,,United Airlines MileagePlus,3
+,,,Southwest Airlines Rapid Rewards,4
+,,,JetBlue Airways TrueBlue,5
+,,,Alaska Airlines/Horizon Air Mileage Plan,6
+,,,Other,7
+,,,I don't belong to an airline loyalty program,-3105
+,,,,
+69788,STANDARD_HOTEL_LOYALTY,"Do you belong to any of the following hotel loyalty programs?
+",,
+,,,Hilton HHonors,1
+,,,Marriott Rewards/Ritz-Carlton Rewards,2
+,,,Best Western Rewards,3
+,,,IHG Rewards (previously Priority Club),4
+,,,Choice Privileges,5
+,,,Starwood Preferred Guest,6
+,,,Hyatt Gold Passport,7
+,,,Wyndham Rewards,8
+,,,Club Carlson,9
+,,,La Quinta Returns,10
+,,,Other,11
+,,,I don't belong to a hotel loyalty program,-3105
+,,,,
+74804,STANDARD_TV_PROVIDER_US,Which of the following television providers do you subscribe to at your primary residence?,,
+,,,AT&T U-verse,1
+,,,Bright House,2
+,,,Cablevision,3
+,,,Charter Spectrum,4
+,,,Comcast XFINITY,5
+,,,Cox,6
+,,,DIRECTV,7
+,,,DISH Network,8
+,,,Mediacom,9
+,,,Suddenlink 10,10
+,,,Time Warner Cable,11
+,,,Verizon Fios,12
+,,,Other,13
+,,,I don't have a television subscription,14
+,,,,
+74807,STANDARD_JOB_SEARCH,"In the last year, have you engaged in any of the following job-related activities?
+",,
+,,,Looked for a job,1
+,,,Searched online job listings,2
+,,,Used an online social network to advance your career,3
+,,,Asked for provided career advice,4
+,,,Had direct responsibility for recruiting candidates for open positions,5
+,,,Helped define recruiting processes/policies for a company,6
+,,,None of the above,-3105
+,,,,
+74875,STANDARD_SMARTPHONE_TYPE,What type of smartphone do you primarily use?,,
+,,,Android,1
+,,,BlackBerry,2
+,,,iPhone,3
+,,,Windows,4
+,,,Other,5
+,,,I don't own a smartphone,6
+,,,,
+84668,STANDARD_MILITARY_SERVICE,"Do you, or have you ever, served in the United States Military?",,
+,,,No,1
+,,,Yes - currently serving,2
+,,,Yes - no longer serving,3
+,,,,
+86830,AT_VECTOR_ID,Do you belong to this vector ID?,,
+,,,,
+93517,STANDARD_SUPPLEMENTAL_INCOME,Do you participate in any of the following activities either full-time or as supplemental income?,,
+,,,"Ride share driver (Uber, Lyft, etc.)",1
+,,,"Home share host (AirBnB host, etc.)",2
+,,,Landlord,3
+,,,Paid dog walker,4
+,,,Other supplemental income activity,5
+,,,None of the above,-3105
+,,,,
+93518,STANDARD_ORGANIZATION_TYPE,Which of the following best describes your organization?,,
+,,,"A for-profit, business-to-business company (B2B)",1
+,,,"A for-profit, business-to-consumer company (B2C)",2
+,,,A for-profit company that is both business-to-business and business-to-consumer (B2B & B2C),3
+,,,A non-profit organization,4
+,,,A governmental organization,5
+,,,None of the above,-3105
+,,,,
+93519,STANDARD_INDUSTRY_EDUCATION,Which of the following best describes your current profession?,,
+,,,Preschool teacher,1
+,,,Preschool administrator or staff,2
+,,,Elementary school teacher,3
+,,,Elementary school administrator or staff,4
+,,,Middle school teacher,5
+,,,Middle school administrator or staff,6
+,,,High school teacher,7
+,,,High school administrator or staff,8
+,,,University/college professor,9
+,,,University/college administrator or staff,10
+,,,Other education profession,11
+,,,I don't work in the education industry,-3105
+,,,,
+93520,STANDARD_INDUSTRY_CONSTRUCTION,Which of the following best describes your current profession?,,
+,,,Carpentry/Woodworker/Cabinet Maker,1
+,,,Drywall/Plaster,2
+,,,Electrician,3
+,,,Fencing/Decking,4
+,,,Flooring,5
+,,,Framer,6
+,,,General Contractor,7
+,,,Handyman/Property Maintenance,8
+,,,Home builder,9
+,,,Home or Property Restorer,10
+,,,HVAC,11
+,,,Insulation,12
+,,,Landscaper,13
+,,,Masonry,14
+,,,Painter,15
+,,,Plumber,16
+,,,Remodeler,17
+,,,Roofer,18
+,,,Siding/Windows/Doors,19
+,,,Other construction profession,20
+,,,I don't work in the construction industry.,-3105
+,,,,
+93521,STANDARD_INDUSTRY_IT,Which IT role(s)/function(s) do you operate within?,,
+,,,Application Architecture and Integration,1
+,,,Application Development,2
+,,,Application Quality,3
+,,,"Audit, Compliance, Privacy",4
+,,,Business Analytics,5
+,,,Business Applications,6
+,,,Cloud Architecture,7
+,,,Customer Relationship Management (CRM),8
+,,,Data and Business Intelligence,9
+,,,Data Architecture,10
+,,,Data Center Architecture,11
+,,,Enterprise Resource Planning (ERP),12
+,,,Enterprise/IT Risk Management/Digital Risk,13
+,,,Information Security Management or Architecture,14
+,,,IT Procurement Manager,15
+,,,IT Service and Support Management,16
+,,,IT Services Sourcing Manager,17
+,,,IT Vendor Manager,18
+,,,Mobile and Endpoint Computing Management,19
+,,,Mobile Applications,20
+,,,Program/Portfolio Management,21
+,,,Server/Storage Architecture,22
+,,,Software Asset Manager,23
+,,,Telecom and Network Infrastructure,24
+,,,Other IT role/function,25
+,,,I'm not involved in any IT roles or functions,-3105
+,,,,
+93522,STANDARD_INDUSTRY_HEALTHCARE,Which of the following best describes your current profession?,,
+,,,Administrator,1
+,,,Chiropractor,2
+,,,Dental Hygienist or Assistant,3
+,,,Dentist,4
+,,,Emergency Medical Technician (EMT),5
+,,,Home health aide,6
+,,,Medical assistant,7
+,,,Nurse,8
+,,,Nursing assistant,9
+,,,Optometrist,10
+,,,Pharmacist,11
+,,,Phlebotomist,12
+,,,Physical or Occupational Therapist,13
+,,,Physician/Doctor,14
+,,,Surgeon,15
+,,,"Technician (laboratory, radiology, etc.)",16
+,,,Therapist or mental health counselor,17
+,,,Veterinarian,18
+,,,Other healthcare profession,19
+,,,I don't work in the healthcare industry,-3105
+,,,,
+100224,AT_AD_CHANNEL,AT_AD_CHANNEL,,
+,,,,
+100225,AT_INAPP,AT_INAPP,,
+,,,,
+100440,AT_REASON,AT_REASON,,
+,,,,
+105013,STANDARD_URBAN_RURAL,Which of the following best describes the area you live in?,,
+,,,"Urban – Densely populated, city or large town",1
+,,,"Suburban – Mainly residential, bordering a city or large town",2
+,,,"Rural – Sparsely populated, small town or village",3
+,,,,
+105014,STANDARD_GROCERY_STORES_US,Which of the following grocery stores do you regularly shop at?,,
+,,,Aldi,1
+,,,Albertsons,2
+,,,Costco,3
+,,,Food Lion,4
+,,,Giant,5
+,,,H-E-B,6
+,,,Kroger,7
+,,,Meijer,8
+,,,Publix,9
+,,,Safeway,10
+,,,Sam’s Club,11
+,,,Save-A-Lot,12
+,,,ShopRite,13
+,,,Sprouts Farmers market,14
+,,,Trader Joe’s,15
+,,,Vons,16
+,,,Walmart Supercenter,17
+,,,Whole Foods,18
+,,,Winn-Dixie,19
+,,,Other grocery store,20
+,,,None of the above,-3105
+,,,,
+105015,STANDARD_PURCHASE_CATEGORY,Which of the following categories have you purchased in the past 12 months?,,
+,,,Accessories,1
+,,,Beauty and Cosmetics,2
+,,,Children's Apparel,3
+,,,Electronics and Tech Accessories,4
+,,,Footwear,5
+,,,Gifts,6
+,,,Handbags,7
+,,,Housewares,8
+,,,Jewelry,9
+,,,Junior's Apparel,10
+,,,Luggage and Travel,11
+,,,Men's Apparel,12
+,,,Sporting Goods,13
+,,,Underwear,14
+,,,Women's Apparel,15
+,,,None of the above,-3105
+,,,,
+105016,STANDARD_HEALTH_INSURANCE_US,What best describes your current health insurance?,,
+,,,I do not have health insurance,1
+,,,I have health insurance through my employer,2
+,,,I have health insurance through my spouse’s employer,3
+,,,I/my spouse buys an individual/family plan health insurance,4
+,,,I am covered by my school,5
+,,,I am covered by my parents,6
+,,,I am covered by Medicaid,7
+,,,I am covered by Medicare,8
+,,,I don’t know or prefer not to say,9
+,,,,
+105018,STANDARD_DIET,Do you adhere to one or more of the following diets or dietary restrictions?,,
+,,,Gluten-free diet,1
+,,,Halal,2
+,,,Kosher,3
+,,,Low carb,4
+,,,Low fat,5
+,,,Organic and/or no processed food diet,6
+,,,Other weight loss diet,7
+,,,Vegan diet,8
+,,,Vegetarian diet,9
+,,,None of the above,-3105
+,,,,
+105019,STANDARD_PRIMARY_BANK_US,Which of the following is your primary bank? ,,
+,,,Ally Bank,1
+,,,Bank of America,2
+,,,BB&T,27
+,,,BMO Harris Bank,3
+,,,Branch Banking and Trust Company,4
+,,,Capital One,5
+,,,Citibank,6
+,,,Citizens Bank,7
+,,,Compass Bank,8
+,,,Fifth Third Bank,9
+,,,First Tennessee Bank,10
+,,,JPMorgan Chase Bank,11
+,,,KeyBank ,12
+,,,People's United Bank,13
+,,,PNC Bank,14
+,,,Regions Bank,15
+,,,"Santander Bank, N.A.",16
+,,,SunTrust Bank,17
+,,,"TD Bank,",18
+,,,The Huntington National Bank,19
+,,,U.S. Bank,20
+,,,USAA,21
+,,,Umpqua Bank,22
+,,,Webster Bank,23
+,,,Wells Fargo Bank,24
+,,,Whitney Bank,25
+,,,"ZB, National Association",26
+,,,None of the above,-3105
+,,,,
+105020,STANDARD_HOME_INSURANCE_US,Which of the following companies do you currently have home insurance from? ,,
+,,,Allstate,1
+,,,Farmers,2
+,,,Liberty Mutual,3
+,,,Nationwide,4
+,,,State Farm,5
+,,,Travelers,6
+,,,USAA,7
+,,,None of the Above,-3105
+,,,,
+105021,STANDARD_CAR_INSURANCE_US,Which of the following companies do you currently have car insurance with? ,,
+,,,Allstate,1
+,,,American Family,2
+,,,Auto Club of Southern California (ACSC) (AAA),3
+,,,Automobile Club Group (ACG) (AAA),4
+,,,CSAA Insurance Group (AAA),5
+,,,Erie Insurance,6
+,,,Farmers,7
+,,,Geico,8
+,,,Liberty Mutual,9
+,,,MAPFRE Insurance,10
+,,,Mercury,11
+,,,Nationwide,12
+,,,Progressive,13
+,,,Travelers,14
+,,,Safeco,15
+,,,State Farm,16
+,,,USAA,17
+,,,None of the above,-3105
+,,,,
+119718,STANDARD_INDUSTRY_HR,Which of the following best describes your role within human resources?,,
+,,,Benefits and Compensation,1
+,,,Recruitment/Talent Acquisition,2
+,,,Onboarding and Training,3
+,,,Employer-Employee relations,4
+,,,Learning and Career Development,5
+,,,Human Resources Generalist,6
+,,,Strategic Leadership,7
+,,,Other Human Resources role,8
+,,,I don't work in Human Resources,-3105
+,,,,
+128244,STANDARD_POLITICALVIEW,"In terms of your political views, do you consider yourself… ",,
+,,,Extremely liberal,1
+,,,Liberal ,2
+,,,Slightly liberal,3
+,,,Moderate,4
+,,,Middle of the road ,5
+,,,Slightly conservative ,6
+,,,Extremely conservative,7
+,,,,
+133831,Beverage_Regularity_Soft,Which of the following non-alcoholic beverages do you regularly consume?,,
+,,,Bottled Water,1
+,,,Coffee,2
+,,,Juice,3
+,,,Soft Drinks,4
+,,,Tea,5
+,,,Other,6
+,,,None of the above,-3105
+,,,,
+133844,Beverage_Regularity_Alcohol,Which of the following alcoholic beverages do you regularly consume?,,
+,,,Beer,1
+,,,Champagne,2
+,,,Liquor,3
+,,,Wine,4
+,,,Other,5
+,,,I do not consume alcohol,98
+,,,None of the above,-3105
+,,,,
+137449,AILMENTS_2_ADDICTION,"Have you, or someone for whom you provide care, been diagnosed with any of the following medical conditions related to addiction?",,
+,,,Alcoholism,1
+,,,Drug addiction,2
+,,,Gambling addiction,3
+,,,Other Addiction,4
+,,,None of the Above,5
+,,,,
+137450,AILMENTS_2_VISION_HEARING,"Have you, or someone for whom you provide care, been diagnosed with any of the following medical conditions related to Vision / Hearing Impairments?",,
+,,,Cataracts,1
+,,,Dry Eyes,2
+,,,Glaucoma,3
+,,,Hearing Loss,4
+,,,Macular Degeneration,5
+,,,Macular Edema,6
+,,,Wear Contacts,7
+,,,Wear Eyeglasses,8
+,,,Other Vision Condition,9
+,,,Other Hearing Condition,10
+,,,None of the Above,11
+,,,,
+137451,AILMENTS_2_RESPIRATORY,"Have you, or someone for whom you provide care, been diagnosed with any of the following medical conditions related to Allergy / Asthma / Respiratory?",,
+,,,Allergies,1
+,,,Asthma,2
+,,,COPD,3
+,,,Cystic Fibrosis,4
+,,,Idiopathic Pulmonary Fibrosis (IPF),5
+,,,Pulmonary Arterial Hypertension (PAH),6
+,,,"Other Allergy, Asthma, or Respiratory Condition",7
+,,,None of the Above,8
+,,,,
+137452,AILMENTS_2_SLEEP,"Have you, or someone for whom you provide care, been diagnosed with any of the following medical conditions related to Sleep Disorders?",,
+,,,Insomnia,1
+,,,Narcolepsy,2
+,,,Sleep Apnea,3
+,,,Other Sleep Disorder,4
+,,,None of the Above,5
+,,,,
+137453,AILMENTS_2_ARTHRITIS,"Have you, or someone for whom you provide care, been diagnosed with any of the following medical conditions related to Arthritis / Joint Ailments?",,
+,,,Osteo Arthritis (Large Joint),1
+,,,Psoriatic Arthritis,2
+,,,Rheumatoid Arthritis,3
+,,,Other Arthritis or Joint Condition,4
+,,,None of the Above,5
+,,,,
+137454,AILMENTS_2_SKIN,"Have you, or someone for whom you provide care, been diagnosed with any of the following medical conditions related to Skin / Dermatologic?",,
+,,,Acne,1
+,,,Baldness / Hair Loss,2
+,,,Eczema,3
+,,,Hyperhidrosis,4
+,,,Psoriasis,5
+,,,Rosacea,6
+,,,Shingles,7
+,,,Other Skin or Dermatologic Condition,8
+,,,None of the Above,9
+,,,,
+137455,AILMENTS_2_PAIN,"Have you, or someone for whom you provide care, been diagnosed with any of the following medical conditions related to Pain (e.g. Fibromyalgia, Gout)?",,
+,,,Ankylosing Spondylitis,1
+,,,Back Pain,2
+,,,Fibromyalgia,3
+,,,Gout,4
+,,,Neuropathy,5
+,,,Other Pain Condition,6
+,,,None of the Above,7
+,,,,
+137456,AILMENTS_1,"Have you, or someone for whom you provide care, been diagnosed with any of the following ailments or medical conditions? (Please select all that apply.)",,
+,,,Addiction,1
+,,,Allergy / Asthma / Respiratory,2
+,,,Arthritis / Joint Ailments,3
+,,,Autoimmune / Blood,4
+,,,Cancer,5
+,,,Cardiovascular / Heart,6
+,,,Dental,7
+,,,Diabetes / Thyroid / Obesity,8
+,,,"Gastric / Digestive / Urinary (e.g. Crohn's, Heartburn, Kidney Disease)",9
+,,,"Male / Female Health (e.g. ED, Low T, Menopause, Osteoporosis)",10
+,,,"Mental Health (e.g. Anxiety, ADD/ADHD, Depression)",11
+,,,"Neurologic / Nervous (e.g. Migraines, MS, Stroke)",12
+,,,"Pain (e.g. Fibromyalgia, Gout)",13
+,,,Skin / Dermatologic,14
+,,,Sleep Disorders,15
+,,,Vision / Hearing Impairments,16
+,,,None of the above,17
+,,,Prefer not to answer,18
+,,,,
+137457,AILMENTS_2_AUTOIMMUNE,"Have you, or someone for whom you provide care, been diagnosed with any of the following medical conditions related to Autoimmune / Blood?",,
+,,,AIDS / HIV,1
+,,,Anemia,2
+,,,Hemophilia,3
+,,,Hepatitis C,4
+,,,Lupus,5
+,,,Other Autoimmune Condition,6
+,,,Other Blood Condition,7
+,,,None of the Above,8
+,,,,
+137458,AILMENTS_2_NEURO,"Have you, or someone for whom you provide care, been diagnosed with any of the following medical conditions related to Neurologic / Nervous (e.g. Migraines, MS, Stroke)?",,
+,,,Alzheimer's Disease,1
+,,,Autism,2
+,,,Epilepsy,3
+,,,Migraines,4
+,,,Multiple Sclerosis,5
+,,,Muscular Dystrophy,6
+,,,Parkinson's Disease,7
+,,,Seizures,8
+,,,Stroke,9
+,,,Other Neurologic or Nervous Condition,10
+,,,None of the Above,11
+,,,,
+137459,AILMENTS_2_CANCER,"Have you, or someone for whom you provide care, been diagnosed with any of the following medical conditions related to Cancer?",,
+,,,Breast Cancer,1
+,,,Cervical Cancer,2
+,,,Colorectal Cancer,3
+,,,Kidney (Renal) Cancer,4
+,,,Leukemia Cancer,5
+,,,Lung Cancer,6
+,,,Multiple Myeloma Cancer,7
+,,,Non-Hodgkin's Lymphoma Cancer,8
+,,,Ovarian Cancer,9
+,,,Prostate Cancer,10
+,,,Skin Cancer,11
+,,,Thyroid Cancer,12
+,,,Uterine Cancer,13
+,,,Other Cancer,14
+,,,None of the Above,15
+,,,,
+137460,AILMENTS_2_CARDIOVASCULAR,"Have you, or someone for whom you provide care, been diagnosed with any of the following medical conditions related to Cardiovascular / Heart?",,
+,,,Arrhythmia (e.g. Atrial Fibrillation/Afib),1
+,,,Atherosclerosis,2
+,,,Congestive / Chronic Heart Failure (CHF),3
+,,,Coronary Artery Disease (CAD),4
+,,,Deep Vein Thrombosis (DVT),5
+,,,Dyslipidemia,6
+,,,Heart Attack,7
+,,,High Cholesterol,8
+,,,Hypertension / High Blood Pressure,9
+,,,Peripheral Arterial Disease (PAD),10
+,,,Other Cardiovascular or Heart Condition,11
+,,,None of the Above,12
+,,,,
+137461,AILMENTS_2_MENTAL_HEALTH,"Have you, or someone for whom you provide care, been diagnosed with any of the following medical conditions related to Mental Health (e.g. Anxiety, ADD/ADHD, Depression)?",,
+,,,ADD / ADHD,1
+,,,Anxiety,2
+,,,Bipolar Disorder,3
+,,,Depression,4
+,,,Schizophrenia,5
+,,,Other Mental Health Condition,6
+,,,None of the Above,7
+,,,,
+137462,AILMENTS_2_DENTAL,"Have you, or someone for whom you provide care, been diagnosed with any of the following medical conditions related to Dental?",,
+,,,Canker/Cold Sores,1
+,,,Cosmetic / Orthodontic Condition,2
+,,,Gum (Periodontal) Disease,3
+,,,Tooth Decay,4
+,,,Tooth Sensitivity,5
+,,,Other Dental Condition,6
+,,,None of the Above,7
+,,,,
+137463,AILMENTS_2_MALE_FEMALE,"Have you, or someone for whom you provide care, been diagnosed with any of the following medical conditions related to Male / Female Health (e.g. ED, Low T, Menopause, Osteoporosis)?",,
+,,,Endometriosis,1
+,,,Enlarged Prostate / BPH,2
+,,,Erectile Dysfunction (ED),3
+,,,"Hypogonadism (Low Testosterone, Low LH, Low FSH)",4
+,,,Infertility,5
+,,,Menopause,6
+,,,Osteoporosis,7
+,,,Uterine Fibroids,8
+,,,Other Male or Female Health Condition,9
+,,,None of the Above,10
+,,,,
+137464,AILMENTS_2_GASTRIC,"Have you, or someone for whom you provide care, been diagnosed with any of the following medical conditions related to Gastric / Digestive / Urinary (e.g. Crohn's, Heartburn, Kidney Disease)?",,
+,,,Celiac Disease,1
+,,,Constipation,2
+,,,Crohn's Disease,3
+,,,GERD / Acid Reflux,4
+,,,Heartburn,5
+,,,Incontinence,6
+,,,Irritable Bowel Syndrome (IBS),7
+,,,Kidney Disease,8
+,,,Overactive Bladder / Urge Incontinence,9
+,,,Ulcerative Colitis,10
+,,,Ulcers,11
+,,,"Other Gastric, Digestive, or Urinary Condition",12
+,,,None of the Above,13
+,,,,
+137465,AILMENTS_2_DIABETES,"Have you, or someone for whom you provide care, been diagnosed with any of the following medical conditions related to Diabetes / Thyroid / Obesity?",,
+,,,Type 1 Diabetes,1
+,,,Type 2 Diabetes,2
+,,,Hypothyroidism,3
+,,,Hyperthyroidism,4
+,,,Obesity,5
+,,,Other Diabetes or Thyroid Condition,6
+,,,None of the Above,7
+,,,,
+137510,GENDER_PLUS,Are you...,,
+,,,Male,1
+,,,Female,2
+,,,Other,3
