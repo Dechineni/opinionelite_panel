@@ -14,8 +14,8 @@ $rewardError   = '';
 // Handle reward confirmation (from modal)
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirm_reward'])) {
 
-    $amount     = isset($_POST['reward_amount']) ? (float) $_POST['reward_amount'] : 0.0;
-    $emailChoice = $_POST['email_choice'] ?? 'registered';
+    $amount        = isset($_POST['reward_amount']) ? (float) $_POST['reward_amount'] : 0.0;
+    $emailChoice   = $_POST['email_choice'] ?? 'registered';
     $recipientName = 'Opinion Elite Member'; // you can later build from firstname/lastname if you want
 
     if ($emailChoice === 'registered') {
@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirm_reward'])) {
 <div>
   <div class="container my-4">
 
-    <!-- Success / error messages -->
+    <!-- Success / error messages from PHP -->
     <?php if (!empty($rewardMessage)): ?>
       <div class="alert alert-success" role="alert">
         <?php echo $rewardMessage; ?>
@@ -63,6 +63,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirm_reward'])) {
         <?php echo $rewardError; ?>
       </div>
     <?php endif; ?>
+
+    <!-- JS-controlled low balance banner -->
+    <div id="balanceErrorAlert"
+         class="alert alert-danger"
+         role="alert"
+         style="display:none;">
+      Available balance is low
+    </div>
 
     <h5>
       Total Earnings:
@@ -86,7 +94,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirm_reward'])) {
             <p class="fw-bold">1. Tremendous.in</p>
             <div>
               <!-- CLICKABLE AMOUNTS -->
-              <button class="btn btn-outline-dark amount-btn" data-amount="5">$5</button>
+              <!-- <button class="btn btn-outline-dark amount-btn" data-amount="5">$5</button> -->
               <button class="btn btn-outline-dark amount-btn" data-amount="20">$20</button>
               <button class="btn btn-outline-dark amount-btn" data-amount="50">$50</button>
               <button class="btn btn-outline-dark amount-btn" data-amount="100">$100</button>
@@ -103,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirm_reward'])) {
 
 <!-- Simple modal styles -->
 <style>
- .reward-modal-backdrop {
+.reward-modal-backdrop {
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.5);
@@ -121,20 +129,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirm_reward'])) {
   padding: 20px;
   max-width: 500px;
   width: 100%;
-  color: #000;              /* make text dark by default */
+  color: #000;
 }
-
-/* Make message + radio labels clearly visible */
 .reward-modal-content p {
   margin-bottom: 1rem;
   color: #111;
 }
-
 .reward-modal-content .form-check-label {
-  color: #222;              /* darker radio text */
+  color: #222;
 }
-
-/* Optional: darken the buttons text if needed */
 .reward-modal-content .btn {
   color: #fff;
 }
@@ -142,7 +145,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirm_reward'])) {
   background-color: #6c757d;
 }
 .reward-modal-content .btn.btn-primary {
-  background-color: #f7941d; /* or your OE orange */
+  background-color: #f7941d; /* OE orange */
   border-color: #f7941d;
 }
 </style>
@@ -202,59 +205,63 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirm_reward'])) {
 
 <script>
   let registeredEmail = '';   // filled via AJAX
+  let accountBalance = 0;     // numeric balance
 
-  // Fetch username from localStorage (this is already used for rewards)
   const username = localStorage.getItem('username');
 
-  // Existing total reward fetch
+  // --- Fetch reward totals (incl. balance) ---
   if (username) {
     fetch('get_rewards.php', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: 'username=' + encodeURIComponent(username)
     })
-    .then(res => res.json())
-    .then(data => {
-      document.getElementById('reward-count').textContent = `$${data.total_reward}`;
-      document.getElementById('account-balance').textContent = `$${data.total_reward}`;
-    })
-    .catch(err => console.error('Error fetching reward:', err));
+      .then(res => res.json())
+      .then(data => {
+        const totalReward = parseFloat(data.total_reward || 0);
+        accountBalance = isNaN(totalReward) ? 0 : totalReward;
 
-    // NEW: fetch registered email from DB
+        document.getElementById('reward-count').textContent   = `$${accountBalance}`;
+        document.getElementById('account-balance').textContent = `$${accountBalance}`;
+      })
+      .catch(err => console.error('Error fetching reward:', err));
+
+    // Fetch registered email from DB
     fetch('get_registered_email.php', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: 'username=' + encodeURIComponent(username)
     })
-    .then(res => res.json())
-    .then(data => {
-      registeredEmail = data.email || '';
-      document.getElementById('registeredEmailInput').value = registeredEmail;
+      .then(res => res.json())
+      .then(data => {
+        registeredEmail = data.email || '';
+        document.getElementById('registeredEmailInput').value = registeredEmail;
 
-      const labelSpan = document.getElementById('registeredEmailLabel');
-      if (registeredEmail) {
-        labelSpan.textContent = registeredEmail;
-      } else {
-        labelSpan.textContent = 'No registered email found';
-      }
-    })
-    .catch(err => {
-      console.error('Error fetching registered email:', err);
-      document.getElementById('registeredEmailLabel').textContent = 'Error loading email';
-    });
+        const labelSpan = document.getElementById('registeredEmailLabel');
+        if (registeredEmail) {
+          labelSpan.textContent = registeredEmail;
+        } else {
+          labelSpan.textContent = 'No registered email found';
+        }
+      })
+      .catch(err => {
+        console.error('Error fetching registered email:', err);
+        document.getElementById('registeredEmailLabel').textContent = 'Error loading email';
+      });
 
   } else {
     console.warn('No username found in localStorage');
   }
 
   // ---- Modal JS ----
-  const modalBackdrop       = document.getElementById('rewardModal');
-  const modalMessage        = document.getElementById('rewardModalMessage');
-  const rewardAmountInput   = document.getElementById('rewardAmountInput');
+  const modalBackdrop         = document.getElementById('rewardModal');
+  const modalMessage          = document.getElementById('rewardModalMessage');
+  const rewardAmountInput     = document.getElementById('rewardAmountInput');
   const emailChoiceRegistered = document.getElementById('emailChoiceRegistered');
-  const emailChoiceNew      = document.getElementById('emailChoiceNew');
-  const newEmailContainer   = document.getElementById('newEmailContainer');
-  const rewardModalCancel   = document.getElementById('rewardModalCancel');
+  const emailChoiceNew        = document.getElementById('emailChoiceNew');
+  const newEmailContainer     = document.getElementById('newEmailContainer');
+  const rewardModalCancel     = document.getElementById('rewardModalCancel');
+  const balanceErrorAlert     = document.getElementById('balanceErrorAlert');
 
   function updateEmailFieldVisibility() {
     if (emailChoiceNew.checked) {
@@ -274,11 +281,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirm_reward'])) {
   // When user clicks any amount button
   document.querySelectorAll('.reward-card .amount-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      const amount = btn.getAttribute('data-amount');
+      const amountStr   = btn.getAttribute('data-amount');
+      const amountValue = parseFloat(amountStr);
 
-      rewardAmountInput.value = amount;
+      if (isNaN(amountValue)) {
+        return;
+      }
 
-      const amountText = `$${amount}`;
+      // 🔴 Balance check BEFORE opening modal
+      if (amountValue > accountBalance) {
+        if (balanceErrorAlert) {
+          balanceErrorAlert.style.display = 'block';
+          balanceErrorAlert.textContent = 'Account balance is low';
+        }
+        return; // do NOT show dialog
+      } else {
+        // Hide banner if previously shown
+        if (balanceErrorAlert) {
+          balanceErrorAlert.style.display = 'none';
+        }
+      }
+
+      // If enough balance, proceed with existing modal logic
+      rewardAmountInput.value = amountValue;
+
+      const amountText = `$${amountValue}`;
       const emailText = registeredEmail
         ? `this registered email: ${registeredEmail}`
         : `a new email (no registered email found)`;
