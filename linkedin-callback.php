@@ -1,17 +1,30 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+
 require 'vendor/autoload.php';
-include('UI/config.php'); 
+include('UI/config.php');
+require_once __DIR__ . '/tremendous_helper.php';
+
+// Load .env so getenv() works
+load_env(__DIR__ . '/.env');
+
 session_start();
 
 // LinkedIn OIDC credentials
-$client_id = getenv('LINKEDIN_CLIENT_ID');
+$client_id     = getenv('LINKEDIN_CLIENT_ID');
 $client_secret = getenv('LINKEDIN_CLIENT_SECRET');
-$redirect_uri = 'https://lightsteelblue-chimpanzee-746078.hostingersite.com/linkedin-callback.php';
+$redirect_uri  = 'https://lightsteelblue-chimpanzee-746078.hostingersite.com/linkedin-callback.php';
+
+// Basic config check
+if (empty($client_id) || empty($client_secret)) {
+    error_log('LinkedIn config missing: client_id or client_secret not set in environment.');
+    echo "<script>alert('LinkedIn configuration error. Please contact support.'); window.location.href='index.php';</script>";
+    exit();
+}
 
 // CSRF state check
-if (!isset($_GET['state']) || $_GET['state'] !== $_SESSION['linkedin_state']) {
+if (!isset($_GET['state']) || !isset($_SESSION['linkedin_state']) || $_GET['state'] !== $_SESSION['linkedin_state']) {
     echo "<script>alert('CSRF token mismatch.'); window.location.href='index.php';</script>";
     exit();
 }
@@ -27,55 +40,62 @@ $code = $_GET['code'];
 // Exchange code for access token
 $token_url = 'https://www.linkedin.com/oauth/v2/accessToken';
 $data = http_build_query([
-    'grant_type' => 'authorization_code',
-    'code' => $code,
-    'redirect_uri' => $redirect_uri,
-    'client_id' => $client_id,
-    'client_secret' => $client_secret
+    'grant_type'    => 'authorization_code',
+    'code'          => $code,
+    'redirect_uri'  => $redirect_uri,
+    'client_id'     => $client_id,
+    'client_secret' => $client_secret,
 ]);
 
 $ch = curl_init($token_url);
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
 $response = curl_exec($ch);
+if ($response === false) {
+    error_log('LinkedIn token cURL error: ' . curl_error($ch));
+}
 curl_close($ch);
 
 $tokens = json_decode($response, true);
 
 if (!isset($tokens['access_token'])) {
+    // Log the raw response for debugging (not shown to user)
+    error_log('LinkedIn token response: ' . $response);
     echo "<script>alert('Failed to get access token.'); window.location.href='index.php';</script>";
     exit();
 }
 
 $access_token = $tokens['access_token'];
 
-// Fetch user info
+// Fetch user info via OIDC userinfo endpoint
 $ch = curl_init('https://api.linkedin.com/v2/userinfo');
 curl_setopt($ch, CURLOPT_HTTPHEADER, ["Authorization: Bearer $access_token"]);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $userinfo_response = curl_exec($ch);
+if ($userinfo_response === false) {
+    error_log('LinkedIn userinfo cURL error: ' . curl_error($ch));
+}
 curl_close($ch);
 
 $userinfo = json_decode($userinfo_response, true);
 
 if (!isset($userinfo['email'])) {
+    error_log('LinkedIn userinfo response: ' . $userinfo_response);
     echo "<script>alert('Failed to fetch email.'); window.location.href='index.php';</script>";
     exit();
 }
 
 // ✅ Extract user info
-$first_name = $userinfo['given_name'] ?? '';
+$first_name = $userinfo['given_name']  ?? '';
 $last_name  = $userinfo['family_name'] ?? '';
 $email      = $userinfo['email'];
 $username   = $email; // Use email as username
 
 // ✅ Generate random password and hash it
-$plain_password = substr(str_shuffle('abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789'), 0, 10);
+$plain_password  = substr(str_shuffle('abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789'), 0, 10);
 $hashed_password = password_hash($plain_password, PASSWORD_BCRYPT);
-
-// ✅ DB insert with check
-// $db = mysqli_connect(...);
 
 // Step 1: Check if user already exists
 $check = $db->prepare("SELECT id FROM signup WHERE email = ?");
@@ -84,9 +104,8 @@ $check->execute();
 $check->store_result();
 
 if ($check->num_rows > 0) {
-    // Email exists
-    echo "<script>alert('Email already registered!'); window.location.href='index.php';</script>";
     $check->close();
+    echo "<script>alert('Email already registered!'); window.location.href='index.php';</script>";
     exit();
 }
 $check->close();
@@ -96,15 +115,15 @@ $stmt = $db->prepare("INSERT INTO signup (firstname, lastname, email, username, 
 $stmt->bind_param("sssss", $first_name, $last_name, $email, $username, $hashed_password);
 
 if ($stmt->execute()) {
-     $mail = new PHPMailer(true);
+    // Send welcome email with credentials
+    $mail = new PHPMailer(true);
 
-try {
-    // Server settings
-          $mail->isSMTP();
+    try {
+        $mail->isSMTP();
         $mail->Host       = 'smtp.office365.com';
         $mail->SMTPAuth   = true;
         $mail->Username   = 'noreply@opinionelite.com';  // Microsoft 365 email
-        $mail->Password   = 'kkzzxtbjxmhpkjvm';  // Real password or App Password
+        $mail->Password   = 'kkzzxtbjxmhpkjvm';          // App password
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
@@ -117,32 +136,31 @@ try {
           <div style="background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 30px;">
             <h2 style="color: #333333; text-align: center;">Welcome to <span style="color: #0078d4;">Opinion Elite</span>!</h2>
             <p style="font-size: 16px; color: #555555;">
-              Hi '.$first_name.'
+              Hi ' . htmlspecialchars($first_name) . '
             </p>
             <p style="font-size: 16px; color: #555555; line-height: 1.6;">
               Thanks for signing up with <strong>Opinion Elite</strong>!<br>
-              Your Username is :'.$username.'<br>
-              Your Password is: '.$plain_password.'<br>
-              Were glad to have you on board. You can now participate in exclusive surveys and share your valuable opinions.
+              Your Username is: ' . htmlspecialchars($username) . '<br>
+              Your Password is: ' . htmlspecialchars($plain_password) . '<br>
+              We\'re glad to have you on board. You can now participate in exclusive surveys and share your valuable opinions.
             </p>
             <div style="text-align: center; margin: 30px 0;">
               <a href="https://opinionelite.com" style="background-color: #0078d4; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; display: inline-block;">
                 Get Started
               </a>
             </div>
-            </div></div>';
+          </div>
+        </div>';
+
         $mail->send();
-        echo "<script>
-          alert('Signup Successfully Completed');
-          window.location.href='index.php';
-          </script>";
-        } catch (Exception $e) {
-            echo "❌ Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-        }
-          
-     
+        echo "<script>alert('Signup Successfully Completed'); window.location.href='index.php';</script>";
+    } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    }
+
 } else {
     echo "<script>alert('Database insert failed.'); window.location.href='index.php';</script>";
 }
+
 $stmt->close();
 ?>

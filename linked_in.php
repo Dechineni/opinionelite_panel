@@ -1,10 +1,21 @@
 <?php
 session_start();
 
+// Load env variables using the same helper as Tremendous
+require_once __DIR__ . '/tremendous_helper.php';
+load_env(__DIR__ . '/.env');
+
 // LinkedIn OIDC App Info
-$client_id = '86ekr2plzfbfun';
+$client_id = getenv('LINKEDIN_CLIENT_ID');
 $redirect_uri = 'https://lightsteelblue-chimpanzee-746078.hostingersite.com/linkedin-callback.php';
 $scope = 'openid profile email';
+
+if (empty($client_id)) {
+    // Config problem – better to fail loudly than send a broken auth request
+    die('LinkedIn client ID is not configured on the server. Please contact support.');
+}
+
+// CSRF + nonce
 $state = bin2hex(random_bytes(16));
 $nonce = bin2hex(random_bytes(16)); // for ID token validation
 
@@ -14,11 +25,11 @@ $_SESSION['linkedin_nonce'] = $nonce;
 // Build LinkedIn login URL
 $params = http_build_query([
     'response_type' => 'code',
-    'client_id' => $client_id,
-    'redirect_uri' => $redirect_uri,
-    'scope' => $scope,
-    'state' => $state,
-    'nonce' => $nonce,
+    'client_id'     => $client_id,
+    'redirect_uri'  => $redirect_uri,
+    'scope'         => $scope,
+    'state'         => $state,
+    'nonce'         => $nonce,
 ]);
 
 header("Location: https://www.linkedin.com/oauth/v2/authorization?$params");
