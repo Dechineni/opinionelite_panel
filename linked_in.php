@@ -1,23 +1,29 @@
 <?php
 session_start();
 
-// Load env variables using the same helper as Tremendous
-require_once __DIR__ . '/tremendous_helper.php';
-load_env(__DIR__ . '/.env');
+require __DIR__ . '/vendor/autoload.php';
 
-// LinkedIn OIDC App Info
-$client_id = getenv('LINKEDIN_CLIENT_ID');
-$redirect_uri = 'https://lightsteelblue-chimpanzee-746078.hostingersite.com/linkedin-callback.php';
-$scope = 'openid profile email';
+use Dotenv\Dotenv;
 
-if (empty($client_id)) {
-    // Config problem – better to fail loudly than send a broken auth request
-    die('LinkedIn client ID is not configured on the server. Please contact support.');
+// Load .env
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->safeLoad();
+
+// Read from env
+$client_id     = $_ENV['LINKEDIN_CLIENT_ID']     ?? getenv('LINKEDIN_CLIENT_ID')     ?? null;
+$redirect_uri  = $_ENV['LINKEDIN_REDIRECT_URI']  ?? getenv('LINKEDIN_REDIRECT_URI')  ?? 'https://lightsteelblue-chimpanzee-746078.hostingersite.com/linkedin-callback.php';
+
+if (!$client_id) {
+    echo "LinkedIn client ID is not configured on the server. Please contact support.";
+    exit;
 }
+
+// OIDC scopes
+$scope = 'openid profile email';
 
 // CSRF + nonce
 $state = bin2hex(random_bytes(16));
-$nonce = bin2hex(random_bytes(16)); // for ID token validation
+$nonce = bin2hex(random_bytes(16));
 
 $_SESSION['linkedin_state'] = $state;
 $_SESSION['linkedin_nonce'] = $nonce;
@@ -34,4 +40,3 @@ $params = http_build_query([
 
 header("Location: https://www.linkedin.com/oauth/v2/authorization?$params");
 exit;
-?>
