@@ -6,7 +6,8 @@ session_destroy();
 ?>
 
 <script>
-  localStorage.removeItem('username');
   localStorage.removeItem('passwordVerified');
-  window.location.href = '../index.php'; 
+  localStorage.removeItem('username');
+
+  window.location.href = "../"; 
 </script>
