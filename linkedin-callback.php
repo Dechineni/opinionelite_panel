@@ -106,6 +106,9 @@ $username   = $email; // using email as username for LinkedIn signups
 $plain_password  = substr(str_shuffle('abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789'), 0, 10);
 $hashed_password = password_hash($plain_password, PASSWORD_BCRYPT);
 
+// Mark this as a LinkedIn user
+$user_type = 'linkedin';
+
 /**
  * 3) Check if user already exists
  *    - If yes: auto-login (no email)
@@ -128,12 +131,12 @@ if ($check->num_rows > 0) {
 
 $check->close();
 
-// New user -> insert into DB
+// New user -> insert into DB with user_type = 'linkedin'
 $stmt = $db->prepare("
-    INSERT INTO signup (firstname, lastname, email, username, password)
-    VALUES (?, ?, ?, ?, ?)
+    INSERT INTO signup (firstname, lastname, email, username, password, user_type)
+    VALUES (?, ?, ?, ?, ?, ?)
 ");
-$stmt->bind_param("sssss", $first_name, $last_name, $email, $username, $hashed_password);
+$stmt->bind_param("ssssss", $first_name, $last_name, $email, $username, $hashed_password, $user_type);
 
 if ($stmt->execute()) {
 
@@ -167,7 +170,7 @@ if ($stmt->execute()) {
               Your profile has been created and you can now access your dashboard and start
               participating in exclusive surveys.
             </p>
-            <p style="font-size: 14px; color: #777777; line-height: 1.6;">
+            <p style="font-size: 14px; color: #777777; line-height: 1.6%;">
               Next time, simply click <strong>Sign in with LinkedIn</strong> on our website
               to access your account quickly and securely.
             </p>

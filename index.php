@@ -33,8 +33,38 @@ if (isset($_POST['signup'])) {
     $username     = $_POST['username'];
     $hashedPassword = password_hash($_POST['password'], PASSWORD_BCRYPT);
 
-    $sql  = "INSERT INTO signup(firstname,lastname,email,zipcode,gender,birthday,income,job_industry,role,job_title,password,username)
-             VALUES('$fname','$lname','$email','$zipcode','$gender','$birthday','$income','$job_industry','$role','$job_title','$hashedPassword','$username')";
+    // NEW: mark this as a direct website signup
+    $userType     = 'direct';
+
+    $sql  = "INSERT INTO signup(
+                firstname,
+                lastname,
+                email,
+                zipcode,
+                gender,
+                birthday,
+                income,
+                job_industry,
+                role,
+                job_title,
+                password,
+                username,
+                user_type
+             ) VALUES (
+                '$fname',
+                '$lname',
+                '$email',
+                '$zipcode',
+                '$gender',
+                '$birthday',
+                '$income',
+                '$job_industry',
+                '$role',
+                '$job_title',
+                '$hashedPassword',
+                '$username',
+                '$userType'
+             )";
 
     $sql1 = "SELECT COUNT(email) FROM signup WHERE email='$email'";
     $rs   = mysqli_query($db, $sql1);
@@ -111,62 +141,8 @@ if (isset($_POST['signup'])) {
     class="flex flex-col items-center justify-start bg-gradient-to-br from-[#171717] to-[#000] font-gilroy"
   >
     <!-- Password Modal -->
-    <!-- <div
-      id="password-modal"
-      class="fixed font-inter inset-0 bg-black flex justify-center items-center"
-    >
-      <div class="modal-content">
-        <img src="imgs/logo.png" alt="Logo" class="max-w-[200px] mb-6" />
-        <div class="pseudoInput relative mb-4">
-          <input
-            autofocus
-            type="text"
-            id="username-input"
-            name="username"
-            placeholder=""
-            class="peer w-full text-white font-medium text-[19px] placeholder:text-[#494940] border-2 border-[#262629] bg-gradient-to-b from-[#111112] to-[#151517] rounded-md p-4 pt-6 hover:border-[#363639] focus:border-[#f1aa3f] focus:from-[#1a1918] focus:to-[#272219] active:border-[#f1aa3f] ring-0 focus:ring-0 outline-none"
-          />
-          <label
-            for="username-input"
-            class="absolute top-3 left-[calc(1rem+2px)] text-gray-400 peer-focus:text-[#f1aa3f] font-semibold uppercase text-[12px]"
-            >Username</label
-          >
-        </div>
-        <div class="pseudoInput relative mb-4">
-          <input
-            type="password"
-            id="password-input"
-            name="password"
-            placeholder=""
-            class="peer w-full text-white font-medium text-[19px] placeholder:text-[#494940] border-2 border-[#262629] bg-gradient-to-b from-[#111112] to-[#151517] rounded-md p-4 pt-6 hover:border-[#363639] focus:border-[#f1aa3f] focus:from-[#1a1918] focus:to-[#272219] active:border-[#f1aa3f] ring-0 focus:ring-0 outline-none"
-          />
-          <label
-            for="password-input"
-            class="absolute top-3 left-[calc(1rem+2px)] text-gray-400 peer-focus:text-[#f1aa3f] font-semibold uppercase text-[12px]"
-            >Password</label
-          >
-        </div>
-        <div
-          id="error-message"
-          class="h-[20px] text-red-500 text-sm mb-4 invisible"
-        ></div>
+    <!-- (unchanged, still commented out) -->
 
-        <button
-          onclick="checkPassword()"
-          class="w-[300px] h-[80px] relative my-6"
-        >
-          <span
-            class="relative z-[10] text-[16px] font-bold tracking-[0.03em] leading-none uppercase"
-            >Login</span
-          >
-          <img
-            class="absolute inset-0 z-0"
-            src="imgs/join-button.png"
-            alt="Signup"
-          />
-        </button>
-      </div>
-    </div> -->
     <!-- Main Content -->
     <div id="content">
       <nav class="nav w-full mb-12">
@@ -610,7 +586,8 @@ if (isset($_POST['signup'])) {
                   <div
                     class="flex items-center justify-center gap-6 mx-auto md:mx-0"
                   >
-                    <!-- <button class="relative w-[80px] h-[80px]">
+                    <!-- FB button currently disabled
+                    <button class="relative w-[80px] h-[80px]">
                       <img
                         class="w-full h-full object-contain"
                         src="imgs/form-fb-button.png"
