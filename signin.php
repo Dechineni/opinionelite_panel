@@ -552,44 +552,49 @@
 
       // Check username and password function
       async function checkPassword() {
-  const userInput = document.getElementById('username-input').value.trim();
-  const passInput = document.getElementById('password-input').value.trim();
-  const errorMessage = document.getElementById('error-message');
+        const userInput = document.getElementById('username-input').value.trim();
+        const passInput = document.getElementById('password-input').value.trim();
+        const errorMessage = document.getElementById('error-message');
 
-  errorMessage.classList.add('invisible');
-  errorMessage.textContent = '';
+        errorMessage.classList.add('invisible');
+        errorMessage.textContent = '';
 
-  if (!userInput || !passInput) {
-    errorMessage.textContent = 'Please enter both username and password.';
-    errorMessage.classList.remove('invisible');
-    return;
-  }
+        if (!userInput || !passInput) {
+          errorMessage.textContent = 'Please enter both username and password.';
+          errorMessage.classList.remove('invisible');
+          return;
+        }
 
-  const formData = new FormData();
-  formData.append('username', userInput);
-  formData.append('password', passInput);
+        const formData = new FormData();
+        formData.append('username', userInput);
+        formData.append('password', passInput);
 
-  try {
-    const response = await fetch('login.php', {
-      method: 'POST',
-      body: formData
-    });
-    const result = await response.json();
+        try {
+          const response = await fetch('login.php', {
+            method: 'POST',
+            body: formData
+          });
+          const result = await response.json();
 
-    if (result.success) {
-      localStorage.setItem('passwordVerified', 'true');
-      localStorage.setItem('username', result.username);
-      window.location.href = 'UI/index.php';
-    } else {
-      errorMessage.textContent = result.message;
-      errorMessage.classList.remove('invisible');
-    }
-  } catch (error) {
-    console.error('Error:', error);
-    errorMessage.textContent = 'Server error. Try again later.';
-    errorMessage.classList.remove('invisible');
-  }
-}
+          if (result.success) {
+            localStorage.setItem('passwordVerified', 'true');
+            localStorage.setItem('username', result.username);
+
+            // 🔹 NEW: store user_type for later use (header, change password, etc.)
+            const userType = result.user_type || 'direct';
+            localStorage.setItem('userType', userType);
+
+            window.location.href = 'UI/index.php';
+          } else {
+            errorMessage.textContent = result.message;
+            errorMessage.classList.remove('invisible');
+          }
+        } catch (error) {
+          console.error('Error:', error);
+          errorMessage.textContent = 'Server error. Try again later.';
+          errorMessage.classList.remove('invisible');
+        }
+      }
 
       // Initialize and add Enter key listener after DOM is loaded
       document.addEventListener('DOMContentLoaded', () => {

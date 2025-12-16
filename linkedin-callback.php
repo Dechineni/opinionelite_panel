@@ -1,19 +1,18 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+use Dotenv\Dotenv;
 
 require __DIR__ . '/vendor/autoload.php';
 include('UI/config.php');
 session_start();
-
-use Dotenv\Dotenv;
 
 // Load .env from project root
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->safeLoad();
 
 // LinkedIn OIDC credentials from .env
-$client_id     = $_ENV['LINKEDIN_CLIENT_ID']    ?? null;
+$client_id     = $_ENV['LINKEDIN_CLIENT_ID']     ?? null;
 $client_secret = $_ENV['LINKEDIN_CLIENT_SECRET'] ?? null;
 
 // MUST match LinkedIn app redirect URL exactly
@@ -26,7 +25,11 @@ if (!$client_id || !$client_secret) {
 }
 
 // CSRF state check
-if (!isset($_GET['state']) || !isset($_SESSION['linkedin_state']) || $_GET['state'] !== $_SESSION['linkedin_state']) {
+if (
+    !isset($_GET['state']) ||
+    !isset($_SESSION['linkedin_state']) ||
+    $_GET['state'] !== $_SESSION['linkedin_state']
+) {
     echo "<script>alert('CSRF token mismatch.'); window.location.href='index.php';</script>";
     exit();
 }
@@ -41,12 +44,17 @@ $code = $_GET['code'];
 
 /**
  * Helper: auto-login and redirect to UI home
+ * Also sets userType in localStorage so header.php can hide "Change Password"
+ * for LinkedIn/Facebook users.
  */
-function autoLoginAndRedirect(string $usernameForLogin): void {
+function autoLoginAndRedirect(string $usernameForLogin, string $userTypeForLogin): void {
     $usernameJs = json_encode($usernameForLogin);
+    $userTypeJs = json_encode($userTypeForLogin);
+
     echo "<script>
         localStorage.setItem('passwordVerified', 'true');
         localStorage.setItem('username', {$usernameJs});
+        localStorage.setItem('userType', {$userTypeJs});
         window.location.href = 'UI/index.php';
     </script>";
     exit();
@@ -106,7 +114,7 @@ $username   = $email; // using email as username for LinkedIn signups
 $plain_password  = substr(str_shuffle('abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789'), 0, 10);
 $hashed_password = password_hash($plain_password, PASSWORD_BCRYPT);
 
-// Mark this as a LinkedIn user
+// Mark this as a LinkedIn user (for new signups)
 $user_type = 'linkedin';
 
 /**
@@ -114,19 +122,22 @@ $user_type = 'linkedin';
  *    - If yes: auto-login (no email)
  *    - If no:  insert, send confirmation email (no password), auto-login
  */
-$check = $db->prepare("SELECT id, username FROM signup WHERE email = ?");
+$check = $db->prepare("SELECT id, username, user_type FROM signup WHERE email = ?");
 $check->bind_param("s", $email);
 $check->execute();
 $check->store_result();
 
 if ($check->num_rows > 0) {
     // Existing user -> login directly
-    $check->bind_result($existingId, $existingUsername);
+    $check->bind_result($existingId, $existingUsername, $existingUserType);
     $check->fetch();
     $check->close();
 
     $usernameForLogin = $existingUsername ?: $username;
-    autoLoginAndRedirect($usernameForLogin);
+    // If user_type was already set, use that; otherwise treat as 'direct'
+    $loginUserType = $existingUserType ?: 'direct';
+
+    autoLoginAndRedirect($usernameForLogin, $loginUserType);
 }
 
 $check->close();
@@ -170,7 +181,7 @@ if ($stmt->execute()) {
               Your profile has been created and you can now access your dashboard and start
               participating in exclusive surveys.
             </p>
-            <p style="font-size: 14px; color: #777777; line-height: 1.6%;">
+            <p style="font-size: 14px; color: #777777; line-height: 1.6;">
               Next time, simply click <strong>Sign in with LinkedIn</strong> on our website
               to access your account quickly and securely.
             </p>
@@ -191,8 +202,8 @@ if ($stmt->execute()) {
 
     $stmt->close();
 
-    // Auto-login new user
-    autoLoginAndRedirect($username);
+    // Auto-login new LinkedIn user (user_type = 'linkedin')
+    autoLoginAndRedirect($username, $user_type);
 
 } else {
     $stmt->close();

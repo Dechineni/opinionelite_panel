@@ -11,9 +11,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
       
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
 
   <style>
@@ -106,59 +104,60 @@
       gap: 20px;
     }
     
-/* Modal customization to match the dark theme */
-.modal-content {
-  background-color: #111 !important; /* Dark background */
-  color: #ff9900 !important; /* White text */
-  border: 1px solid #444;
-  border-radius: 12px;
-}
+    /* Modal customization to match the dark theme */
+    .modal-content {
+      background-color: #111 !important;
+      color: #ff9900 !important;
+      border: 1px solid #444;
+      border-radius: 12px;
+    }
 
-.modal-header {
-  background-color: #111 !important;
-  border-bottom: 1px solid #333;
-  color: #ff9900 !important; /* Orange heading text */
-}
+    .modal-header {
+      background-color: #111 !important;
+      border-bottom: 1px solid #333;
+      color: #ff9900 !important;
+    }
 
-.modal-title {
-  color: #ff9900 !important;
-}
+    .modal-title {
+      color: #ff9900 !important;
+    }
 
-.modal-body {
-  background-color: #111 !important;
-}
+    .modal-body {
+      background-color: #111 !important;
+    }
 
-.modal-footer {
-  background-color: #111 !important;
-  border-top: 1px solid #333;
-}
+    .modal-footer {
+      background-color: #111 !important;
+      border-top: 1px solid #333;
+    }
 
-/* Input fields */
-.modal-body input[type="text"],
-.modal-body textarea {
-  background-color: #222;
-  color: #fff;
-  border: 1px solid #555;
-}
+    /* Input fields */
+    .modal-body input[type="text"],
+    .modal-body textarea {
+      background-color: #222;
+      color: #fff;
+      border: 1px solid #555;
+    }
 
-.modal-body input[type="text"]::placeholder,
-.modal-body textarea::placeholder {
-  color: #999;
-}
+    .modal-body input[type="text"]::placeholder,
+    .modal-body textarea::placeholder {
+      color: #999;
+    }
 
-/* Buttons */
-.btn-primary {
-  background-color: #ff9900;
-  border-color: #ff9900;
-  color: #000;
-}
+    /* Buttons */
+    .btn-primary {
+      background-color: #ff9900;
+      border-color: #ff9900;
+      color: #000;
+    }
 
-.btn-primary:hover {
-  background-color: #e68a00;
-  border-color: #e68a00;
-  color: #fff;
-}
-.swiper {
+    .btn-primary:hover {
+      background-color: #e68a00;
+      border-color: #e68a00;
+      color: #fff;
+    }
+
+    .swiper {
       width: 75%;
       margin: auto;
       padding: 20px 0;
@@ -236,7 +235,7 @@
 </head>
 <body>
 
-<!-- ✅ Updated Navbar (Bootstrap 5 Compatible) -->
+<!-- ✅ Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
@@ -270,7 +269,10 @@
           </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
             <li><a class="dropdown-item" href="my_account.php">My Account</a></li>
-            <li><a class="dropdown-item" href="change_password.php">Change Password</a></li>
+            <!-- 🔐 Only for direct users (hidden via JS for others) -->
+            <li id="changePasswordMenuItem">
+              <a class="dropdown-item" href="change_password.php">Change Password</a>
+            </li>
             <li><a class="dropdown-item" href="#">Settings</a></li>
             <li><a class="dropdown-item" href="logout.php">Logout</a></li>
           </ul>
@@ -280,3 +282,27 @@
   </div>
 </nav>
 
+<!-- JS to hide "Change Password" for non-direct users -->
+<script>
+  (function () {
+    try {
+      const userType  = localStorage.getItem('userType');
+      const username  = localStorage.getItem('username');
+      const changeLi  = document.getElementById('changePasswordMenuItem');
+
+      // If not logged in at all, hide the Change Password item
+      if (!username && changeLi) {
+        changeLi.style.display = 'none';
+        return;
+      }
+
+      // Hide for any non-direct userType (linkedin, facebook, etc.)
+      if (changeLi && userType && userType !== 'direct') {
+        changeLi.style.display = 'none';
+      }
+    } catch (e) {
+      // Fail silently: worst case, item is still visible, but
+      // backend will block non-direct users.
+    }
+  })();
+</script>
