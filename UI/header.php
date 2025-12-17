@@ -273,7 +273,7 @@
             <li id="changePasswordMenuItem">
               <a class="dropdown-item" href="change_password.php">Change Password</a>
             </li>
-            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="settings.php">Settings</a></li>
             <li><a class="dropdown-item" href="logout.php">Logout</a></li>
           </ul>
         </li>
