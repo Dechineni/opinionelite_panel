@@ -57,8 +57,10 @@ include('header.php');
 
 <div>
   <div class="container py-5">
-    <div class="card-data text-center">
-      <h5 class="fw-bold">Settings</h5>
+      <h3 class="text-center fw-bold" style="color: #ff9900;">Settings</h3>
+    <div class="row justify-content-center mt-5">
+    <div class="col-md-10 shadow rounded overflow-hidden" style="background-color: #111; border: 1px solid #333;">
+      <div class="card-data text-center">
       <p class="text-dark small mb-4">
         If you no longer wish to use Opinion Elite, you can request to delete your account below.
         <br><strong>This action is permanent and cannot be undone.</strong>
@@ -96,6 +98,8 @@ include('header.php');
           Submit
         </button>
       </form>
+        </div>
+    </div>
     </div>
   </div>
 </div>

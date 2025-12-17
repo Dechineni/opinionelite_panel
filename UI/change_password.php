@@ -52,6 +52,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['change_password'])) {
 
 <div>
   <div class="container py-5">
+    <h3 class="text-center fw-bold" style="color: #ff9900;">Change your password</h3>
+    <div class="row justify-content-center mt-5">
+    <div class="col-md-10 shadow rounded overflow-hidden" style="background-color: #111; border: 1px solid #333;">
     <div class="card-data text-center">
 
       <!-- Success / Error banners -->
@@ -93,7 +96,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['change_password'])) {
         </div>
       <?php endif; ?>
 
-      <h5 class="fw-bold">Change your password</h5>
       <p class="text-dark small mb-4">Enter a new password below to change your password</p>
 
       <form method="post" id="changePasswordForm">
@@ -130,6 +132,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['change_password'])) {
       </form>
     </div>
   </div>
+</div>
+</div>
 </div>
 
 <script>
