@@ -1,11 +1,12 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-use Dotenv\Dotenv;
 
 require __DIR__ . '/vendor/autoload.php';
 include('UI/config.php');
 session_start();
+
+use Dotenv\Dotenv;
 
 // Load .env from project root
 $dotenv = Dotenv::createImmutable(__DIR__);
@@ -25,11 +26,7 @@ if (!$client_id || !$client_secret) {
 }
 
 // CSRF state check
-if (
-    !isset($_GET['state']) ||
-    !isset($_SESSION['linkedin_state']) ||
-    $_GET['state'] !== $_SESSION['linkedin_state']
-) {
+if (!isset($_GET['state']) || !isset($_SESSION['linkedin_state']) || $_GET['state'] !== $_SESSION['linkedin_state']) {
     echo "<script>alert('CSRF token mismatch.'); window.location.href='index.php';</script>";
     exit();
 }
@@ -44,17 +41,12 @@ $code = $_GET['code'];
 
 /**
  * Helper: auto-login and redirect to UI home
- * Also sets userType in localStorage so header.php can hide "Change Password"
- * for LinkedIn/Facebook users.
  */
-function autoLoginAndRedirect(string $usernameForLogin, string $userTypeForLogin): void {
+function autoLoginAndRedirect(string $usernameForLogin): void {
     $usernameJs = json_encode($usernameForLogin);
-    $userTypeJs = json_encode($userTypeForLogin);
-
     echo "<script>
         localStorage.setItem('passwordVerified', 'true');
         localStorage.setItem('username', {$usernameJs});
-        localStorage.setItem('userType', {$userTypeJs});
         window.location.href = 'UI/index.php';
     </script>";
     exit();
@@ -114,7 +106,7 @@ $username   = $email; // using email as username for LinkedIn signups
 $plain_password  = substr(str_shuffle('abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789'), 0, 10);
 $hashed_password = password_hash($plain_password, PASSWORD_BCRYPT);
 
-// Mark this as a LinkedIn user (for new signups)
+// Mark this as a LinkedIn user
 $user_type = 'linkedin';
 
 /**
@@ -134,10 +126,12 @@ if ($check->num_rows > 0) {
     $check->close();
 
     $usernameForLogin = $existingUsername ?: $username;
-    // If user_type was already set, use that; otherwise treat as 'direct'
-    $loginUserType = $existingUserType ?: 'direct';
 
-    autoLoginAndRedirect($usernameForLogin, $loginUserType);
+    // ✅ put into PHP session as well
+    $_SESSION['username']  = $usernameForLogin;
+    $_SESSION['user_type'] = $existingUserType ?: 'linkedin';
+
+    autoLoginAndRedirect($usernameForLogin);
 }
 
 $check->close();
@@ -176,12 +170,12 @@ if ($stmt->execute()) {
             <p style="font-size: 16px; color: #555555;">
               Hi ' . $safeFirst . ',
             </p>
-            <p style="font-size: 16px; color: #555555; line-height: 1.6;">
+            <p style="font-size: 16px; color: #555555; line-height: 1.6%;">
               Thanks for joining <strong>Opinion Elite</strong> with your LinkedIn account.
               Your profile has been created and you can now access your dashboard and start
               participating in exclusive surveys.
             </p>
-            <p style="font-size: 14px; color: #777777; line-height: 1.6;">
+            <p style="font-size: 14px; color: #777777; line-height: 1.6%;">
               Next time, simply click <strong>Sign in with LinkedIn</strong> on our website
               to access your account quickly and securely.
             </p>
@@ -197,13 +191,16 @@ if ($stmt->execute()) {
         $mail->send();
     } catch (Exception $e) {
         // If email fails we still log the user in
-        // error_log("LinkedIn signup email failed: " . $mail->ErrorInfo);
     }
 
     $stmt->close();
 
-    // Auto-login new LinkedIn user (user_type = 'linkedin')
-    autoLoginAndRedirect($username, $user_type);
+    // ✅ put new LinkedIn user into session as well
+    $_SESSION['username']  = $username;
+    $_SESSION['user_type'] = $user_type;
+
+    // Auto-login new user
+    autoLoginAndRedirect($username);
 
 } else {
     $stmt->close();
