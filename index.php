@@ -162,6 +162,14 @@ if (isset($_POST['signup'])) {
             <a href="signin.php" class="inline-block w-[150px] h-auto">
               <img src="imgs/signin.png" alt="Sign In" class="w-full h-auto" />
             </a>
+            <a href="linked_in.php" class="inline-block w-[150px] h-auto">
+              <img src="imgs/form-li-button.png" alt="linkedin connect" class="w-[130px] h-[52px]" />
+              <span
+          class="text-[11px] sm:text-xs font-semibold uppercase tracking-[0.18em] text-white whitespace-nowrap"
+        >
+        By LinkedIn
+        </span>
+            </a>
           </div>
         </div>
       </nav>
@@ -594,13 +602,6 @@ if (isset($_POST['signup'])) {
                         alt="fb connect"
                       />
                     </button> -->
-                    <a href="linked_in.php">
-                      <img
-                        class="w-full h-full object-contain"
-                        src="imgs/form-li-button.png"
-                        alt="likedin connect"
-                      />
-                    </a>
                   </div>
                 </div>
               </div>
