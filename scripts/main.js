@@ -1,3 +1,5 @@
+console.log('main.js loaded – PRIVACY_POLICY_2025_12_16');
+
 document.addEventListener('DOMContentLoaded', () => {
   // Hide preloader with a fade effect
   const preloader = document.getElementById('preloader');

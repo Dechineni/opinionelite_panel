@@ -134,7 +134,7 @@ if (isset($_POST['signup'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Opinion Elite</title>
     <link href="output.css" rel="stylesheet" />
-    <script src="scripts/main.js"></script>
+    <script src="scripts/main.js?v=20251216"></script>
     <link rel="icon" sizes="64x64" href="favicon.png" type="image/png" />
   </head>
   <body
