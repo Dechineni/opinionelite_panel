@@ -33,63 +33,186 @@ function initLegalModals() {
   // Modal content
   const modalContents = {
     privacy: {
-      title: 'Privacy Policy',
-      content: `<p class="mb-4">Last updated: December 2024</p>
-                <p class="mb-4">This Privacy Policy describes how QuantifyAI ("we," "us," or "our") collects, uses, and discloses your personal information when you use our services.</p>
-                <p class="mb-4">1. Introduction</p>
+      title: 'OpinionElite Privacy Policy',
+      content: `
+<p class="mb-4">Last Updated: 12/16/2025</p>
 
-<p class="mb-4">This "Privacy Policy" is for residents and persons located within the United States and Canada. For all other visitors, please visit the international version of our Privacy Policy here.</p>
+<p class="mb-4">
+  This Privacy Policy applies to individuals residing in the US, Canada, Europe, and other locations who access or use OpinionElite’s websites, applications, online survey systems, browser extensions, emails, and any other digital properties or services we make available (collectively, the “OpinionElite Site and Features”). OpinionElite (“OpinionElite,” “we,” “our,” or “us”) is a United States–based technology and market research company. This Privacy Policy explains how we collect, use, store, share, secure, and otherwise process personal information through the OpinionElite Site and Features.
+</p>
 
-<p class="mb-4">We want you to be familiar with how we collect, use, and share your Personally Identifiable Information (defined below). This Privacy Policy outlines the type of information that we collect and receive from and about you via the QuantifyAI Sites and Features and our Services (both as defined below), and our data practices related thereto, with additional disclosures for California, Colorado, Connecticut, Nevada, Utah and Virginia residents in the U.S. State Privacy Notice section below.</p>
+<p class="mb-4">
+  Your use of the OpinionElite Site and Features constitutes your acceptance of this Privacy Policy and our Terms of Use, which include a binding arbitration clause and a waiver of class action rights. If you do not agree to the terms described in this Privacy Policy, you should immediately discontinue your use of the OpinionElite Site and Features.
+</p>
 
-<p class="mb-4">To the extent that there is a conflict between this Privacy Policy and the U.S. State Privacy Notice section, the U.S. State Privacy Notice section will control as to residents of those states.</p>
+<p class="mb-4">
+  Unless otherwise stated, this Privacy Policy applies only to information collected online through the OpinionElite Site and Features, and not to information collected offline or through unrelated websites, applications, or services to which we may provide links.
+</p>
 
-<p class="mb-4">Please review this Privacy Policy carefully, especially before providing any Personally Identifiable Information through the QuantifyAI Sites and Features or our Services. The QuantifyAI Sites and Features and our Services are generally operated in and controlled from the United States of America unless otherwise stated.</p>
+<h3 class="mt-6 mb-2 font-semibold text-lg">1. Overview and Scope of This Policy</h3>
+<p class="mb-4">
+  This Privacy Policy applies to individuals residing in the US, Canada, Europe, and other locations who access or use the OpinionElite Site and Features. It explains how we collect, use, store, share, secure, and otherwise process personal information through the OpinionElite Site and Features.
+</p>
 
-<p class="mb-4">QuantifyAI Sites and Features and our Services may collect and use location-aware and cross-device data for advertising and other purposes.</p>
-
-<p class="mb-4">IF YOU DO NOT WISH TO HAVE US COLLECT, USE, AND SHARE INFORMATION AS DESCRIBED IN THIS PRIVACY POLICY, PLEASE DO NOT USE ANY OF THE QuantifyAI SITES AND FEATURES OR OUR SERVICES.</p>
-
-<p class="mb-4">Notice of Terms of Use, Including Arbitration: Your use of the QuantifyAI Sites and Features and our Services is subject to our Terms of Use, which includes binding individual arbitration of any disputes which may arise in connection with such use. Please note that your use of the QuantifyAI Sites and Features or our Services constitutes your express agreement to our Terms of Use, including its arbitration provisions and class action waiver. Please read the Terms of Use—including the arbitration provisions—carefully, and do not use any of the QuantifyAI Sites and Features or our Services if you do not agree.</p>
-
-<p class="mb-4">2. Information We Collect</p>
-
-<p class="mb-4">When you visit any QuantifyAI Sites and Features or use any of our Services, you may share and/or we may automatically collect information that identifies you personally. In this Privacy Policy, "Personally Identifiable Information" (or "PII") refers to any information that can reasonably be used to identify, contact or locate you.</p>
-
-<p class="mb-4">Examples of PII may include, without limitation:</p>
+<h3 class="mt-6 mb-2 font-semibold text-lg">2. Information You Provide and What We Automatically Collect</h3>
+<p class="mb-4">
+  When you visit or use the OpinionElite Site and Features, you may provide, and we may automatically collect, information that identifies you personally. “Personal Information” means information that can reasonably be used to identify, contact, or locate you.
+</p>
+<p class="mb-2">Examples of Personal Information include, without limitation:</p>
 <ul class="list-disc pl-8 mb-4">
   <li>Your name</li>
-  <li>Your precise geo-location</li>
-  <li>Your credit card number</li>
   <li>Your email address</li>
-  <li>Your mailing address</li>
   <li>Your phone number</li>
+  <li>Your date of birth</li>
+  <li>Your mailing address and ZIP or postal code</li>
+  <li>Device identifiers and social media profile information</li>
 </ul>
+<p class="mb-4">
+  We may also collect demographic information, survey response data, and account credentials when you register or participate in research activities. Personal Information may be collected when you create an account, participate in surveys, communicate with us, join email lists, submit feedback, install browser extensions, or otherwise engage with the OpinionElite Site and Features.
+</p>
+<p class="mb-4">
+  We may also collect “Non-Personal Information” (“Non-PI”), which cannot reasonably identify you on its own. If we combine Non-PI with Personal Information, we treat the combined data as Personal Information. If you choose not to provide certain Personal Information, you may be unable to access some or all of the OpinionElite Site and Features.
+</p>
 
-<p class="mb-4">We also collect, and may create from PII, information about you that is not PII ("Non-PII"). If we combine PII collected via QuantifyAI Sites and Features or our Services with other of your PII or with Non-PII, that combined data will be treated as PII subject to this Privacy Policy.</p>
+<h3 class="mt-6 mb-2 font-semibold text-lg">3. Data Supplemented From External Sources</h3>
+<p class="mb-4">
+  We may receive additional information about you from trusted third parties, including research partners, identity and fraud-prevention vendors, analytics providers, and social media networks when you choose to link or interact with them through the OpinionElite Site and Features. Such information may include confirmation of your identity, eligibility checks, account verification details, and information necessary to validate survey participation. Any information received from third parties and combined with information collected through the OpinionElite Site and Features will be treated under this Privacy Policy.
+</p>
 
-<p class="mb-4">3. How We Use Your Information</p>
+<h3 class="mt-6 mb-2 font-semibold text-lg">4. How OpinionElite Utilizes and Shares Information</h3>
+<p class="mb-4">
+  OpinionElite uses Personal Information and Non-PI to operate, maintain, and improve the OpinionElite Site and Features; provide surveys, research opportunities, content, incentives, and relevant communications; validate data quality; prevent fraudulent activity; and support analytics, optimization, compliance, and administrative functions.
+</p>
+<p class="mb-4">
+  Personal Information may also be used for research, internal analysis, troubleshooting, service improvements, and other business-related purposes as permitted by applicable law. We may share information with our affiliated entities, service providers, survey partners, clients, incentive providers, analytics companies, and other trusted third parties who assist in delivering the OpinionElite Site and Features.
+</p>
+<p class="mb-4">
+  These parties may help authenticate users, facilitate rewards, host data, enhance security, or conduct research analytics. We may also share aggregated or anonymized information that does not identify you personally for business or research purposes.
+</p>
 
-<p class="mb-4">We use your PII and non-PII to:</p>
+<h3 class="mt-6 mb-2 font-semibold text-lg">5. Public Interactions, Contributions, and Visible Content</h3>
+<p class="mb-4">
+  The OpinionElite Site and Features may include blogs, forums, feedback tools, or public-facing features that allow you to submit comments, text, photos, videos, audio, or other “User Content.” Any User Content you submit may be publicly visible depending on the feature and may include metadata that could contain information about you.
+</p>
+<p class="mb-4">
+  If you choose to voluntarily disclose Personal Information through User Content, that information becomes publicly available and is not protected by this Privacy Policy. By submitting User Content, you grant OpinionElite permission to use, reproduce, adapt, display, or distribute such content for operational, administrative, or promotional purposes.
+</p>
+
+<h3 class="mt-6 mb-2 font-semibold text-lg">6. Links and Connections to Other Digital Services</h3>
+<p class="mb-4">
+  The OpinionElite Site and Features may contain links to third-party websites, applications, or tools that we do not own or control. These third-party services may collect Personal Information or other data from you independently, including through their own tracking technologies. Their privacy and data-handling practices are governed by their own policies, not by this Privacy Policy. We encourage you to review those third-party privacy statements before interacting with their services.
+</p>
+
+<h3 class="mt-6 mb-2 font-semibold text-lg">7. Advertising, Measurement Partners, and Analytical Technologies</h3>
+<p class="mb-4">
+  OpinionElite may work with advertising networks, attribution platforms, or analytics providers who may place cookies or tracking technologies on your device to measure engagement, provide aggregated analytics, and improve campaign performance. These third parties may collect information about your interactions with the OpinionElite Site and Features and other digital properties over time. Their data collection activities are governed by their own privacy policies.
+</p>
+
+<h3 class="mt-6 mb-2 font-semibold text-lg">8. Use of Cookies, Device Signals, and Tracking Methods</h3>
+<p class="mb-4">
+  OpinionElite and certain trusted third parties use cookies, pixel tags, web beacons, device fingerprinting technologies, embedded scripts, session replay tools, and similar tracking mechanisms to analyze usage patterns, authenticate users, maintain sessions, detect fraud, deliver surveys, improve system performance, and personalize your experience.
+</p>
+<p class="mb-4">
+  You may disable or delete cookies through your browser settings; however, doing so may limit functionality and affect your ability to fully use the OpinionElite Site and Features.
+</p>
+
+<h3 class="mt-6 mb-2 font-semibold text-lg">9. Situations in Which We May Disclose Information</h3>
+<p class="mb-4">
+  OpinionElite may disclose information when required to comply with legal or regulatory obligations, such as responding to subpoenas, court orders, lawful requests by government authorities, or other legal processes.
+</p>
+<p class="mb-4">
+  We may also disclose information if we believe such action is necessary to investigate fraud, prevent harm, address security concerns, enforce our Terms of Use, or protect the rights, property, or safety of OpinionElite, our users, or the general public.
+</p>
+
+<h3 class="mt-6 mb-2 font-semibold text-lg">10. Data Transfers During Company Restructuring or Sale</h3>
+<p class="mb-4">
+  If OpinionElite undergoes a business transition such as a merger, acquisition, divestiture, financing, sale of assets, or reorganization, your Personal Information and other data may be transferred to the acquiring or successor entity as part of the transaction. The new entity will continue to handle your Personal Information consistent with this Privacy Policy unless otherwise permitted by law.
+</p>
+
+<h3 class="mt-6 mb-2 font-semibold text-lg">11. Managing Your Information, Preferences, and Communication Choices</h3>
+<p class="mb-4">
+  You are responsible for ensuring that the Personal Information you provide is accurate and current. If you have questions about updating your information, managing your privacy choices, or opting out of certain data uses, you may contact us using the information provided in the Contact Us section below.
+</p>
+<p class="mb-4">
+  You may opt out of marketing communications by following instructions in those messages or by contacting us directly. Even after opting out of marketing communications, you may continue to receive transactional or administrative messages regarding your account or the OpinionElite Site and Features.
+</p>
+
+<h3 class="mt-6 mb-2 font-semibold text-lg">12. How We Communicate Changes to This Policy</h3>
+<p class="mb-4">
+  OpinionElite may modify this Privacy Policy from time to time. If we make material changes, we may notify you through email or by posting an updated version in prominent areas of the OpinionElite Site and Features. Your continued use of the platform after such changes constitutes acceptance of the updated Privacy Policy. If you do not agree to updates, you should discontinue using the OpinionElite Site and Features.
+</p>
+
+<h3 class="mt-6 mb-2 font-semibold text-lg">13. Policies Regarding Minors and Underage Users</h3>
+<p class="mb-4">
+  OpinionElite does not knowingly collect Personal Information from children under 13 years of age. For residents of the European Union and applicable European jurisdictions, the minimum participation age is 16, as required by GDPR, and the OpinionElite Site and Features are not intended for use by children under 13.
+</p>
+<p class="mb-4">
+  If we become aware that we have collected Personal Information from a child under 13, we will take steps to delete such information promptly. If you believe that a child has provided Personal Information to OpinionElite, please contact us at <a href="mailto:Support@opinionelite.com" class="underline text-[#fd9f15]">Support@opinionelite.com</a>.
+</p>
+
+<h3 class="mt-6 mb-2 font-semibold text-lg">14. Safeguards and Measures to Protect Information</h3>
+<p class="mb-4">
+  OpinionElite employs reasonable administrative, technical, and physical safeguards designed to protect Personal Information from unauthorized access, alteration, disclosure, or destruction. Despite our efforts, no method of internet transmission or electronic storage is completely secure, and we cannot guarantee the absolute security of your information. You acknowledge that transmission of Personal Information is done at your own risk.
+</p>
+
+<h3 class="mt-6 mb-2 font-semibold text-lg">15. Where Data Is Processed and Governing Legal Framework</h3>
+<p class="mb-4">
+  OpinionElite processes and stores data primarily in the United States. Some processing may occur in other countries, including India and Europe, through service providers acting on our behalf.
+</p>
+<p class="mb-4">
+  By using the OpinionElite Site and Features, you consent to the transfer and processing of your Personal Information in the United States and other locations where we or our service providers operate. The laws of the United States, including the State of Delaware, govern the interpretation and application of this Privacy Policy, regardless of conflict-of-law principles.
+</p>
+
+<h3 class="mt-6 mb-2 font-semibold text-lg">16. Data Retention</h3>
+<p class="mb-4">
+  OpinionElite retains Personal Information only for as long as reasonably necessary to fulfill the purposes outlined in this Privacy Policy, including providing services, complying with legal obligations, resolving disputes, enforcing agreements, and maintaining business records.
+</p>
+<p class="mb-4">
+  Retention periods may vary depending on the nature of the data, contractual requirements, and applicable laws. When Personal Information is no longer required, it is securely deleted, anonymized, or de-identified in accordance with our internal data retention and destruction policies.
+</p>
+
+<h3 class="mt-6 mb-2 font-semibold text-lg">17. Additional Rights for Residents of California, Canada, and Other U.S. States (CCPA/CPRA and CPPA)</h3>
+<p class="mb-4">
+  If you are a resident of California, Canada, or another U.S. state with applicable consumer privacy laws, you may have additional rights, including:
+</p>
 <ul class="list-disc pl-8 mb-4">
-  <li>Provide you with our Services</li>
-  <li>Operate and improve the QuantifyAI Sites and Features</li>
-  <li>Provide advertising, content, surveys, location-based deals, special offers, promotions, and other rewards opportunities</li>
-  <li>Marketing, administrative, operational, business, and commercial purposes subject to applicable law</li>
+  <li>Right to know / access the categories and specific pieces of Personal Information we have collected about you;</li>
+  <li>Right to request deletion of Personal Information, subject to legal exceptions;</li>
+  <li>Right to request correction of inaccurate Personal Information;</li>
+  <li>Right to opt out of the sale or sharing of Personal Information, where applicable;</li>
+  <li>Right to limit the use of Sensitive Personal Information, where applicable; and</li>
+  <li>Right to non-discrimination for exercising your privacy rights.</li>
 </ul>
+<p class="mb-4">
+  OpinionElite provides a mechanism for eligible users to opt out of the sale or sharing of Personal Information by submitting a request via email to <a href="mailto:support@opinionelite.com" class="underline text-[#fd9f15]">support@opinionelite.com</a> with the subject line “Do Not Sell or Share My Personal Information.”
+</p>
+<p class="mb-4">
+  Requests to exercise rights under CCPA/CPRA or CPPA may be submitted by contacting us at <a href="mailto:support@opinionelite.com" class="underline text-[#fd9f15]">support@opinionelite.com</a>. We may require verification of identity before fulfilling requests.
+</p>
 
-<p class="mb-4">4. Information Security</p>
+<h3 class="mt-6 mb-2 font-semibold text-lg">18. Additional Rights for Residents in the European Union and Europe</h3>
+<p class="mb-4">
+  If you reside in the European Union, the European Economic Area, or other European regions with applicable data protection laws, you have additional rights under the General Data Protection Regulation (“GDPR”) and comparable European laws. These rights include the ability to request access to your Personal Information, correct inaccuracies, request deletion, restrict processing, object to processing based on legitimate interests, request data portability, and withdraw consent at any time when processing is based on consent.
+</p>
+<p class="mb-4">
+  You may also lodge complaints with your local data protection authority. OpinionElite processes European Personal Information based on lawful grounds such as your consent, our legitimate interests (for example, fraud prevention, analytics, and service improvement), the performance of contracts (such as reward fulfillment), and compliance with legal obligations.
+</p>
+<p class="mb-4">
+  When European data is transferred outside Europe, including to the United States, we use appropriate safeguards such as Standard Contractual Clauses, Data Processing Agreements, and technical measures designed to protect the data during transfer and processing. Requests to exercise European privacy rights may be submitted to <a href="mailto:Support@opinionelite.com" class="underline text-[#fd9f15]">Support@opinionelite.com</a>.
+</p>
 
-<p class="mb-4">We maintain security measures to help protect against the loss, misuse and alteration of the PII and other information under our control. Please be advised, however, that the Internet and other technologies are, by their nature, not entirely secure, and your PII and non-PII may therefore be subject to interception or loss which is beyond our reasonable control.</p>
-
-<p class="mb-4">5. Contact Us</p>
-
-<p class="mb-4">If you have any questions about this Privacy Policy or our privacy practices, please contact us at our Help Center or through the contact options located in the applicable QuantifyAI Sites and Features footer.</p><p class="mb-4">
-QuantifyAI, LLC<br>
-3200 Paseo Village Way #2337<br>
-San Diego, CA 92130<br>
-USA
-</p>`,
+<h3 class="mt-6 mb-2 font-semibold text-lg">19. How to Contact OpinionElite Regarding Privacy</h3>
+<p class="mb-4">
+  If you have questions about this Privacy Policy or wish to exercise your privacy rights, please contact us at:
+</p>
+<p class="mb-2">
+  Email: <a href="mailto:Support@opinionelite.com" class="underline text-[#fd9f15]">Support@opinionelite.com</a>
+</p>
+<p class="mb-4">
+  DOP: Rajesh Dechineni<br/>
+  OpinionElite – Privacy Office
+</p>
+      `,
     },
     terms: {
       title: 'Terms of Use',
