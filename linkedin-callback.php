@@ -13,7 +13,7 @@ $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->safeLoad();
 
 // LinkedIn OIDC credentials from .env
-$client_id     = $_ENV['LINKEDIN_CLIENT_ID']     ?? null;
+$client_id     = $_ENV['LINKEDIN_CLIENT_ID']    ?? null;
 $client_secret = $_ENV['LINKEDIN_CLIENT_SECRET'] ?? null;
 
 // MUST match LinkedIn app redirect URL exactly
@@ -102,109 +102,35 @@ $last_name  = $userinfo['family_name'] ?? '';
 $email      = $userinfo['email'];
 $username   = $email; // using email as username for LinkedIn signups
 
-// Generate a random password (for DB only – not emailed)
-$plain_password  = substr(str_shuffle('abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789'), 0, 10);
-$hashed_password = password_hash($plain_password, PASSWORD_BCRYPT);
-
-// Mark this as a LinkedIn user
-$user_type = 'linkedin';
-
 /**
  * 3) Check if user already exists
- *    - If yes: auto-login (no email)
- *    - If no:  insert, send confirmation email (no password), auto-login
+ *    - Existing user: auto-login → home
+ *    - New user: store info in session → Join the Elite form
  */
-$check = $db->prepare("SELECT id, username, user_type FROM signup WHERE email = ?");
+$check = $db->prepare("SELECT id, username FROM signup WHERE email = ?");
 $check->bind_param("s", $email);
 $check->execute();
 $check->store_result();
 
 if ($check->num_rows > 0) {
     // Existing user -> login directly
-    $check->bind_result($existingId, $existingUsername, $existingUserType);
+    $check->bind_result($existingId, $existingUsername);
     $check->fetch();
     $check->close();
 
     $usernameForLogin = $existingUsername ?: $username;
-
-    // ✅ put into PHP session as well
-    $_SESSION['username']  = $usernameForLogin;
-    $_SESSION['user_type'] = $existingUserType ?: 'linkedin';
-
     autoLoginAndRedirect($usernameForLogin);
 }
 
 $check->close();
 
-// New user -> insert into DB with user_type = 'linkedin'
-$stmt = $db->prepare("
-    INSERT INTO signup (firstname, lastname, email, username, password, user_type)
-    VALUES (?, ?, ?, ?, ?, ?)
-");
-$stmt->bind_param("ssssss", $first_name, $last_name, $email, $username, $hashed_password, $user_type);
+// New user: save LinkedIn info in session and send to Join the Elite page
+$_SESSION['linkedin_new_user']   = true;
+$_SESSION['linkedin_email']      = $email;
+$_SESSION['linkedin_first_name'] = $first_name;
+$_SESSION['linkedin_last_name']  = $last_name;
 
-if ($stmt->execute()) {
-
-    // Send simple confirmation email (no username/password)
-    $mail = new PHPMailer(true);
-    try {
-        $mail->isSMTP();
-        $mail->Host       = 'smtp.office365.com';
-        $mail->SMTPAuth   = true;
-        $mail->Username   = 'noreply@opinionelite.com';  // Microsoft 365 email
-        $mail->Password   = 'kkzzxtbjxmhpkjvm';          // App password / real password
-        $mail->SMTPSecure = 'tls';
-        $mail->Port       = 587;
-
-        $mail->setFrom('noreply@opinionelite.com', 'Opinion Elite');
-        $mail->addAddress($email, $first_name);
-        $mail->isHTML(true);
-        $mail->Subject = 'Welcome to Opinion Elite!';
-
-        $safeFirst = htmlspecialchars($first_name ?: 'there');
-
-        $mail->Body = '
-        <div style="max-width: 600px; margin: auto; padding: 20px; font-family: Arial, sans-serif; background-color: #f4f4f4;">
-          <div style="background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 30px;">
-            <h2 style="color: #333333; text-align: center;">Welcome to <span style="color: #f9a825;">Opinion Elite</span>!</h2>
-            <p style="font-size: 16px; color: #555555;">
-              Hi ' . $safeFirst . ',
-            </p>
-            <p style="font-size: 16px; color: #555555; line-height: 1.6%;">
-              Thanks for joining <strong>Opinion Elite</strong> with your LinkedIn account.
-              Your profile has been created and you can now access your dashboard and start
-              participating in exclusive surveys.
-            </p>
-            <p style="font-size: 14px; color: #777777; line-height: 1.6%;">
-              Next time, simply click <strong>Sign in with LinkedIn</strong> on our website
-              to access your account quickly and securely.
-            </p>
-            <div style="text-align: center; margin: 30px 0;">
-              <a href="https://lightsteelblue-chimpanzee-746078.hostingersite.com/"
-                 style="background-color: #f9a825; color: #000; padding: 12px 25px; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold;">
-                Go to Opinion Elite
-              </a>
-            </div>
-          </div>
-        </div>';
-
-        $mail->send();
-    } catch (Exception $e) {
-        // If email fails we still log the user in
-    }
-
-    $stmt->close();
-
-    // ✅ put new LinkedIn user into session as well
-    $_SESSION['username']  = $username;
-    $_SESSION['user_type'] = $user_type;
-
-    // Auto-login new user
-    autoLoginAndRedirect($username);
-
-} else {
-    $stmt->close();
-    echo "<script>alert('Database insert failed.'); window.location.href='index.php';</script>";
-    exit();
-}
+// Redirect to Join the Elite (index.php)
+header("Location: index.php?from=linkedin");
+exit();
 ?>
