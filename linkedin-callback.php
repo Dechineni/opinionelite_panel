@@ -131,6 +131,6 @@ $_SESSION['linkedin_first_name'] = $first_name;
 $_SESSION['linkedin_last_name']  = $last_name;
 
 // Redirect to Join the Elite (index.php)
-header("Location: index.php?from=linkedin");
+header("Location: join.php?from=linkedin");
 exit();
 ?>
