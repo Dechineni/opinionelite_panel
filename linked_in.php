@@ -1,42 +1,49 @@
 <?php
-session_start();
-
 require __DIR__ . '/vendor/autoload.php';
+session_start();
 
 use Dotenv\Dotenv;
 
-// Load .env
+// Load .env (safe if it doesn’t exist, e.g. on prod)
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->safeLoad();
 
-// Read from env
-$client_id     = $_ENV['LINKEDIN_CLIENT_ID']     ?? getenv('LINKEDIN_CLIENT_ID')     ?? null;
-$redirect_uri  = $_ENV['LINKEDIN_REDIRECT_URI']  ?? getenv('LINKEDIN_REDIRECT_URI')  ?? 'https://lightsteelblue-chimpanzee-746078.hostingersite.com/linkedin-callback.php';
+// LinkedIn app credentials
+$client_id = $_ENV['LINKEDIN_CLIENT_ID'] ?? getenv('LINKEDIN_CLIENT_ID');
+$client_secret = $_ENV['LINKEDIN_CLIENT_SECRET'] ?? getenv('LINKEDIN_CLIENT_SECRET');
 
 if (!$client_id) {
     echo "LinkedIn client ID is not configured on the server. Please contact support.";
-    exit;
+    exit();
 }
 
-// OIDC scopes
-$scope = 'openid profile email';
+/**
+ * Build redirect_uri dynamically so it works for:
+ *   - prod:  https://.../linkedin-callback.php
+ *   - test:  https://.../test/linkedin-callback.php
+ *   - local: http://localhost/opinionelite_panel/linkedin-callback.php
+ */
+$scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+$host   = $_SERVER['HTTP_HOST'];
+$dir    = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\'); // '' or '/test' or '/opinionelite_panel'
 
-// CSRF + nonce
+$redirect_uri = $scheme . '://' . $host . $dir . '/linkedin-callback.php';
+
+// CSRF protection state
 $state = bin2hex(random_bytes(16));
-$nonce = bin2hex(random_bytes(16));
-
 $_SESSION['linkedin_state'] = $state;
-$_SESSION['linkedin_nonce'] = $nonce;
 
-// Build LinkedIn login URL
-$params = http_build_query([
+// Build LinkedIn authorization URL
+$params = [
     'response_type' => 'code',
     'client_id'     => $client_id,
     'redirect_uri'  => $redirect_uri,
-    'scope'         => $scope,
     'state'         => $state,
-    'nonce'         => $nonce,
-]);
+    'scope'         => 'openid profile email',
+];
 
-header("Location: https://www.linkedin.com/oauth/v2/authorization?$params");
-exit;
+$auth_url = 'https://www.linkedin.com/oauth/v2/authorization?' . http_build_query($params);
+
+// Send user to LinkedIn
+header("Location: $auth_url");
+exit();

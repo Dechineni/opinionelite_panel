@@ -17,7 +17,12 @@ $client_id     = $_ENV['LINKEDIN_CLIENT_ID']    ?? null;
 $client_secret = $_ENV['LINKEDIN_CLIENT_SECRET'] ?? null;
 
 // MUST match LinkedIn app redirect URL exactly
-$redirect_uri  = 'https://lightsteelblue-chimpanzee-746078.hostingersite.com/linkedin-callback.php';
+$scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+$host   = $_SERVER['HTTP_HOST'];
+$dir    = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\'); // '' or '/test' or '/opinionelite_panel'
+
+$redirect_uri = $scheme . '://' . $host . $dir . '/linkedin-callback.php';
+
 
 // Basic safety check
 if (!$client_id || !$client_secret) {
