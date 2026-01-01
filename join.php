@@ -33,9 +33,11 @@ if (isset($_POST['signup'])) {
     $fname        = $_POST['firstName'];
     $lname        = $_POST['lastName'];
     $email        = $_POST['email'];
+    $country      = $_POST['country'];      // NEW
     $zipcode      = $_POST['zipCode'];
     $gender       = $_POST['gender'];
     $birthday     = $_POST['birthday'];
+    $education    = $_POST['education'];    // NEW
     $income       = $_POST['income'];
     $job_industry = $_POST['job_industry'];
     $role         = $_POST['role'];
@@ -50,9 +52,11 @@ if (isset($_POST['signup'])) {
                 firstname,
                 lastname,
                 email,
+                country,
                 zipcode,
                 gender,
                 birthday,
+                education,
                 income,
                 job_industry,
                 role,
@@ -64,9 +68,11 @@ if (isset($_POST['signup'])) {
                 '$fname',
                 '$lname',
                 '$email',
+                '$country',
                 '$zipcode',
                 '$gender',
                 '$birthday',
+                '$education',
                 '$income',
                 '$job_industry',
                 '$role',
@@ -168,9 +174,6 @@ if (isset($_POST['signup'])) {
   <body
     class="flex flex-col items-center justify-start bg-gradient-to-br from-[#171717] to-[#000] font-gilroy"
   >
-    <!-- Password Modal -->
-    <!-- (unchanged, still commented out) -->
-
     <!-- Main Content -->
     <div id="content">
       <nav class="nav w-full mb-12">
@@ -301,6 +304,24 @@ if (isset($_POST['signup'])) {
                     >
                   </div>
 
+                  <!-- Country (NEW) -->
+                  <div class="pseudoInput relative">
+                    <select
+                      class="peer w-full font-semibold text-[19px] border-2 border-[#262629] bg-gradient-to-b from-[#111112] to-[#151517] rounded-md p-4 hover:border-[#363639] focus:border-[#f1aa3f] focus:from-[#1a1918] focus:to-[#272219] ring-0 focus:ring-0 outline-none appearance-none"
+                      id="country"
+                      name="country"
+                      required
+                    >
+                      <option value="" disabled selected hidden>Country</option>
+                      <option value="United States">United States</option>
+                      <option value="Canada">Canada</option>
+                      <option value="United Kingdom">United Kingdom</option>
+                      <option value="Australia">Australia</option>
+                      <option value="India">India</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+
                   <!-- Zip Code -->
                   <div class="pseudoInput relative">
                     <input
@@ -336,7 +357,7 @@ if (isset($_POST['signup'])) {
                     </select>
                   </div>
 
-                  <!-- Date -->
+                  <!-- Date of birth -->
                   <div class="pseudoInput relative">
                     <input
                       class="peer w-full font-semibold text-[19px] placeholder:text-[#494940] border-2 border-[#262629] bg-gradient-to-b from-[#111112] to-[#151517] rounded-md p-4 pt-6 hover:border-[#363639] focus:border-[#f1aa3f] focus:from-[#1a1918] focus:to-[#272219] active:border-[#f1aa3f] ring-0 focus:ring-0 outline-none text-[#494940]"
@@ -345,6 +366,24 @@ if (isset($_POST['signup'])) {
                       name="birthday"
                       required
                     />
+                  </div>
+
+                  <!-- Education (NEW) -->
+                  <div class="pseudoInput relative">
+                    <select
+                      class="peer w-full font-semibold text-[19px] border-2 border-[#262629] bg-gradient-to-b from-[#111112] to-[#151517] rounded-md p-4 hover:border-[#363639] focus:border-[#f1aa3f] focus:from-[#1a1918] focus:to-[#272219] ring-0 focus:ring-0 outline-none appearance-none"
+                      id="education"
+                      name="education"
+                      required
+                    >
+                      <option value="" disabled selected hidden>Education</option>
+                      <option value="High school or less">High school or less</option>
+                      <option value="Some college / Diploma">Some college / Diploma</option>
+                      <option value="Bachelor's degree">Bachelor's degree</option>
+                      <option value="Master's degree">Master's degree</option>
+                      <option value="Doctorate / Professional">Doctorate / Professional</option>
+                      <option value="Other">Other</option>
+                    </select>
                   </div>
 
                   <!-- Household Income -->
@@ -415,44 +454,33 @@ if (isset($_POST['signup'])) {
                         Energy/Utilities/Oil and Gas
                       </option>
                       <option value="Environmental Services">
-                        Environmental Services
-                      </option>
+                        Environmental Services</option>
                       <option value="Fashion/Apparel">Fashion/Apparel</option>
                       <option value="Food and Consumer Products">
-                        Food and Consumer Products
-                      </option>
+                        Food and Consumer Products</option>
                       <option value="Government/Public Sector">
-                        Government/Public Sector
-                      </option>
+                        Government/Public Sector</option>
                       <option value="Health Care and Social assistance">
-                        Health Care and Social assistance
-                      </option>
+                        Health Care and Social assistance</option>
                       <option value="Hospitality/Tourism">
-                        Hospitality/Tourism
-                      </option>
+                        Hospitality/Tourism</option>
                       <option value="Information/Technology/IT">
-                        Information/Technology/IT
-                      </option>
+                        Information/Technology/IT</option>
                       <option value="Insurance/Legal/Law">
-                        Insurance/Legal/Law
-                      </option>
+                        Insurance/Legal/Law</option>
                       <option value="Manufacturing">Manufacturing</option>
                       <option value="Marketing">Marketing</option>
                       <option value="Media/Entertainment">
-                        Media/Entertainment
-                      </option>
+                        Media/Entertainment</option>
                       <option value="Military">Military</option>
                       <option value="Non Profit/Social services">
-                        Non Profit/Social services
-                      </option>
+                        Non Profit/Social services</option>
                       <option value="Real Estate/Property">
-                        Real Estate/Property
-                      </option>
+                        Real Estate/Property</option>
                       <option value="Sales">Sales</option>
                       <option value="Security">Security</option>
                       <option value="Shipping/Distribution">
-                        Shipping/Distribution
-                      </option>
+                        Shipping/Distribution</option>
                       <option value="Does not apply">Does not apply</option>
                     </select>
                   </div>
@@ -610,14 +638,7 @@ if (isset($_POST['signup'])) {
                   <div
                     class="flex items-center justify-center gap-6 mx-auto md:mx-0"
                   >
-                    <!-- FB button currently disabled
-                    <button class="relative w-[80px] h-[80px]">
-                      <img
-                        class="w-full h-full object-contain"
-                        src="imgs/form-fb-button.png"
-                        alt="fb connect"
-                      />
-                    </button> -->
+                    <!-- FB button currently disabled -->
                   </div>
                 </div>
               </div>
