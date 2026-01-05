@@ -40,16 +40,25 @@ function load_env(string $envPath): void
 }
 
 /**
+ * Ensure .env is loaded once for all helper functions.
+ */
+function ensure_env_loaded(): void
+{
+    static $loaded = false;
+    if ($loaded) {
+        return;
+    }
+
+    load_env(__DIR__ . '/.env');
+    $loaded = true;
+}
+
+/**
  * Get Tremendous API key from .env or environment.
  */
 function get_tremendous_api_key(): string
 {
-    // Ensure .env is loaded once
-    static $loaded = false;
-    if (!$loaded) {
-        load_env(__DIR__ . '/.env');
-        $loaded = true;
-    }
+    ensure_env_loaded();
 
     $apiKey = $_ENV['TREMENDOUS_API_KEY'] ?? getenv('TREMENDOUS_API_KEY');
 
@@ -61,12 +70,54 @@ function get_tremendous_api_key(): string
 }
 
 /**
- * Call Tremendous API to send a single EMAIL reward (Sandbox).
+ * Get Tremendous environment: "sandbox" (default) or "production".
+ */
+function get_tremendous_env(): string
+{
+    ensure_env_loaded();
+
+    $env = $_ENV['TREMENDOUS_ENV'] ?? getenv('TREMENDOUS_ENV') ?? 'sandbox';
+
+    $env = strtolower(trim($env));
+
+    // Normalize any weird values to sandbox for safety
+    if ($env !== 'production' && $env !== 'sandbox') {
+        $env = 'sandbox';
+    }
+
+    return $env;
+}
+
+/**
+ * Get Tremendous base URL depending on environment.
+ *
+ * Sandbox:    https://test.api.tremendous.com/api/v2
+ * Production: https://api.tremendous.com/api/v2
+ */
+function get_tremendous_base_url(): string
+{
+    $env = get_tremendous_env();
+
+    if ($env === 'production') {
+        return 'https://api.tremendous.com/api/v2';
+    }
+
+    // default to sandbox
+    return 'https://test.api.tremendous.com/api/v2';
+}
+
+/**
+ * Call Tremendous API to send a single EMAIL reward.
+ *
+ * Uses:
+ *  - TREMENDOUS_ENV (sandbox | production) to pick base URL
+ *  - TREMENDOUS_API_KEY for Authorization header
  */
 function send_tremendous_reward(string $email, string $name, float $amountUsd = 5.0): array
 {
-    $apiKey = get_tremendous_api_key();
-    $url    = 'https://testflight.tremendous.com/api/v2/orders';
+    $apiKey  = get_tremendous_api_key();
+    $baseUrl = get_tremendous_base_url();
+    $url     = $baseUrl . '/orders';
 
     $payload = [
         'payment' => [
