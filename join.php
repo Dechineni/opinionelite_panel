@@ -33,17 +33,16 @@ if (isset($_POST['signup'])) {
     $fname        = $_POST['firstName'];
     $lname        = $_POST['lastName'];
     $email        = $_POST['email'];
-    $country      = $_POST['country'];      // NEW
+    $country      = $_POST['country'];
     $zipcode      = $_POST['zipCode'];
     $gender       = $_POST['gender'];
     $birthday     = $_POST['birthday'];
-    $education    = $_POST['education'];    // NEW
+    $education    = $_POST['education'];
     $income       = $_POST['income'];
     $job_industry = $_POST['job_industry'];
     $role         = $_POST['role'];
     $job_title    = $_POST['job_title'];
     $username     = $_POST['username'];
-    $hashedPassword = password_hash($_POST['password'], PASSWORD_BCRYPT);
 
     // Mark user_type depending on the flow
     $userType = $isLinkedinNewUser ? 'linkedin' : 'direct';
@@ -61,7 +60,6 @@ if (isset($_POST['signup'])) {
                 job_industry,
                 role,
                 job_title,
-                password,
                 username,
                 user_type
              ) VALUES (
@@ -77,7 +75,6 @@ if (isset($_POST['signup'])) {
                 '$job_industry',
                 '$role',
                 '$job_title',
-                '$hashedPassword',
                 '$username',
                 '$userType'
              )";
@@ -105,7 +102,7 @@ if (isset($_POST['signup'])) {
                 $mail->isHTML(true);
                 $mail->Subject = 'Welcome to Opinion Elite!';
                 $mail->Body = '
-                <div style="max-width: 600px; margin: auto; padding: 20px; font-family: Arial, sans-serif; background-color: #f4f4f4;">
+                <div style="max-width: 600px; margin: auto; padding: 20px; font-family: Arial, sans-serif; background-color: #f4f4f4%;">
                   <div style="background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 30px;">
                     <h2 style="color: #333333; text-align: center;">Welcome to <span style="color: #f1aa3f;">Opinion Elite</span>!</h2>
                     <p style="font-size: 16px; color: #555555;">
@@ -114,7 +111,7 @@ if (isset($_POST['signup'])) {
                     <p style="font-size: 16px; color: #555555; line-height: 1.6;">
                       Signup successfully completed and it will take <strong>48 hours</strong> to activate your account.
                     </p>
-                    <p style="font-size: 14px; color: #777777; line-height: 1.6;">
+                    <p style="font-size: 14px; color: #777777; line-height: 1.6%;">
                       Once your account is active, you will be able to log in and start participating in our exclusive surveys and earn rewards.
                     </p>
                     <div style="text-align: center; margin: 30px 0;">
@@ -170,7 +167,93 @@ if (isset($_POST['signup'])) {
     <link href="output.css" rel="stylesheet" />
     <script src="scripts/main.js?v=20251216"></script>
     <link rel="icon" sizes="64x64" href="favicon.png" type="image/png" />
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const countrySelect   = document.getElementById('country');
+        const educationSelect = document.getElementById('education');
+        const incomeSelect    = document.getElementById('income');
+
+        if (!countrySelect || !educationSelect || !incomeSelect) return;
+
+        function resetSelect(selectElement, placeholderText) {
+          selectElement.innerHTML = '';
+          const placeholder = document.createElement('option');
+          placeholder.value = '';
+          placeholder.textContent = placeholderText;
+          placeholder.disabled = true;
+          placeholder.selected = true;
+          placeholder.hidden = true;
+          selectElement.appendChild(placeholder);
+        }
+
+        // Initially disable education+income until a country is chosen
+        resetSelect(educationSelect, 'Education');
+        resetSelect(incomeSelect, 'Household Income (Pre-Tax)');
+        educationSelect.disabled = true;
+        incomeSelect.disabled = true;
+
+        // Load country data from JSON generated from Excel
+        fetch('countries.json', { cache: 'no-cache' })
+          .then(function (res) {
+            if (!res.ok) throw new Error('Failed to load countries.json');
+            return res.json();
+          })
+          .then(function (COUNTRY_DATA) {
+            // Populate Country dropdown (sorted alphabetically)
+            const countries = Object.keys(COUNTRY_DATA).sort(function (a, b) {
+              return a.localeCompare(b);
+            });
+
+            countries.forEach(function (country) {
+              const opt = document.createElement('option');
+              opt.value = country;
+              opt.textContent = country;
+              countrySelect.appendChild(opt);
+            });
+
+            // On country change → update Education and Income for that country
+            countrySelect.addEventListener('change', function () {
+              const selectedCountry = this.value;
+              const data = COUNTRY_DATA[selectedCountry];
+
+              resetSelect(educationSelect, 'Education');
+              resetSelect(incomeSelect, 'Household Income (Pre-Tax)');
+
+              if (!data) {
+                educationSelect.disabled = true;
+                incomeSelect.disabled = true;
+                return;
+              }
+
+              // Fill Education dropdown
+              (data.educations || []).forEach(function (edu) {
+                const opt = document.createElement('option');
+                opt.value = edu;
+                opt.textContent = edu;
+                educationSelect.appendChild(opt);
+              });
+
+              // Fill Income dropdown (already in correct currency + brackets)
+              (data.incomes || []).forEach(function (inc) {
+                const opt = document.createElement('option');
+                opt.value = inc;
+                opt.textContent = inc;
+                incomeSelect.appendChild(opt);
+              });
+
+              educationSelect.disabled = false;
+              incomeSelect.disabled = false;
+            });
+          })
+          .catch(function (err) {
+            console.error('Error loading countries.json:', err);
+            // Optional: you could show a small message or fallback here if needed
+          });
+      });
+    </script>
   </head>
+
   <body
     class="flex flex-col items-center justify-start bg-gradient-to-br from-[#171717] to-[#000] font-gilroy"
   >
@@ -304,7 +387,7 @@ if (isset($_POST['signup'])) {
                     >
                   </div>
 
-                  <!-- Country (NEW) -->
+                  <!-- Country -->
                   <div class="pseudoInput relative">
                     <select
                       class="peer w-full font-semibold text-[19px] border-2 border-[#262629] bg-gradient-to-b from-[#111112] to-[#151517] rounded-md p-4 hover:border-[#363639] focus:border-[#f1aa3f] focus:from-[#1a1918] focus:to-[#272219] ring-0 focus:ring-0 outline-none appearance-none"
@@ -313,12 +396,6 @@ if (isset($_POST['signup'])) {
                       required
                     >
                       <option value="" disabled selected hidden>Country</option>
-                      <option value="United States">United States</option>
-                      <option value="Canada">Canada</option>
-                      <option value="United Kingdom">United Kingdom</option>
-                      <option value="Australia">Australia</option>
-                      <option value="India">India</option>
-                      <option value="Other">Other</option>
                     </select>
                   </div>
 
@@ -368,7 +445,7 @@ if (isset($_POST['signup'])) {
                     />
                   </div>
 
-                  <!-- Education (NEW) -->
+                  <!-- Education -->
                   <div class="pseudoInput relative">
                     <select
                       class="peer w-full font-semibold text-[19px] border-2 border-[#262629] bg-gradient-to-b from-[#111112] to-[#151517] rounded-md p-4 hover:border-[#363639] focus:border-[#f1aa3f] focus:from-[#1a1918] focus:to-[#272219] ring-0 focus:ring-0 outline-none appearance-none"
@@ -376,13 +453,7 @@ if (isset($_POST['signup'])) {
                       name="education"
                       required
                     >
-                      <option value="" disabled selected hidden>Education</option>
-                      <option value="High school or less">High school or less</option>
-                      <option value="Some college / Diploma">Some college / Diploma</option>
-                      <option value="Bachelor's degree">Bachelor's degree</option>
-                      <option value="Master's degree">Master's degree</option>
-                      <option value="Doctorate / Professional">Doctorate / Professional</option>
-                      <option value="Other">Other</option>
+                      <!-- Options filled via JS -->
                     </select>
                   </div>
 
@@ -394,34 +465,7 @@ if (isset($_POST['signup'])) {
                       name="income"
                       required
                     >
-                      <option value="" disabled selected hidden>
-                        Household Income (Pre-Tax)
-                      </option>
-                      <option value="Less than $14,999">Less than $14,999</option>
-                      <option value="$15,000 - $49,999">$15,000 - $49,999</option>
-                      <option value="$50,000 - $79,999">$50,000 - $79,999</option>
-                      <option value="$80,000 - $124,999">
-                        $80,000 - $124,999
-                      </option>
-                      <option value="$125,000 - $149,999">
-                        $125,000 - $149,999
-                      </option>
-                      <option value="$150,000 - $174,999">
-                        $150,000 - $174,999
-                      </option>
-                      <option value="$175,000 - $199,999">
-                        $175,000 - $199,999
-                      </option>
-                      <option value="$200,000 - $249,999">
-                        $200,000 - $249,999
-                      </option>
-                      <option value="$250,000 - $499,999">
-                        $250,000 - $499,999
-                      </option>
-                      <option value="$500,000 - $999,999">
-                        $500,000 - $999,999
-                      </option>
-                      <option value="$1 million +">$1 million +</option>
+                      <!-- Options filled via JS -->
                     </select>
                   </div>
 
@@ -454,33 +498,44 @@ if (isset($_POST['signup'])) {
                         Energy/Utilities/Oil and Gas
                       </option>
                       <option value="Environmental Services">
-                        Environmental Services</option>
+                        Environmental Services
+                      </option>
                       <option value="Fashion/Apparel">Fashion/Apparel</option>
                       <option value="Food and Consumer Products">
-                        Food and Consumer Products</option>
+                        Food and Consumer Products
+                      </option>
                       <option value="Government/Public Sector">
-                        Government/Public Sector</option>
+                        Government/Public Sector
+                      </option>
                       <option value="Health Care and Social assistance">
-                        Health Care and Social assistance</option>
+                        Health Care and Social assistance
+                      </option>
                       <option value="Hospitality/Tourism">
-                        Hospitality/Tourism</option>
+                        Hospitality/Tourism
+                      </option>
                       <option value="Information/Technology/IT">
-                        Information/Technology/IT</option>
+                        Information/Technology/IT
+                      </option>
                       <option value="Insurance/Legal/Law">
-                        Insurance/Legal/Law</option>
+                        Insurance/Legal/Law
+                      </option>
                       <option value="Manufacturing">Manufacturing</option>
                       <option value="Marketing">Marketing</option>
                       <option value="Media/Entertainment">
-                        Media/Entertainment</option>
+                        Media/Entertainment
+                      </option>
                       <option value="Military">Military</option>
                       <option value="Non Profit/Social services">
-                        Non Profit/Social services</option>
+                        Non Profit/Social services
+                      </option>
                       <option value="Real Estate/Property">
-                        Real Estate/Property</option>
+                        Real Estate/Property
+                      </option>
                       <option value="Sales">Sales</option>
                       <option value="Security">Security</option>
                       <option value="Shipping/Distribution">
-                        Shipping/Distribution</option>
+                        Shipping/Distribution
+                      </option>
                       <option value="Does not apply">Does not apply</option>
                     </select>
                   </div>
@@ -542,8 +597,8 @@ if (isset($_POST['signup'])) {
                       <option
                         value="Manager (Group Manager, Sr. Manager, Manager, Program Manager)"
                       >
-                        Manager (Group Manager, Sr. Manager, Manager, Program
-                        Manager)
+                        Manager (Group Manager, Sr. Manager, Manager,
+                        Program Manager)
                       </option>
                       <option value="Vice President (EVP, SVP, AVP, VP)">
                         Vice President (EVP, SVP, AVP, VP)
@@ -569,22 +624,6 @@ if (isset($_POST['signup'])) {
                     <label
                       class="absolute top-3 left-[calc(1rem+2px)] text-[#45454D] peer-focus:text-[#f1aa3f] font-semibold uppercase text-[12px]"
                       >Username</label
-                    >
-                  </div>
-
-                  <!-- Password -->
-                  <div class="pseudoInput relative">
-                    <input
-                      class="peer w-full text-white font-semibold text-[19px] placeholder:text-[#494940] border-2 border-[#262629] bg-gradient-to-b from-[#111112] to-[#151517] rounded-md p-4 pt-6 hover:border-[#363639] focus:border-[#f1aa3f] focus:from-[#1a1918] focus:to-[#272219] active:border-[#f1aa3f] ring-0 focus:ring-0 outline-none appearance-none"
-                      type="password"
-                      id="password"
-                      name="password"
-                      placeholder="eg. 12345"
-                      required
-                    />
-                    <label
-                      class="absolute top-3 left-[calc(1rem+2px)] text-[#45454D] peer-focus:text-[#f1aa3f] font-semibold uppercase text-[12px]"
-                      >Password</label
                     >
                   </div>
 

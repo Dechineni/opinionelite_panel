@@ -1,0 +1,5129 @@
+{
+  "Afghanistan": {
+    "incomes": [
+      "Less than AFN 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Albania": {
+    "incomes": [
+      "Less than L 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Algeria": {
+    "incomes": [
+      "Less than DA 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Andorra": {
+    "incomes": [
+      "€0 - €2,400",
+      "€2,401 - €4,800",
+      "€4,801 - €9,600",
+      "€9,601 - €12,000",
+      "€12,001 - €14,400",
+      "€14,401 - €16,800",
+      "€16,801 - €19,200",
+      "€19,201 - €21,600",
+      "€21,601 - €24,000",
+      "24,001 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Angola": {
+    "incomes": [
+      "Less than Kz 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Antigua and Barbuda": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Argentina": {
+    "incomes": [
+      "ARS 20,000 - ARS 39,999",
+      "ARS 40,000 - ARS 59,999",
+      "ARS 60,000 - ARS 79,000",
+      "ARS 80,000 - ARS 99,999",
+      "ARS 100,000 - ARS 149,999",
+      "ARS 150,000 - ARS 299,999",
+      "ARS 300,000 - ARS 499,999",
+      "Less than ARS 20,000",
+      "More than ARS 500,000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Armenia": {
+    "incomes": [
+      "Less than AMD 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Australia": {
+    "incomes": [
+      "1 million + AUD",
+      "15,000 to 29,999 AUD",
+      "30,000 to 44,999 AUD",
+      "45,000 to 59,999 AUD",
+      "60,000 to 74,999 AUD",
+      "75,000 to 99,999 AUD",
+      "100,000 to 149,999 AUD",
+      "150,000 to 199,999 AUD",
+      "200,000 to 499,999 AUD",
+      "Less than 15,000 AUD",
+      "Not earning/No income",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent Completed",
+      "Incomplete Secondary (high school) Education",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed",
+      "Secondary Education Completed",
+      "Some University or Vocational Certification",
+      "Some University or Vocational Certification (TAFE Certificate I, II,III or IV)",
+      "University Education Completed",
+      "Vocational or Professional Certification Completed",
+      "Vocational or Professional Certification Completed (TAFE Diploma or Advanced Diploma)",
+      "Prefer not to answer"
+    ]
+  },
+  "Austria": {
+    "incomes": [
+      "€20,000 - €39,999",
+      "€40,000 - €59,999",
+      "€60,000 - €79,999",
+      "€80,000 - €99,999",
+      "€100.000 - €149.999",
+      "€150.000 - €299.999",
+      "Less than €20,000",
+      "More than €500,000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent (Bac +8)",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed (Bac+5: Master, Engineering Degree or equivalent)",
+      "Secondary Education Completed (Baccalauréat or equivalent)",
+      "Some University or Vocational Certification",
+      "University Education Completed (Bac+3)",
+      "Vocational or Professional Certification Completed (BTS, DUT or equivalent)",
+      "Prefer not to answer"
+    ]
+  },
+  "Azerbaijan": {
+    "incomes": [
+      "Less than ₼15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Bahamas": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Bahrain": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Bangladesh": {
+    "incomes": [
+      "Less than ৳15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Barbados": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Belarus": {
+    "incomes": [
+      "Less than Br 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Belgium": {
+    "incomes": [
+      "€20,000 - €39,999",
+      "€40,000 - €59,999",
+      "€60,000 - €79,999",
+      "€80,000 - €119,999",
+      "€120,000 - €159,999",
+      "€160,000 - €199,999",
+      "Less than €20,000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Belize": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Benin": {
+    "incomes": [
+      "Less than CFA 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Bhutan": {
+    "incomes": [
+      "Less than Nu. 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Bolivia": {
+    "incomes": [
+      "Less than Bs 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Bosnia and Herzegovina": {
+    "incomes": [
+      "Less than KM 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Botswana": {
+    "incomes": [
+      "Less than P 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Brazil": {
+    "incomes": [
+      "Less than R$ 45000",
+      "Prefer not to answer",
+      "R$ 45000 to R$ 84999",
+      "R$ 85000 to R$ 129999",
+      "R$ 130000 to R$ 174999",
+      "R$ 175000 to R$ 249999",
+      "R$ 250000 to R$ 349999",
+      "R$ 350000 to R$ 449999",
+      "R$ 450000 to R$ 874999",
+      "R$ 875000 to R$ 1749999",
+      "R$ 1750000 or more"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Brunei": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Bulgaria": {
+    "incomes": [
+      "$0 - $6000 lv.",
+      "6001 - 12000 lv.",
+      "12001 - 18000 lv.",
+      "18001 - 24000 lv.",
+      "24001 - 30000 lv.",
+      "30001 - 36000 lv.",
+      "36001 - 42000 lv.",
+      "42001 - 48000 lv.",
+      "48000 + lv.",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Burkina Faso": {
+    "incomes": [
+      "Less than CFA 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Burundi": {
+    "incomes": [
+      "Less than FBu 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Cambodia": {
+    "incomes": [
+      "Less than ៛15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Cameroon": {
+    "incomes": [
+      "Less than CFA 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Canada": {
+    "incomes": [
+      "C$ 15,000 to C$ 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "Less than 15,000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Graduate/Post Graduate Degree",
+      "High School Diploma, Secondary School/A-Levels Graduate",
+      "Junior High or Middle School",
+      "Some College, University, Technical School or Further Education",
+      "Some High School, Secondary School/A-Levels",
+      "Some Postgraduate",
+      "Undergraduate, University Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Cape Verde": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Central African Republic": {
+    "incomes": [
+      "Less than CFA 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Chad": {
+    "incomes": [
+      "Less than CFA 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Chile": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent Completed",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed",
+      "Secondary Education Completed",
+      "Some University or Vocational Certification",
+      "Vocational Certification or University Completed",
+      "Prefer not to answer"
+    ]
+  },
+  "China": {
+    "incomes": [
+      "15,000 CNY - 24,999 CNY",
+      "25,000 CNY - 34,999 CNY",
+      "35,000 CNY - 44,999 CNY",
+      "45,000 CNY - 54,999 CNY",
+      "55,000 CNY - 64,999 CNY",
+      "65,000 CNY - 74,999 CNY",
+      "75,000 CNY - 84,999 CNY",
+      "85,000 CNY - 94,999 CNY",
+      "95,000 CNY - 99,999 CNY",
+      "100,000 CNY - 149,999 CNY",
+      "150,000CNY - 199,999 CNY",
+      "200,000 CNY - 249,999 CNY",
+      "Less than 15,000 CNY",
+      "More than 250,000 CNY",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent Completed",
+      "Junior middle school",
+      "or Vocational school",
+      "Postgraduate Education Completed",
+      "Primary school",
+      "Senior high school (middle school)",
+      "University or college",
+      "Prefer not to answer"
+    ]
+  },
+  "Colombia": {
+    "incomes": [
+      "From $1,740,001 to $3,600,000",
+      "From $3,600,001 to $6,360,000",
+      "From $6,360,001 to $14,820,000",
+      "From $14,820,001 - to $28,620,000",
+      "From $28,620,001 to $60,000,000",
+      "Over $60,000,001",
+      "Under $1,740,000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed",
+      "Primary complete",
+      "Primary Incomplete",
+      "Secondary Education Completed (Baccalauréat or equivalent)",
+      "Some University or Vocational Certification (Polytechnic Certificate)",
+      "Vocational Certification or University Completed",
+      "Prefer not to answer"
+    ]
+  },
+  "Comoros": {
+    "incomes": [
+      "Less than CF 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Congo": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Costa Rica": {
+    "incomes": [
+      "Less than ₡15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Croatia": {
+    "incomes": [
+      "$1,080,000 - $1,200,000 Kč",
+      "120,000 - 239,999 Kč",
+      "240,000 - 359,999 Kč",
+      "360,000 - 479,000 Kč",
+      "480,000 - 599,999 Kč",
+      "600,000 - 719,999 Kč",
+      "720,000 - 839,999 Kč",
+      "840,000 - 959,999 Kč",
+      "960,0000 - 1,079,999 Kč",
+      "Over 1,200,000 Kč",
+      "Under 120,000 Kč",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent (Bac +8)",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed (Bac+5: Master, Engineering Degree or equivalent)",
+      "Secondary Education Completed (Baccalauréat or equivalent)",
+      "Some University or Vocational Certification",
+      "University Education Completed (Bac+3)",
+      "Vocational or Professional Certification Completed (BTS, DUT or equivalent)",
+      "Prefer not to answer"
+    ]
+  },
+  "Cuba": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Cyprus": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Czech Republic": {
+    "incomes": [
+      "$1,080,000 - $1,200,000 Kč",
+      "120,000 - 239,999 Kč",
+      "240,000 - 359,999 Kč",
+      "360,000 - 479,000 Kč",
+      "480,000 - 599,999 Kč",
+      "600,000 - 719,999 Kč",
+      "720,000 - 839,999 Kč",
+      "840,000 - 959,999 Kč",
+      "960,0000 - 1,079,999 Kč",
+      "Over 1,200,000 Kč",
+      "Under 120,000 Kč",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent (Bac +8)",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed (Bac+5: Master, Engineering Degree or equivalent)",
+      "Secondary Education Completed (Baccalauréat or equivalent)",
+      "Some University or Vocational Certification",
+      "University Education Completed (Bac+3)",
+      "Vocational or Professional Certification Completed (BTS, DUT or equivalent)",
+      "Prefer not to answer"
+    ]
+  },
+  "Democratic Republic of the Congo": {
+    "incomes": [
+      "Less than FC 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Denmark": {
+    "incomes": [
+      "1,100,000 kr - 1,500,000 kr",
+      "110,000 kr - 219,999 kr",
+      "220,000 kr - 329,999 kr",
+      "330,000 kr - 439,999 kr",
+      "440,000 kr - 549,999 kr",
+      "550,000 kr - 659,999 kr",
+      "660,000 kr - 769,999 kr",
+      "770,000 kr - 879,999 kr",
+      "880,000 kr - 989,999 kr",
+      "990,000 kr - 1,099,999 kr",
+      "Less than 110,000 kr",
+      "More than 1,500,000 kr",
+      "Not earning/No income",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent (Bac +8)",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed (Bac+5: Master, Engineering Degree or equivalent)",
+      "Secondary Education Completed (Baccalauréat or equivalent)",
+      "Some University or Vocational Certification",
+      "University Education Completed (Bac+3)",
+      "Vocational or Professional Certification Completed (BTS, DUT or equivalent)",
+      "Prefer not to answer"
+    ]
+  },
+  "Djibouti": {
+    "incomes": [
+      "Less than Fdj 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Dominica": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Dominican Republic": {
+    "incomes": [
+      "Less than RD$ 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Ecuador": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Egypt": {
+    "incomes": [
+      "Less than E£ 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "El Salvador": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Equatorial Guinea": {
+    "incomes": [
+      "Less than CFA 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Eritrea": {
+    "incomes": [
+      "Less than Nfk 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Estonia": {
+    "incomes": [
+      "1,100,000 kr - 1,500,000 kr",
+      "110,000 kr - 219,999 kr",
+      "220,000 kr - 329,999 kr",
+      "330,000 kr - 439,999 kr",
+      "440,000 kr - 549,999 kr",
+      "550,000 kr - 659,999 kr",
+      "660,000 kr - 769,999 kr",
+      "770,000 kr - 879,999 kr",
+      "880,000 kr - 989,999 kr",
+      "990,000 kr - 1,099,999 kr",
+      "Less than 110,000 kr",
+      "More than 1,500,000 kr",
+      "Not earning/No income",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent (Bac +8)",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed (Bac+5: Master, Engineering Degree or equivalent)",
+      "Secondary Education Completed (Baccalauréat or equivalent)",
+      "Some University or Vocational Certification",
+      "University Education Completed (Bac+3)",
+      "Vocational or Professional Certification Completed (BTS, DUT or equivalent)",
+      "Prefer not to answer"
+    ]
+  },
+  "Eswatini": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Ethiopia": {
+    "incomes": [
+      "Less than Br 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Fiji": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Finland": {
+    "incomes": [
+      "€20,000 - €39,999",
+      "€40,000 - €59,999",
+      "€60,000 - €79,999",
+      "€80,000 - €119,999",
+      "€120,000 - €159,999",
+      "€160,000 - €199,999",
+      "€800,000 or more",
+      "Less than €20,000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent (Bac +8)",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed (Bac+5: Master, Engineering Degree or equivalent)",
+      "Secondary Education Completed (Baccalauréat or equivalent)",
+      "Some University or Vocational Certification",
+      "University Education Completed (Bac+3)",
+      "Vocational or Professional Certification Completed (BTS, DUT or equivalent)",
+      "Prefer not to answer"
+    ]
+  },
+  "France": {
+    "incomes": [
+      "20000€ - 39999€",
+      "40000€ - 59999€",
+      "60000€ - 79999€",
+      "80000€ - 99999€",
+      "100000€ - 149999€",
+      "150000€ - 299999€",
+      "Less than 20000€",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent (Bac +8)",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed (Bac+5: Master, Engineering Degree or equivalent)",
+      "Secondary Education Completed (Baccalauréat or equivalent)",
+      "Some University or Vocational Certification",
+      "University Education Completed (Bac+3)",
+      "Vocational or Professional Certification Completed (BTS, DUT or equivalent)",
+      "Prefer not to answer"
+    ]
+  },
+  "Gabon": {
+    "incomes": [
+      "Less than CFA 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Gambia": {
+    "incomes": [
+      "Less than D 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Georgia": {
+    "incomes": [
+      "Less than ₾15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Germany": {
+    "incomes": [
+      "€20,000 - €39,999",
+      "€40,000 - €59,999",
+      "€60,000 - €79,999",
+      "€80,000 - €99,999",
+      "€100.000 - €149.999",
+      "€150.000 - €299.999",
+      "Less than €20,000",
+      "More than €500,000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent (Bac +8)",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed (Bac+5: Master, Engineering Degree or equivalent)",
+      "Secondary Education Completed (Baccalauréat or equivalent)",
+      "Some University or Vocational Certification",
+      "University Education Completed (Bac+3)",
+      "Vocational or Professional Certification Completed (BTS, DUT or equivalent)",
+      "Prefer not to answer"
+    ]
+  },
+  "Ghana": {
+    "incomes": [
+      "Less than ₵15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Greece": {
+    "incomes": [
+      "€20,000 - €39,999",
+      "€40,000 - €59,999",
+      "€60,000 - €79,999",
+      "€80,000 - €99,999",
+      "€100.000 - €149.999",
+      "€150.000 - €299.999",
+      "Less than €20,000",
+      "More than €500,000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent Completed",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed",
+      "Secondary Education Completed",
+      "Some University or Vocational Certification",
+      "University Education Completed",
+      "Vocational or Professional Certification Completed",
+      "Prefer not to answer"
+    ]
+  },
+  "Greenland": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Grenada": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Guatemala": {
+    "incomes": [
+      "Less than Q 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Guinea": {
+    "incomes": [
+      "Less than FG 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Guinea-Bissau": {
+    "incomes": [
+      "Less than CFA 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Guyana": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Haiti": {
+    "incomes": [
+      "Less than G 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Heard Island and McDonald Islands": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Honduras": {
+    "incomes": [
+      "Less than L 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Hong Kong": {
+    "incomes": [
+      "HK$1,000,000 - HK$1,499,999",
+      "HK$1,500,000 - HK$2,000,000",
+      "HK$100,000 - HK$199,999",
+      "HK$200,000 - HK$299,999",
+      "HK$300,000 - HK$399,999",
+      "HK$400,000 - HK$499,999",
+      "HK$500,000 - HK$599,999",
+      "HK$600,000 - HK$699,999",
+      "HK$700,000 - HK$799,999",
+      "HK$800,000 - HK$899,999",
+      "HK$900,000 - HK$999,999",
+      "Less than HK$100,000",
+      "More than HK$2,000,000",
+      "Not earning/No income",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent (Bac +8)",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed (Bac+5: Master, Engineering Degree or equivalent)",
+      "Secondary Education Completed (Baccalauréat or equivalent)",
+      "Some University or Vocational Certification",
+      "University Education Completed (Bac+3)",
+      "Vocational or Professional Certification Completed (BTS, DUT or equivalent)",
+      "Prefer not to answer"
+    ]
+  },
+  "Hungary": {
+    "incomes": [
+      "$1,500,000 - $1,999,999 Ft",
+      "2,000,000 - 2,499,999 Ft",
+      "2,500,000 - 3,499,999 Ft",
+      "3,500,000 - 3,999,999 Ft",
+      "4,000,000 - 4,500,000 Ft",
+      "200,000 - 399,999 Ft",
+      "400,000 - 599,999 Ft",
+      "600,000 - 899,999 Ft",
+      "900,000 - 1,499,999 Ft",
+      "Less than 200,000 Ft",
+      "More than 4,500,000 Ft",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent (Bac +8)",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed (Bac+5: Master, Engineering Degree or equivalent)",
+      "Secondary Education Completed (Baccalauréat or equivalent)",
+      "Some University or Vocational Certification",
+      "University Education Completed (Bac+3)",
+      "Vocational or Professional Certification Completed (BTS, DUT or equivalent)",
+      "Prefer not to answer"
+    ]
+  },
+  "Iceland": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "India": {
+    "incomes": [
+      "Under ₹ 1,00,000",
+      "₹ 1,00,000 to ₹ 4,99,999",
+      "₹ 5,00,000 to ₹ 9,99,999",
+      "₹ 10,00,000 to ₹ 14,99,999",
+      "₹ 15,00,000 to ₹ 19,99,999",
+      "₹ 20,00,000 to ₹ 29,99,999",
+      "₹ 30,00,000 to ₹ 39,99,999",
+      "₹ 40,00,000 to ₹ 49,99,999",
+      "₹ 50,00,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent Completed",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed",
+      "Secondary Education Completed",
+      "Some University or Vocational Certification",
+      "University Education Completed",
+      "Vocational or Professional Certification Completed",
+      "Prefer not to answer"
+    ]
+  },
+  "Indonesia": {
+    "incomes": [
+      "IDR 30.000.000 - IDR 39.999.999",
+      "IDR 40.000.000 - IDR 49.999.999",
+      "IDR 50.000.000 - IDR 59.999.999",
+      "IDR 60,000,000 - IDR 69,999,999",
+      "IDR 70.000.000 - IDR 79.999.999",
+      "IDR 80.000.000 - IDR 89.999.999",
+      "IDR 90.000.000 - IDR 99.999.999",
+      "IDR 100.000.000 - IDR 149.999.999",
+      "IDR 150.000.000 - IDR 200.000.000",
+      "More than IDR 200.000.000",
+      "Under IDR 30.000.000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent (Bac +8)",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed (Bac+5: Master, Engineering Degree or equivalent)",
+      "Secondary Education Completed (Baccalauréat or equivalent)",
+      "Some University or Vocational Certification",
+      "University Education Completed (Bac+3)",
+      "Vocational or Professional Certification Completed (BTS, DUT or equivalent)",
+      "Prefer not to answer"
+    ]
+  },
+  "Iran": {
+    "incomes": [
+      "Less than ﷼15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Iraq": {
+    "incomes": [
+      "Less than IQD 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Ireland": {
+    "incomes": [
+      "€20.000 - €39.999",
+      "€40.000 - €59.999",
+      "€60.000 - €79.999",
+      "€80.000 - €99.999",
+      "€100.000 - €149.999",
+      "€150.000 - €299.999",
+      "Less than €20.000",
+      "More than €500.000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent Completed",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed",
+      "Secondary Education Completed",
+      "Some University or Vocational Certification",
+      "University Education Completed",
+      "Vocational or Professional Certification Completed",
+      "Prefer not to answer"
+    ]
+  },
+  "Israel": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Italy": {
+    "incomes": [
+      "€20.000 - €39.999",
+      "€40.000 - €59.999",
+      "€60.000 - €79.999",
+      "€80.000 - €99.999",
+      "€100.000 - €149.999",
+      "€150.000 - €299.999",
+      "€300.000 - €499.999",
+      "Less than €20.000",
+      "More than €500.000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent Completed",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed",
+      "Secondary Education Completed",
+      "Some University or Vocational Certification",
+      "University Education Completed",
+      "Vocational or Professional Certification Completed",
+      "Prefer not to answer"
+    ]
+  },
+  "Jamaica": {
+    "incomes": [
+      "Less than J$ 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Japan": {
+    "incomes": [
+      "JPY 3.000.000,00",
+      "JPY 4.000.000,00",
+      "JPY 5.000.000,00",
+      "JPY 6.000.000,00",
+      "JPY 7.000.000,00",
+      "JPY 8.000.000,00",
+      "JPY 9.000.000,00",
+      "JPY 10.000.000,00",
+      "JPY 11.000.000,00",
+      "JPY 12.000.000,00",
+      "JPY 13.000.000,00",
+      "More than JPY 14.000.000,00",
+      "under JPY 2,990,000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent Completed",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed",
+      "Secondary Education Completed",
+      "Some University or Vocational Certification",
+      "University Education Completed",
+      "Vocational or Professional Certification Completed",
+      "Prefer not to answer"
+    ]
+  },
+  "Jordan": {
+    "incomes": [
+      "Less than JD 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Kazakhstan": {
+    "incomes": [
+      "Less than ₸15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Kenya": {
+    "incomes": [
+      "Less than KSh 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Kiribati": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Kuwait": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Kyrgyzstan": {
+    "incomes": [
+      "Less than сом 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Laos": {
+    "incomes": [
+      "Less than ₭15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Latvia": {
+    "incomes": [
+      "€20.000 - €39.999",
+      "€40.000 - €59.999",
+      "€60.000 - €79.999",
+      "€80.000 - €99.999",
+      "€100.000 - €149.999",
+      "€150.000 - €299.999",
+      "€300.000 - €499.999",
+      "Less than €20.000",
+      "More than €500.000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent Completed",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed",
+      "Secondary Education Completed",
+      "Some University or Vocational Certification",
+      "University Education Completed",
+      "Vocational or Professional Certification Completed",
+      "Prefer not to answer"
+    ]
+  },
+  "Lebanon": {
+    "incomes": [
+      "Less than L£ 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Lesotho": {
+    "incomes": [
+      "Less than L 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Liberia": {
+    "incomes": [
+      "Less than L$ 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Libya": {
+    "incomes": [
+      "Less than LD 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Liechtenstein": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Lithuania": {
+    "incomes": [
+      "€20.000 - €39.999",
+      "€40.000 - €59.999",
+      "€60.000 - €79.999",
+      "€80.000 - €99.999",
+      "€100.000 - €149.999",
+      "€150.000 - €299.999",
+      "€300.000 - €499.999",
+      "Less than €20.000",
+      "More than €500.000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent Completed",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed",
+      "Secondary Education Completed",
+      "Some University or Vocational Certification",
+      "University Education Completed",
+      "Vocational or Professional Certification Completed",
+      "Prefer not to answer"
+    ]
+  },
+  "Luxembourg": {
+    "incomes": [
+      "€20.000 - €39.999",
+      "€40.000 - €59.999",
+      "€60.000 - €79.999",
+      "€80.000 - €99.999",
+      "€100.000 - €149.999",
+      "€150.000 - €299.999",
+      "€300.000 - €499.999",
+      "Less than €20.000",
+      "More than €500.000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent Completed",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed",
+      "Secondary Education Completed",
+      "Some University or Vocational Certification",
+      "University Education Completed",
+      "Vocational or Professional Certification Completed",
+      "Prefer not to answer"
+    ]
+  },
+  "Malawi": {
+    "incomes": [
+      "Less than MK 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Malaysia": {
+    "incomes": [
+      "Less than RM 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Maldives": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Mali": {
+    "incomes": [
+      "Less than CFA 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Malta": {
+    "incomes": [
+      "€20.000 - €39.999",
+      "€40.000 - €59.999",
+      "€60.000 - €79.999",
+      "€80.000 - €99.999",
+      "€100.000 - €149.999",
+      "€150.000 - €299.999",
+      "€300.000 - €499.999",
+      "Less than €20.000",
+      "More than €500.000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent Completed",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed",
+      "Secondary Education Completed",
+      "Some University or Vocational Certification",
+      "University Education Completed",
+      "Vocational or Professional Certification Completed",
+      "Prefer not to answer"
+    ]
+  },
+  "Marshall Islands": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Mauritania": {
+    "incomes": [
+      "Less than UM 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Mauritius": {
+    "incomes": [
+      "Less than ₨15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Mexico": {
+    "incomes": [
+      "1 million +",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 to 999,999",
+      "Less than 15,000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent Completed",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed",
+      "Primary complete",
+      "Primary Incomplete",
+      "Secondary Education Completed",
+      "Some University or Vocational Certification",
+      "University Education Completed",
+      "Vocational or Professional Certification Completed",
+      "Prefer not to answer"
+    ]
+  },
+  "Micronesia": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Moldova": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Monaco": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Mongolia": {
+    "incomes": [
+      "Less than ₮15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Montenegro": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Morocco": {
+    "incomes": [
+      "Less than MAD 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Mozambique": {
+    "incomes": [
+      "Less than MT 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Myanmar": {
+    "incomes": [
+      "More than MYR 200,000",
+      "MYR 20,000 to MYR 29,999",
+      "MYR 30,000 to MYR39,999",
+      "MYR 40,000 to MYR49,999",
+      "MYR 50,000 to MYR59,999",
+      "MYR 60,000 to MYR 69,999",
+      "MYR 70,000 - MYR 79,999",
+      "MYR 80,000 - MYR 89,999",
+      "MYR 90,000 - MYR 99,999",
+      "MYR 100,000 - MYR 149,999",
+      "MYR 150,000 - MYR 200,000",
+      "Under MYR 20,000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent (Bac +8)",
+      "Education not yet completed",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed (Bac+5: Master, Engineering Degree or equivalent)",
+      "Secondary Education Completed (Baccalauréat or equivalent)",
+      "Some University or Vocational Certification",
+      "University Education Completed (Bac+3)",
+      "Vocational or Professional Certification Completed (BTS, DUT or equivalent)",
+      "Prefer not to answer"
+    ]
+  },
+  "Namibia": {
+    "incomes": [
+      "Less than N$ 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Nauru": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Nepal": {
+    "incomes": [
+      "Less than ₨15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Netherlands": {
+    "incomes": [
+      "€20.000 - €39.999",
+      "€40.000 - €59.999",
+      "€60.000 - €79.999",
+      "€80.000 - €99.999",
+      "€100.000 - €149.999",
+      "€150.000 - €299.999",
+      "€300.000 - €499.999",
+      "Less than €20.000",
+      "More than €500.000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent Completed",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed",
+      "Secondary Education Completed",
+      "Some University or Vocational Certification",
+      "University Education Completed",
+      "Vocational or Professional Certification Completed",
+      "Prefer not to answer"
+    ]
+  },
+  "New Zealand": {
+    "incomes": [
+      "$21,000 to $40,000",
+      "$41,000 to $60,000",
+      "$61,000 to $80,000",
+      "$81,000 to $100,000",
+      "Less than $21,000",
+      "Not earning/No income",
+      "Over $100,000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent Completed",
+      "Incomplete Secondary (high school) Education",
+      "Postgraduate Education Completed",
+      "Secondary Education Completed",
+      "Some University or Vocational Certification (Polytechnic Certificate)",
+      "University Education Completed",
+      "Vocational or Professional Certification Completed (Polytechnic Diploma)",
+      "Prefer not to answer"
+    ]
+  },
+  "Nicaragua": {
+    "incomes": [
+      "Less than C$ 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Niger (the)": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Nigeria": {
+    "incomes": [
+      "Less than ₦15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "North Korea": {
+    "incomes": [
+      "Less than ₩15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "North Macedonia": {
+    "incomes": [
+      "Less than MKD 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Norway": {
+    "incomes": [
+      "1,000,000 kr - 1,499,999 kr",
+      "1,500,000 kr - 2,000,000 kr",
+      "100,000 kr - 199,999 kr",
+      "200,000 kr - 299,999 kr",
+      "300,000 kr - 399,999 kr",
+      "400,000 kr - 499,999 kr",
+      "500,000 kr - 599,999 kr",
+      "600,000 kr - 699,999 kr",
+      "700,000 kr - 799,999 kr",
+      "800,000 kr - 899,999 kr",
+      "900,000 kr - 999,999 kr",
+      "Less than 100,000 kr",
+      "More than 2,000,000 kr",
+      "Not earning/No income",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent (Bac +8)",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed (Bac+5: Master, Engineering Degree or equivalent)",
+      "Secondary Education Completed (Baccalauréat or equivalent)",
+      "Some University or Vocational Certification",
+      "University Education Completed (Bac+3)",
+      "Vocational or Professional Certification Completed (BTS, DUT or equivalent)",
+      "Prefer not to answer"
+    ]
+  },
+  "Oman": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Pakistan": {
+    "incomes": [
+      "Less than ₨15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Palau": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Palestine, State of": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Panama": {
+    "incomes": [
+      "Less than B/. 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Papua New Guinea": {
+    "incomes": [
+      "Less than K 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Paraguay": {
+    "incomes": [
+      "Less than ₲15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Peru": {
+    "incomes": [
+      "Less than S/ 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Philippines": {
+    "incomes": [
+      "Php 1,000,000 or more",
+      "Php 150,000 - Php 249,999",
+      "Php 250,000 - Php 599,999",
+      "Php 600,000 - Php 999,999",
+      "Prefer not to answer",
+      "Under Php 150,000"
+    ],
+    "educations": [
+      "Bachelor's degree",
+      "College level",
+      "High school",
+      "Masters",
+      "Other",
+      "PHD",
+      "Primary",
+      "Secondary school",
+      "Vocational / Technical",
+      "Prefer not to answer"
+    ]
+  },
+  "Poland": {
+    "incomes": [
+      "10,000 PLN - 19,999 PLN",
+      "20,000 PLN - 29,999 PLN",
+      "30,000 PLN - 39,999 PLN",
+      "40,000 PLN - 49,999 PLN",
+      "50,000 PLN - 59,999 PLN",
+      "60,000 PLN - 69,999 PLN",
+      "70,000 PLN - 79,999 PLN",
+      "80,000 PLN - 89,999 PLN",
+      "90,000 PLN - 99,999 PLN",
+      "over 100,000 PLN",
+      "under 10,000 PLN",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent Completed",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed",
+      "Secondary Education Completed",
+      "Some University or Vocational Certification",
+      "University Education Completed",
+      "Vocational or Professional Certification Completed",
+      "Prefer not to answer"
+    ]
+  },
+  "Portugal": {
+    "incomes": [
+      "€10.000 - €19.999",
+      "€20.000 - €29.999",
+      "€30.000 - €39.999",
+      "€40.000 - €49.999",
+      "€50.000 - €59.999",
+      "€60.000 - €69.999",
+      "€70.000 - €79.999",
+      "€80.000 - €89.999",
+      "€90.000 - €99.999",
+      "Less than €10,000",
+      "More than €100,000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent (Bac +8)",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed (Bac+5: Master, Engineering Degree or equivalent)",
+      "Secondary Education Completed (Baccalauréat or equivalent)",
+      "Some University or Vocational Certification",
+      "University Education Completed (Bac+3)",
+      "Vocational or Professional Certification Completed (BTS, DUT or equivalent)",
+      "Prefer not to answer"
+    ]
+  },
+  "Qatar": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent Completed",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed",
+      "Secondary Education Completed",
+      "Some University or Vocational Certification",
+      "University Education Completed",
+      "Vocational or Professional Certification Completed",
+      "Prefer not to answer"
+    ]
+  },
+  "Romania": {
+    "incomes": [
+      "$0 - $6.000 RON",
+      "6.001 - 12.000 RON",
+      "12.001 - 18.000 RON",
+      "18.001 - 24.000 RON",
+      "24.001 - 30.000 RON",
+      "30.001 - 36.000 RON",
+      "36.001 - 42.000 RON",
+      "42.001 - 48.000 RON",
+      "48.001 - 60.000 RON",
+      "60.001 - 90.000 RON",
+      "90.001 + RON",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Bachelors Degree",
+      "Doctoral Studies",
+      "Higher Education",
+      "Masters Degree",
+      "Post-Secondary Education",
+      "Primary education",
+      "Secondary education",
+      "Prefer not to answer"
+    ]
+  },
+  "Russia": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Rwanda": {
+    "incomes": [
+      "Less than FRw 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Saint Kitts and Nevis": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Saint Lucia": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Saint Martin": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Saint Vincent and the Grenadines": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Samoa": {
+    "incomes": [
+      "Less than T 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "San Marino": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Sao Tome and Principe": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Saudi Arabia": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Senegal": {
+    "incomes": [
+      "Less than CFA 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Serbia": {
+    "incomes": [
+      "Less than RSD 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Seychelles": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Sierra Leone": {
+    "incomes": [
+      "Less than Le 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Singapore": {
+    "incomes": [
+      "Don't know",
+      "Less than S$25,000",
+      "More than S$250,000",
+      "S$25,000 - S$34,999",
+      "S$35,000 - S$44,999",
+      "S$45,000 - S$54.999",
+      "S$55,000 - S$64,999",
+      "S$65,000 - S$74,999",
+      "S$75,000 - S$84,999",
+      "S$85,000 - S$99,999",
+      "S$100,000 - S$149,999",
+      "S$150,000 - S$199,999",
+      "S$200,000 - S$250,000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent (Bac +8)",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed (Bac+5: Master, Engineering Degree or equivalent)",
+      "Secondary Education Completed (Baccalauréat or equivalent)",
+      "Some University or Vocational Certification",
+      "University Education Completed (Bac+3)",
+      "Vocational or Professional Certification Completed (BTS, DUT or equivalent)",
+      "Prefer not to answer"
+    ]
+  },
+  "Slovakia": {
+    "incomes": [
+      "24,001 or more",
+      "€0 - €2,400",
+      "€2,401 - €4,800",
+      "€4,801 - €9,600",
+      "€9,601 - €12,000",
+      "€12,001 - €14,400",
+      "€14,401 - €16,800",
+      "€16,801 - €19,200",
+      "€19,201 - €21,600",
+      "€21,601 - €24,000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate or Higher",
+      "General Secondary Education",
+      "Primary education",
+      "Secondary Vocational Education",
+      "University - Academic education advanced level (MA)",
+      "University - Academic education ground level (BA)",
+      "Prefer not to answer"
+    ]
+  },
+  "Slovenia": {
+    "incomes": [
+      "24,001 or more",
+      "€0 - €2,400",
+      "€2,401 - €4,800",
+      "€4,801 - €9,600",
+      "€9,601 - €12,000",
+      "€12,001 - €14,400",
+      "€14,401 - €16,800",
+      "€16,801 - €19,200",
+      "€19,201 - €21,600",
+      "€21,601 - €24,000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate or Higher",
+      "General Secondary Education",
+      "Primary education",
+      "Secondary Vocational Education",
+      "University - Academic education advanced level (MA)",
+      "University - Academic education ground level (BA)",
+      "Prefer not to answer"
+    ]
+  },
+  "Solomon Islands": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Somalia": {
+    "incomes": [
+      "Less than Sh 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "South Africa": {
+    "incomes": [
+      "R5,000 - R9,999",
+      "R10,000 - R15,999",
+      "R16,000 - R19,999",
+      "R20,000 - R29,999",
+      "R30,000 - R39,999",
+      "R40,000 - R49,999",
+      "R50,000 - R59,999",
+      "R60,000 - R69,999",
+      "R70,000 - R79,999",
+      "R80,000 - R89,999",
+      "R90,000 - R99,999",
+      "R100,000 - R249,999",
+      "R250,000 or more",
+      "Under R5,000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Bachelors Degree (Three Years)",
+      "Doctorate",
+      "Grade Eleven (Standard Nine)",
+      "Grade four to Grade Nine (Standard two to Standard Seven)",
+      "Grade Ten (Standard Eight)",
+      "Grade Twelve (Standard Ten / Matric)",
+      "Higher Diploma",
+      "Honours Degree",
+      "Masters",
+      "National Certificate National Diploma",
+      "Occupational Certificate",
+      "Post Graduate Certificate",
+      "Trade Certificate",
+      "Prefer not to answer"
+    ]
+  },
+  "South Korea": {
+    "incomes": [
+      "20,000,000 KRW - 29,999,999 KRW",
+      "30,000,000 KRW - 39,999,999 KRW",
+      "40,000,000 KRW - 49,999,999 KRW",
+      "50,000,000 KRW - 59,999,999 KRW",
+      "60,000,000 KRW - 69,999,999 KRW",
+      "70,000,000 KRW - 79,999,999 KRW",
+      "80,000,000 KRW - 89,999,999 KRW",
+      "90,000,000 KRW - 99,999,999 KRW",
+      "100,000,000 KRW - 150,000,000 KRW",
+      "Don't know",
+      "More than 150,000,000 KRW",
+      "Not earning/No income",
+      "Under 20,000,000 KRW",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent (Bac +8)",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed (Bac+5: Master, Engineering Degree or equivalent)",
+      "Secondary Education Completed (Baccalauréat or equivalent)",
+      "Some University or Vocational Certification",
+      "University Education Completed (Bac+3)",
+      "Vocational or Professional Certification Completed (BTS, DUT or equivalent)",
+      "Prefer not to answer"
+    ]
+  },
+  "South Sudan": {
+    "incomes": [
+      "Less than £15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Spain": {
+    "incomes": [
+      "€20.000 - €39.999",
+      "€40.000 - €59.999",
+      "€60.000 - €79.999",
+      "€80.000 - €99.999",
+      "€100.000 - €149.999",
+      "€150.000 - €299.999",
+      "€300.000 - €499.999",
+      "Less than €20.000",
+      "More than €500.000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent Completed",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed",
+      "Secondary Education Completed",
+      "Some University or Vocational Certification",
+      "University Education Completed",
+      "Vocational or Professional Certification Completed",
+      "Prefer not to answer"
+    ]
+  },
+  "Sri Lanka": {
+    "incomes": [
+      "Less than Rs 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Sudan": {
+    "incomes": [
+      "Less than £15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Suriname": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Sweden": {
+    "incomes": [
+      "100,000 kr - 199,999 kr",
+      "200,000 kr - 299,999 kr",
+      "300,000 kr - 399,999 kr",
+      "400,000 kr - 499,999 kr",
+      "500,000 kr - 599,999 kr",
+      "600,000 kr - 699,999 kr",
+      "700,000 kr - 799,999 kr",
+      "800,000 kr - 899,999 kr",
+      "900,000 kr - 999,999 kr",
+      "Less than 100,000 kr",
+      "More than 1,000,000 kr",
+      "Not earning/No income",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "KY Vocational education or other vocational education",
+      "Primary education (Year 1 - 9) completed",
+      "Secondary education completed",
+      "University - Academic education advanced level (MA)",
+      "University - Academic education doctoral level (PhD)",
+      "University - Academic education ground level (BA)",
+      "Prefer not to answer"
+    ]
+  },
+  "Switzerland": {
+    "incomes": [
+      "CHF 20,000 - CHF 39,999",
+      "CHF 40,000 - CHF 59,999",
+      "CHF 60,000 - CHF 79,999",
+      "CHF 80,000 - CHF 99,999",
+      "CHF 100,000 - CHF 119,999",
+      "CHF 120,000 - CHF 139,999",
+      "CHF 140,000 - CHF 159,999",
+      "CHF 160,000 - CHF 179,999",
+      "CHF 180 000 - CHF 200,000",
+      "More than CHF 200,000",
+      "Under CHF 20 000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent (Bac +8)",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed (Bac+5: Master, Engineering Degree or equivalent)",
+      "Secondary Education Completed (Baccalauréat or equivalent)",
+      "Some University or Vocational Certification",
+      "University Education Completed (Bac+3)",
+      "Vocational or Professional Certification Completed (BTS, DUT or equivalent)",
+      "Prefer not to answer"
+    ]
+  },
+  "Syrian Arab Republic": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Taiwan": {
+    "incomes": [
+      "Less than NT$300,000",
+      "More than NT$3,000,000",
+      "Not earning/No income",
+      "NT$1,000,000 - NT$1,299,999",
+      "NT$1,300,000 - NT$1,599,999",
+      "NT$1,600,000 - NT$1,999,999",
+      "NT$2,000,000 - NT$2,499,999",
+      "NT$2,500,000 - NT$3,000,000",
+      "NT$300,000 - NT$399,999",
+      "NT$400,000 - NT$499,999",
+      "NT$500,000 - NT$599,999",
+      "NT$600,000 - NT$699,999",
+      "NT$700,000 - NT$799,999",
+      "NT$800,000 - NT$899,999",
+      "NT$900,000 - NT$999,999",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent (Bac +8)",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed (Bac+5: Master, Engineering Degree or equivalent)",
+      "Secondary Education Completed (Baccalauréat or equivalent)",
+      "Some University or Vocational Certification",
+      "University Education Completed (Bac+3)",
+      "Vocational or Professional Certification Completed (BTS, DUT or equivalent)",
+      "Prefer not to answer"
+    ]
+  },
+  "Thailand": {
+    "incomes": [
+      "1,000,000 THB - 1,499,999 THB",
+      "1,500,000 THB - 2,000,000 THB",
+      "200,000 THB - 299,999 THB",
+      "300,000 THB - 399,999 THB",
+      "400,000 THB - 499,999 THB",
+      "500,000 THB - 599,999 THB",
+      "600,000 THB - 699,999 THB",
+      "700,000 THB - 799,999 THB",
+      "800,000 THB - 899,999 THB",
+      "900,000 THB - 999,999 THB",
+      "Less than 200,000 THB",
+      "More than 2,000,000 THB",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent (Bac +8)",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed (Bac+5: Master, Engineering Degree or equivalent)",
+      "Secondary Education Completed (Baccalauréat or equivalent)",
+      "Some University or Vocational Certification",
+      "University Education Completed (Bac+3)",
+      "Vocational or Professional Certification Completed (BTS, DUT or equivalent)",
+      "Prefer not to answer"
+    ]
+  },
+  "Tajikistan": {
+    "incomes": [
+      "Less than SM 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Tanzania, United Republic of": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Timor-Leste": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Togo": {
+    "incomes": [
+      "Less than CFA 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Tonga": {
+    "incomes": [
+      "Less than T$ 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Trinidad and Tobago": {
+    "incomes": [
+      "Less than TT$ 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Tunisia": {
+    "incomes": [
+      "Less than DT 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Turkey": {
+    "incomes": [
+      "10,000 TRY - 19,999 TRY",
+      "20,000 TRY - 29,999 TRY",
+      "30,000 TRY - 39,999 TRY",
+      "40,000 TRY - 49,999 TRY",
+      "50,000 TRY - 74,999 TRY",
+      "75,000 TRY - 99,999 TRY",
+      "100,000 TRY - 149,999 TRY",
+      "150,000 TRY - 200,000 TRY",
+      "Less than 10,000 TRY",
+      "More than 200,000 TRY",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent (Bac +8)",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed (Bac+5: Master, Engineering Degree or equivalent)",
+      "Secondary Education Completed (Baccalauréat or equivalent)",
+      "Some University or Vocational Certification",
+      "University Education Completed (Bac+3)",
+      "Vocational or Professional Certification Completed (BTS, DUT or equivalent)",
+      "Prefer not to answer"
+    ]
+  },
+  "Turkmenistan": {
+    "incomes": [
+      "Less than m 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Tuvalu": {
+    "incomes": [
+      "Less than $15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Uganda": {
+    "incomes": [
+      "Less than USh 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Ukraine": {
+    "incomes": [
+      "Less than ₴15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "UAE": {
+    "incomes": [
+      "AED 60,001 – 120,000",
+      "AED 120,001 – 180,000",
+      "AED 180,001 – 240,000",
+      "AED 240,001 – 300,000",
+      "AED 300,001 – 360,000",
+      "AED 360,001 – 420,000",
+      "AED 420,001 – 480,000",
+      "AED 480,001 – 540,000",
+      "AED 540,001 – 600,000",
+      "AED 600,001 +",
+      "Don't know",
+      "less than AED 60,000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent Completed",
+      "Incomplete Secondary Education",
+      "Postgraduate Education Completed",
+      "Secondary Education Completed",
+      "Some University or Vocational Certification",
+      "University Education Completed",
+      "Vocational or Professional Certification Completed",
+      "Prefer not to answer"
+    ]
+  },
+  "UK": {
+    "incomes": [
+      "£10,000 - £19,999",
+      "£20,000 - £29,999",
+      "£30,000 - £39,999",
+      "£40,000 - £49,999",
+      "£50,000 - £59,999",
+      "£60,000 - £69,999",
+      "£70,000 - £79,999",
+      "£80,000 - £89,999",
+      "£90,000 - £99,999",
+      "£100,000 - £149,999",
+      "£500,000 or more",
+      "Under £10,000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Doctorate, Post-doctorate or equivalent (Higher Degree)",
+      "Incomplete Secondary Education (Below GC SE / O Level)",
+      "Postgraduate Education Completed (e.g. Masters)",
+      "Secondary Education Completed (A Level or equivalent)",
+      "Secondary Education Completed (GCSE / O Level / CSE or equivalent)",
+      "Some Vocational or Technical Qualifications",
+      "University Education Completed (First Degree e.g. BA, BSc)",
+      "Vocational or Technical Qualifications Completed (e.g. HND, NVQ)",
+      "Prefer not to answer"
+    ]
+  },
+  "United States of America": {
+    "incomes": [
+      "$15,000 to $24,999",
+      "$25,000 to $49,999",
+      "$50,000 to $74,999",
+      "$75,000 to $99,999",
+      "$100,000 to $149,999",
+      "$150,000 to $199,999",
+      "$200,000 to $249,999",
+      "$250,000 to $499,999",
+      "Less than $15,000",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Uruguay": {
+    "incomes": [
+      "Less than $U 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Uzbekistan": {
+    "incomes": [
+      "Less than UZS 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Vanuatu": {
+    "incomes": [
+      "Less than VT 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Vatican City": {
+    "incomes": [
+      "Less than €15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Venezuela": {
+    "incomes": [
+      "Less than Bs. 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Vietnam": {
+    "incomes": [
+      "Less than V$ 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Yemen": {
+    "incomes": [
+      "Less than ﷼15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Zambia": {
+    "incomes": [
+      "Less than ZK 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  },
+  "Zimbabwe": {
+    "incomes": [
+      "Less than Z$ 15,000",
+      "15,000 to 24,999",
+      "25,000 to 49,999",
+      "50,000 to 74,999",
+      "75,000 to 99,999",
+      "100,000 to 149,999",
+      "150,000 to 199,999",
+      "200,000 to 249,999",
+      "250,000 to 499,999",
+      "500,000 or more",
+      "Prefer not to answer"
+    ],
+    "educations": [
+      "Associate's Degree",
+      "Bachelor's Degree",
+      "Doctoral or Professional Degree (PhD, Ed.D, JD, DVM, DO, MD, DDS, or similar)",
+      "Incomplete Secondary (high school) Education",
+      "Master's Degree",
+      "Secondary (high school) Education",
+      "Some College, University, Technical School or Further Education",
+      "Vocational or Technical Degree",
+      "Prefer not to answer"
+    ]
+  }
+}

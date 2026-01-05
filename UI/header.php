@@ -269,10 +269,6 @@
           </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
             <li><a class="dropdown-item" href="my_account.php">My Account</a></li>
-            <!-- 🔐 Only for direct users (hidden via JS for others) -->
-            <li id="changePasswordMenuItem">
-              <a class="dropdown-item" href="change_password.php">Change Password</a>
-            </li>
             <li><a class="dropdown-item" href="settings.php">Settings</a></li>
             <li><a class="dropdown-item" href="logout.php">Logout</a></li>
           </ul>
