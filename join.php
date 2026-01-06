@@ -13,13 +13,22 @@ session_start();
 $signupSuccessMessage = '';
 $signupErrorMessage   = '';
 
-// Are we coming from LinkedIn for the first time?
+// Are we coming from LinkedIn or Facebook for the first time?
 $isLinkedinNewUser = isset($_SESSION['linkedin_new_user']) && $_SESSION['linkedin_new_user'] === true;
+$isFacebookNewUser = isset($_SESSION['facebook_new_user']) && $_SESSION['facebook_new_user'] === true;
 
-// Prefill values from LinkedIn if present
-$prefillFirstName = $_SESSION['linkedin_first_name'] ?? '';
-$prefillLastName  = $_SESSION['linkedin_last_name'] ?? '';
-$prefillEmail     = $_SESSION['linkedin_email'] ?? '';
+// Prefill values from social login if present (LinkedIn first, then Facebook)
+$prefillFirstName = $_SESSION['linkedin_first_name']
+    ?? $_SESSION['facebook_first_name']
+    ?? '';
+
+$prefillLastName  = $_SESSION['linkedin_last_name']
+    ?? $_SESSION['facebook_last_name']
+    ?? '';
+
+$prefillEmail     = $_SESSION['linkedin_email']
+    ?? $_SESSION['facebook_email']
+    ?? '';
 
 if (isset($_GET['signup_success']) && $_GET['signup_success'] === '1') {
     $signupSuccessMessage = 'Signup successfully completed and it will take 48hrs to activate your account.';
@@ -45,7 +54,13 @@ if (isset($_POST['signup'])) {
     $username     = $_POST['username'];
 
     // Mark user_type depending on the flow
-    $userType = $isLinkedinNewUser ? 'linkedin' : 'direct';
+    if ($isLinkedinNewUser) {
+        $userType = 'linkedin';
+    } elseif ($isFacebookNewUser) {
+        $userType = 'facebook';
+    } else {
+        $userType = 'direct';
+    }
 
     $sql  = "INSERT INTO signup(
                 firstname,
@@ -124,16 +139,21 @@ if (isset($_POST['signup'])) {
 
                 $mail->send();
 
-                if ($isLinkedinNewUser) {
-                    // Clear LinkedIn onboarding session data
+                if ($isLinkedinNewUser || $isFacebookNewUser) {
+                    // Clear social onboarding session data
                     unset(
                         $_SESSION['linkedin_new_user'],
                         $_SESSION['linkedin_email'],
                         $_SESSION['linkedin_first_name'],
-                        $_SESSION['linkedin_last_name']
+                        $_SESSION['linkedin_last_name'],
+                        $_SESSION['facebook_new_user'],
+                        $_SESSION['facebook_email'],
+                        $_SESSION['facebook_first_name'],
+                        $_SESSION['facebook_last_name'],
+                        $_SESSION['facebook_id']
                     );
 
-                    // Auto-login LinkedIn new user and go to home
+                    // Auto-login social user and go to home
                     echo "<script>
                         localStorage.setItem('passwordVerified', 'true');
                         localStorage.setItem('username', " . json_encode($username) . ");
@@ -378,7 +398,7 @@ if (isset($_POST['signup'])) {
                       name="email"
                       placeholder="eg. john.doe@example.com"
                       value="<?php echo htmlspecialchars($prefillEmail); ?>"
-                      <?php echo $isLinkedinNewUser ? 'readonly' : ''; ?>
+                      <?php echo ($isLinkedinNewUser || $isFacebookNewUser) ? 'readonly' : ''; ?>
                       required
                     />
                     <label

@@ -1,5 +1,11 @@
 <?php
 // facebook-callback.php
+
+// Make sure session is available before using $_SESSION
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 require __DIR__ . '/facebook_config.php';
 require __DIR__ . '/UI/config.php'; // for $db, etc. – same as other pages
 
@@ -9,8 +15,11 @@ if (!isset($_GET['code'])) {
     exit;
 }
 
-if (!isset($_GET['state']) || !isset($_SESSION['fb_oauth_state']) ||
-    !hash_equals($_SESSION['fb_oauth_state'], $_GET['state'])) {
+if (
+    !isset($_GET['state']) ||
+    !isset($_SESSION['fb_oauth_state']) ||
+    !hash_equals($_SESSION['fb_oauth_state'], $_GET['state'])
+) {
     echo 'Facebook login failed: invalid state.';
     exit;
 }
@@ -47,8 +56,8 @@ $accessToken = $tokenData['access_token'];
 $profileUrl = 'https://graph.facebook.com/' . FB_GRAPH_VERSION . '/me';
 
 $profileParams = [
-    'fields'        => 'id,first_name,last_name,name,email',
-    'access_token'  => $accessToken,
+    'fields'       => 'id,first_name,last_name,name,email',
+    'access_token' => $accessToken,
 ];
 
 $profileResponse = file_get_contents($profileUrl . '?' . http_build_query($profileParams));
@@ -73,9 +82,8 @@ if (!$email) {
 /**
  * 4. Plug into your existing flow.
  *
- * You can mirror what you already do for LinkedIn:
  *   - If email exists in `signup` → log them in and redirect to UI/index.php
- *   - If not → store details in session and redirect to join.php
+ *   - If not → store details in session and redirect to join.php (Facebook path)
  */
 
 // Example: check if email already exists
@@ -101,7 +109,9 @@ if ($user) {
     $_SESSION['facebook_email']      = $email;
     $_SESSION['facebook_first_name'] = $firstName;
     $_SESSION['facebook_last_name']  = $lastName;
+    $_SESSION['facebook_id']         = $facebookId;
 
-    header('Location: join.php');
+    // Explicitly tag the source so the URL matches expectations
+    header('Location: join.php?from=facebook');
     exit;
 }
