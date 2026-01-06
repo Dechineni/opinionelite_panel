@@ -74,7 +74,7 @@
 
                 <!-- Sign in via Facebook (UI only for now) -->
                 <a
-                  href="#"
+                  href="facebook_login.php"
                   class="relative w-[300px] h-[80px] flex items-center justify-start rounded-full overflow-hidden pl-4 opacity-70 cursor-not-allowed"
                   title="Facebook sign-in coming soon"
                 >
