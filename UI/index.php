@@ -54,28 +54,11 @@ include('header.php');
         <!-- <p>8 MIN</p> -->
       </div>
     </div>
-
-    <div class="swiper-slide">
-      <div class="card profile-card" data-profile="" style="cursor:pointer;">
-        <img src="images/traval.png" alt="Icon 5" class="icon">
-        <h5>Travel Profile</h5>
-        <h2>$2.00</h2>
-        <!-- <p>6 MIN</p> -->
-      </div>
-    </div>
+    
     <div class="swiper-slide">
       <div class="card profile-card" data-profile="Auto Profile" style="cursor:pointer;">
         <img src="images/auto.png" alt="Icon 5" class="icon">
         <h5>Automotive Profile</h5>
-        <h2>$2.00</h2>
-        <!-- <p>6 MIN</p> -->
-      </div>
-    </div>
-  
-  <div class="swiper-slide">
-      <div class="card profile-card" data-profile="" style="cursor:pointer;">
-        <img src="images/game.png" alt="Icon 5" class="icon">
-        <h5>Gaming Profile</h5>
         <h2>$2.00</h2>
         <!-- <p>6 MIN</p> -->
       </div>
