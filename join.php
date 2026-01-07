@@ -39,19 +39,20 @@ if (isset($_GET['signup_error']) && $_GET['signup_error'] === 'email_exists') {
 }
 
 if (isset($_POST['signup'])) {
-    $fname        = $_POST['firstName'];
-    $lname        = $_POST['lastName'];
-    $email        = $_POST['email'];
-    $country      = $_POST['country'];
-    $zipcode      = $_POST['zipCode'];
-    $gender       = $_POST['gender'];
-    $birthday     = $_POST['birthday'];
-    $education    = $_POST['education'];
-    $income       = $_POST['income'];
-    $job_industry = $_POST['job_industry'];
-    $role         = $_POST['role'];
-    $job_title    = $_POST['job_title'];
-    $username     = $_POST['username'];
+    // Safely grab + trim all inputs
+    $fname        = trim($_POST['firstName']     ?? '');
+    $lname        = trim($_POST['lastName']      ?? '');
+    $email        = trim($_POST['email']         ?? '');
+    $country      = trim($_POST['country']       ?? '');
+    $zipcode      = trim($_POST['zipCode']       ?? '');
+    $gender       = trim($_POST['gender']        ?? '');
+    $birthday     = trim($_POST['birthday']      ?? '');
+    $education    = trim($_POST['education']     ?? '');
+    $income       = trim($_POST['income']        ?? '');
+    $job_industry = trim($_POST['job_industry']  ?? '');
+    $role         = trim($_POST['role']          ?? '');
+    $job_title    = trim($_POST['job_title']     ?? '');
+    $username     = trim($_POST['username']      ?? '');
 
     // Mark user_type depending on the flow
     if ($isLinkedinNewUser) {
@@ -62,7 +63,29 @@ if (isset($_POST['signup'])) {
         $userType = 'direct';
     }
 
-    $sql  = "INSERT INTO signup(
+    try {
+        /**
+         * 1) Check for duplicate email using a prepared statement
+         */
+        $stmtCheck = $db->prepare("SELECT COUNT(email) FROM signup WHERE email = ?");
+        $stmtCheck->bind_param("s", $email);
+        $stmtCheck->execute();
+        $stmtCheck->bind_result($emailCount);
+        $stmtCheck->fetch();
+        $stmtCheck->close();
+
+        if ($emailCount > 0) {
+            // Redirect with error flag for duplicate email banner
+            header('Location: index.php?signup_error=email_exists');
+            exit;
+        }
+
+        /**
+         * 2) Insert new row using prepared statement
+         *    (this protects us from quotes/apostrophes in values)
+         */
+        $stmtInsert = $db->prepare(
+            "INSERT INTO signup (
                 firstname,
                 lastname,
                 email,
@@ -77,46 +100,51 @@ if (isset($_POST['signup'])) {
                 job_title,
                 username,
                 user_type
-             ) VALUES (
-                '$fname',
-                '$lname',
-                '$email',
-                '$country',
-                '$zipcode',
-                '$gender',
-                '$birthday',
-                '$education',
-                '$income',
-                '$job_industry',
-                '$role',
-                '$job_title',
-                '$username',
-                '$userType'
-             )";
+            ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+        );
 
-    $sql1 = "SELECT COUNT(email) FROM signup WHERE email='$email'";
-    $rs   = mysqli_query($db, $sql1);
-    $rw   = mysqli_fetch_row($rs);
+        // All 14 fields are strings
+        $stmtInsert->bind_param(
+            "ssssssssssssss",
+            $fname,
+            $lname,
+            $email,
+            $country,
+            $zipcode,
+            $gender,
+            $birthday,
+            $education,
+            $income,
+            $job_industry,
+            $role,
+            $job_title,
+            $username,
+            $userType
+        );
 
-    if ($rw[0] == 0) {
-        if (mysqli_query($db, $sql)) {
-            $mail = new PHPMailer(true);
+        $stmtInsert->execute();
+        $stmtInsert->close();
 
-            try {
-                // Server settings
-                $mail->isSMTP();
-                $mail->Host       = 'smtp.office365.com';
-                $mail->SMTPAuth   = true;
-                $mail->Username   = 'noreply@opinionelite.com';  // Microsoft 365 email
-                $mail->Password   = 'kkzzxtbjxmhpkjvm';          // Real password or App Password
-                $mail->SMTPSecure = 'tls';
-                $mail->Port       = 587;
+        /**
+         * 3) Send welcome email (same as before)
+         */
+        $mail = new PHPMailer(true);
 
-                $mail->setFrom('noreply@opinionelite.com', 'Opinion Elite');
-                $mail->addAddress($email, $fname);
-                $mail->isHTML(true);
-                $mail->Subject = 'Welcome to Opinion Elite!';
-                $mail->Body = '
+        try {
+            // Server settings
+            $mail->isSMTP();
+            $mail->Host       = 'smtp.office365.com';
+            $mail->SMTPAuth   = true;
+            $mail->Username   = 'noreply@opinionelite.com';  // Microsoft 365 email
+            $mail->Password   = 'kkzzxtbjxmhpkjvm';          // Real password or App Password
+            $mail->SMTPSecure = 'tls';
+            $mail->Port       = 587;
+
+            $mail->setFrom('noreply@opinionelite.com', 'Opinion Elite');
+            $mail->addAddress($email, $fname);
+            $mail->isHTML(true);
+            $mail->Subject = 'Welcome to Opinion Elite!';
+            $mail->Body = '
                 <div style="max-width: 600px; margin: auto; padding: 20px; font-family: Arial, sans-serif; background-color: #f4f4f4%;">
                   <div style="background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 30px;">
                     <h2 style="color: #333333; text-align: center;">Welcome to <span style="color: #f1aa3f;">Opinion Elite</span>!</h2>
@@ -137,44 +165,45 @@ if (isset($_POST['signup'])) {
                   </div>
                 </div>';
 
-                $mail->send();
-
-                if ($isLinkedinNewUser || $isFacebookNewUser) {
-                    // Clear social onboarding session data
-                    unset(
-                        $_SESSION['linkedin_new_user'],
-                        $_SESSION['linkedin_email'],
-                        $_SESSION['linkedin_first_name'],
-                        $_SESSION['linkedin_last_name'],
-                        $_SESSION['facebook_new_user'],
-                        $_SESSION['facebook_email'],
-                        $_SESSION['facebook_first_name'],
-                        $_SESSION['facebook_last_name'],
-                        $_SESSION['facebook_id']
-                    );
-
-                    // Auto-login social user and go to home
-                    echo "<script>
-                        localStorage.setItem('passwordVerified', 'true');
-                        localStorage.setItem('username', " . json_encode($username) . ");
-                        window.location.href = 'UI/index.php';
-                    </script>";
-                    exit;
-                } else {
-                    // Redirect with success flag for orange banner (direct signup)
-                    header('Location: index.php?signup_success=1');
-                    exit;
-                }
-            } catch (Exception $e) {
-                echo "❌ Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-            }
-        } else {
-            echo mysqli_error($db);
+            $mail->send();
+        } catch (Exception $e) {
+            // Don't block signup if email fails – just log/ignore quietly in production
+            // echo "❌ Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
         }
-    } else {
-        // Redirect with error flag for duplicate email banner
-        header('Location: index.php?signup_error=email_exists');
-        exit;
+
+        /**
+         * 4) Clear social onboarding session data & redirect
+         */
+        if ($isLinkedinNewUser || $isFacebookNewUser) {
+            unset(
+                $_SESSION['linkedin_new_user'],
+                $_SESSION['linkedin_email'],
+                $_SESSION['linkedin_first_name'],
+                $_SESSION['linkedin_last_name'],
+                $_SESSION['facebook_new_user'],
+                $_SESSION['facebook_email'],
+                $_SESSION['facebook_first_name'],
+                $_SESSION['facebook_last_name'],
+                $_SESSION['facebook_id']
+            );
+
+            // Auto-login social user and go to home
+            echo "<script>
+                localStorage.setItem('passwordVerified', 'true');
+                localStorage.setItem('username', " . json_encode($username) . ");
+                window.location.href = 'UI/index.php';
+            </script>";
+            exit;
+        } else {
+            // Redirect with success flag for orange banner (direct signup)
+            header('Location: index.php?signup_success=1');
+            exit;
+        }
+    } catch (\mysqli_sql_exception $e) {
+        // If something DB-related blows up, show a friendly banner
+        // (and avoid a blank 500 like your friend saw)
+        $signupErrorMessage = 'An unexpected error occurred while processing your signup. Please try again, or contact support if the issue persists.';
+        // Optionally log $e->getMessage() on the server if you have logging set up.
     }
 }
 ?>
@@ -332,7 +361,7 @@ if (isset($_POST['signup'])) {
                 </div>
               <?php endif; ?>
 
-              <!-- 🔴 ERROR BANNER (duplicate email) -->
+              <!-- 🔴 ERROR BANNER (duplicate email or unexpected DB error) -->
               <?php if (!empty($signupErrorMessage)): ?>
                 <div
                   style="
