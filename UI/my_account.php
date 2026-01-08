@@ -8,7 +8,7 @@
           <div class="col-md-7 p-4 m-auto">
             <h3 class="fw-bold" id="welcome-msg" style="color: #fff;"></h3>
             <p style="color: #ccc;">
-              let your elite opinion be heard.
+              Let your elite opinion be heard.
             </p>
 
             <!-- Contact Info -->

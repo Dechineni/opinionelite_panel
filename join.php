@@ -152,10 +152,7 @@ if (isset($_POST['signup'])) {
                       Hi ' . htmlspecialchars($fname) . ',
                     </p>
                     <p style="font-size: 16px; color: #555555; line-height: 1.6;">
-                      Signup successfully completed.
-                    </p>
-                    <p style="font-size: 14px; color: #777777; line-height: 1.6%;">
-                      Once your account is active, you will be able to log in and start participating in our exclusive surveys and earn rewards.
+                      Signup successfully completed. Once your account is active, you will be able to log in and start participating in our exclusive surveys and earn rewards.
                     </p>
                     <div style="text-align: center; margin: 30px 0;">
                       <a href="https://opinionelite.com" style="background-color: #f1aa3f; color: #ffffff; padding: 12px 24px; font-size: 16px; text-decoration: none; border-radius: 5px; display: inline-block;">
