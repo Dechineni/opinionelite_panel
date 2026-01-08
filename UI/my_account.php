@@ -6,9 +6,9 @@
       <div class="col-md-10 shadow rounded overflow-hidden" style="background-color: #111; border: 1px solid #333;">
         <div class="row g-0">
           <div class="col-md-7 p-4 m-auto">
-            <h4 class="fw-bold" id="welcome-msg" style="color: #fff;"></h4>
+            <h3 class="fw-bold" id="welcome-msg" style="color: #fff;"></h3>
             <p style="color: #ccc;">
-              You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)
+              let your elite opinion be heard.
             </p>
 
             <!-- Contact Info -->

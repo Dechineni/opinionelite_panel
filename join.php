@@ -149,10 +149,10 @@ if (isset($_POST['signup'])) {
                   <div style="background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 30px;">
                     <h2 style="color: #333333; text-align: center;">Welcome to <span style="color: #f1aa3f;">Opinion Elite</span>!</h2>
                     <p style="font-size: 16px; color: #555555;">
-                      Hi ' . htmlspecialchars($fname) . '
+                      Hi ' . htmlspecialchars($fname) . ',
                     </p>
                     <p style="font-size: 16px; color: #555555; line-height: 1.6;">
-                      Signup successfully completed and it will take <strong>48 hours</strong> to activate your account.
+                      Signup successfully completed.
                     </p>
                     <p style="font-size: 14px; color: #777777; line-height: 1.6%;">
                       Once your account is active, you will be able to log in and start participating in our exclusive surveys and earn rewards.
