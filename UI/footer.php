@@ -15,7 +15,11 @@
     if (passwordVerified !== 'true' || !username) {
       window.location.href = '/signin.php';
     } else {
-      document.getElementById('welcome-msg').innerText = `Welcome, ${username}!`;
+      // Only set welcome text on pages that actually have the element.
+      const welcomeEl = document.getElementById('welcome-msg');
+      if (welcomeEl) {
+        welcomeEl.innerText = `Welcome, ${username}!`;
+      }
     }
   });
 
@@ -112,4 +116,3 @@
     }
   });
 </script>
-

@@ -1,57 +1,48 @@
 <?php
 // UI/settings.php
-
-// Start session and load DB connection
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
+// NOTE: The UI area uses browser localStorage to track login (see UI/footer.php).
+// Do NOT enforce PHP session-based login here, otherwise Settings will always
+// redirect to signin.php even when the user is logged in.
 
 require_once 'config.php';
-
-// Get current logged-in username from session
-$currentUsername = $_SESSION['username'] ?? null;
-
-// If no user in session, send back to signin
-if (!$currentUsername) {
-    header('Location: ../signin.php');
-    exit;
-}
 
 $deleteError = '';
 
 // Handle delete request
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirm_delete'])) {
+    $currentUsername = trim($_POST['username'] ?? '');
 
-    // Delete from signup table (all user_types)
-    $stmt = $db->prepare("DELETE FROM signup WHERE username = ?");
-    $stmt->bind_param("s", $currentUsername);
-
-    if ($stmt->execute()) {
-        $stmt->close();
-
-        // TODO (optional): also delete related rows from other tables (user_answers, rewards, etc.)
-
-        // Clear PHP session
-        session_unset();
-        session_destroy();
-
-        // Clear browser localStorage + redirect out of the members area
-        echo "<script>
-            try {
-                localStorage.removeItem('passwordVerified');
-                localStorage.removeItem('username');
-            } catch (e) {}
-            alert('Your account has been deleted successfully.');
-            window.location.href = '../index.php';
-        </script>";
-        exit;
+    if ($currentUsername === '') {
+        $deleteError = 'Missing username. Please refresh and try again.';
     } else {
-        $deleteError = 'Failed to delete your account. Please try again.';
-        $stmt->close();
+        // Delete from signup table (all user_types)
+        $stmt = $db->prepare("DELETE FROM signup WHERE username = ?");
+        $stmt->bind_param("s", $currentUsername);
+
+        if ($stmt->execute()) {
+            $stmt->close();
+
+            // TODO (optional): also delete related rows from other tables (user_answers, rewards, etc.)
+
+            // Clear browser localStorage + redirect out of the members area
+            echo "<script>
+                try {
+                    localStorage.removeItem('passwordVerified');
+                    localStorage.removeItem('username');
+                    localStorage.removeItem('userType');
+                } catch (e) {}
+                alert('Your account has been deleted successfully.');
+                window.location.href = '../index.php';
+            </script>";
+            exit;
+        } else {
+            $deleteError = 'Failed to delete your account. Please try again.';
+            $stmt->close();
+        }
     }
 }
 
-// After handling POST, show the page
+// Show the page
 include('header.php');
 ?>
 
@@ -73,6 +64,7 @@ include('header.php');
       <?php endif; ?>
 
       <form method="post" id="deleteAccountForm">
+        <input type="hidden" name="username" id="usernameField" value="">
         <div class="mb-4 text-start">
           <div class="form-check">
             <input
@@ -106,6 +98,24 @@ include('header.php');
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
+    // Require localStorage login (same as other UI pages)
+    try {
+      const passwordVerified = localStorage.getItem('passwordVerified');
+      const username = localStorage.getItem('username');
+      if (passwordVerified !== 'true' || !username) {
+        window.location.href = '/signin.php';
+        return;
+      }
+
+      const usernameField = document.getElementById('usernameField');
+      if (usernameField) {
+        usernameField.value = username;
+      }
+    } catch (e) {
+      window.location.href = '/signin.php';
+      return;
+    }
+
     const deleteChoice = document.getElementById('deleteChoice');
     const deleteSubmit = document.getElementById('deleteSubmit');
 
