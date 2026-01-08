@@ -270,7 +270,7 @@
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
             <li><a class="dropdown-item" href="my_account.php">My Account</a></li>
             <!-- Use absolute path so it works from any folder and matches expected URL -->
-            <li><a class="dropdown-item" href="/settings.php">Settings</a></li>
+            <li><a class="dropdown-item" href="settings.php">Settings</a></li>
             <li><a class="dropdown-item" href="logout.php">Logout</a></li>
           </ul>
         </li>
