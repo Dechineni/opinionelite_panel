@@ -50,14 +50,14 @@
               <div
                 class="flex flex-col items-center xl:items-start gap-4 mt-12"
               >
-                <!-- Sign in via LinkedIn -->
+                <!-- Sign up via LinkedIn -->
                 <a
                   href="linked_in.php"
                   class="relative w-[300px] h-[80px] flex items-center justify-start rounded-full overflow-hidden pl-4"
                 >
                   <img
                     src="imgs/join-button.png"
-                    alt="Sign in via LinkedIn"
+                    alt="Sign up via LinkedIn"
                     class="absolute inset-0 w-full h-full object-cover"
                   />
                   <span
@@ -68,11 +68,11 @@
                       alt="LinkedIn"
                       class="w-[40px] h-[40px] object-contain"
                     />
-                    SIGN IN VIA LINKEDIN
+                    SIGN UP VIA LINKEDIN
                   </span>
                 </a>
 
-                <!-- Sign in via Facebook (UI only for now) -->
+                <!-- Sign up via Facebook (UI only for now) -->
                 <a
                   href="facebook_login.php"
                   class="relative w-[300px] h-[80px] flex items-center justify-start rounded-full overflow-hidden pl-4 opacity-70 cursor-not-allowed"
@@ -80,7 +80,7 @@
                 >
                   <img
                     src="imgs/join-button.png"
-                    alt="Sign in via Facebook"
+                    alt="Sign up via Facebook"
                     class="absolute inset-0 w-full h-full object-cover"
                   />
                   <span
@@ -91,7 +91,7 @@
                       alt="Facebook"
                       class="w-[40px] h-[40px] object-contain"
                     />
-                    SIGN IN VIA FACEBOOK
+                    SIGN UP VIA FACEBOOK
                   </span>
                 </a>
               </div>
