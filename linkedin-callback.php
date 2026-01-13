@@ -112,58 +112,30 @@ $username   = $email; // using email as username for LinkedIn signups
  *    - Existing user: auto-login → home
  *    - New user: store info in session → Join the Elite form
  */
-/**
- * 4. Check if this email already exists
- *
- *    - Existing user: auto-login → home (regardless of signup/signin click)
- *    - New user:
- *        - If flow=signup → store info in session → join.php
- *        - If flow=signin → show message → back to index.php
- */
 $check = $db->prepare("SELECT id, username FROM signup WHERE email = ?");
 $check->bind_param("s", $email);
 $check->execute();
 $check->store_result();
 
-// ✅ What did the user click on the launch page?
-$flow = $_SESSION['linkedin_flow'] ?? 'signup';
-
 if ($check->num_rows > 0) {
-    // Existing user -> login directly (no alerts)
+    // Existing user -> login directly
     $check->bind_result($existingId, $existingUsername);
     $check->fetch();
     $check->close();
 
     $usernameForLogin = $existingUsername ?: $username;
-
-    // cleanup
-    unset($_SESSION['linkedin_flow']);
-
     autoLoginAndRedirect($usernameForLogin);
 }
 
 $check->close();
 
-// New user
-if ($flow === 'signup') {
-    // Signup flow -> send to join.php with prefilled data
-    $_SESSION['linkedin_new_user']   = true;
-    $_SESSION['linkedin_email']      = $email;
-    $_SESSION['linkedin_first_name'] = $first_name;
-    $_SESSION['linkedin_last_name']  = $last_name;
+// New user: save LinkedIn info in session and send to Join the Elite page
+$_SESSION['linkedin_new_user']   = true;
+$_SESSION['linkedin_email']      = $email;
+$_SESSION['linkedin_first_name'] = $first_name;
+$_SESSION['linkedin_last_name']  = $last_name;
 
-    // cleanup
-    unset($_SESSION['linkedin_flow']);
-
-    header("Location: join.php?from=linkedin");
-    exit();
-}
-
-// Signin flow but user doesn't exist -> show message and go back
-unset($_SESSION['linkedin_flow']);
-echo "<script>
-    alert('Account doesn't exist, please Sign up.');
-    window.location.href = 'index.php';
-</script>";
+// Redirect to Join the Elite (index.php)
+header("Location: join.php?from=linkedin");
 exit();
 ?>
