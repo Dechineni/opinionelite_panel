@@ -86,16 +86,23 @@ if (!$email) {
  *   - If not → store details in session and redirect to join.php (Facebook path)
  */
 
-// Example: check if email already exists
-$sql  = "SELECT id, username FROM signup WHERE email = '" . mysqli_real_escape_string($db, $email) . "'";
-$rs   = mysqli_query($db, $sql);
-$user = $rs ? mysqli_fetch_assoc($rs) : null;
+// ✅ Check if email already exists (prepared statement)
+$flow = $_SESSION['facebook_flow'] ?? 'signup';
+
+$stmt = $db->prepare("SELECT id, username FROM signup WHERE email = ?");
+$stmt->bind_param("s", $email);
+$stmt->execute();
+$res = $stmt->get_result();
+$user = $res ? $res->fetch_assoc() : null;
+$stmt->close();
 
 if ($user) {
-    // Existing user -> log in
+    // Existing user -> log in (no alerts)
     $_SESSION['user_id']   = $user['id'];
     $_SESSION['username']  = $user['username'];
     $_SESSION['login_via'] = 'facebook';
+
+    unset($_SESSION['facebook_flow']);
 
     echo "<script>
         localStorage.setItem('passwordVerified', 'true');
@@ -103,15 +110,27 @@ if ($user) {
         window.location.href = 'UI/index.php';
     </script>";
     exit;
-} else {
-    // New Facebook user -> send to join.php with prefilled data (similar to LinkedIn flow)
+}
+
+// New user
+if ($flow === 'signup') {
+    // New Facebook user -> send to join.php with prefilled data
     $_SESSION['facebook_new_user']   = true;
     $_SESSION['facebook_email']      = $email;
     $_SESSION['facebook_first_name'] = $firstName;
     $_SESSION['facebook_last_name']  = $lastName;
     $_SESSION['facebook_id']         = $facebookId;
 
-    // Explicitly tag the source so the URL matches expectations
+    unset($_SESSION['facebook_flow']);
+
     header('Location: join.php?from=facebook');
     exit;
 }
+
+// Signin flow but user doesn't exist -> show message and go back
+unset($_SESSION['facebook_flow']);
+echo "<script>
+    alert('Account doesn't exist, please Sign up.');
+    window.location.href = 'index.php';
+</script>";
+exit;
