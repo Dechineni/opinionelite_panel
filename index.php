@@ -43,7 +43,7 @@
               <p
                 class="text-white xl:text-left text-center text-opacity-[0.85] text-[20px] md:text-[23px] font-semibold max-w-[540px]"
               >
-                Sign in to Opinion Elite and unlock exclusive cash rewards
+                Jump into Opinion Elite and unlock exclusive cash rewards
                 reserved just for you.
               </p>
 
