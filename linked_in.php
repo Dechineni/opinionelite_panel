@@ -12,6 +12,13 @@ $dotenv->safeLoad();
 $client_id = $_ENV['LINKEDIN_CLIENT_ID'] ?? getenv('LINKEDIN_CLIENT_ID');
 $client_secret = $_ENV['LINKEDIN_CLIENT_SECRET'] ?? getenv('LINKEDIN_CLIENT_SECRET');
 
+// Flow handling: signup vs signin (defaults to signin for backward compatibility)
+$flow = strtolower($_GET['flow'] ?? ($_SESSION['linkedin_flow'] ?? 'signin'));
+if (!in_array($flow, ['signup', 'signin'], true)) {
+    $flow = 'signin';
+}
+$_SESSION['linkedin_flow'] = $flow;
+
 if (!$client_id) {
     echo "LinkedIn client ID is not configured on the server. Please contact support.";
     exit();

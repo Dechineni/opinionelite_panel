@@ -9,6 +9,12 @@ if (session_status() === PHP_SESSION_NONE) {
 require __DIR__ . '/facebook_config.php';
 require __DIR__ . '/UI/config.php'; // for $db, etc. – same as other pages
 
+// Determine the requested auth flow (set in facebook_login.php)
+$authFlow = strtolower($_SESSION['facebook_flow'] ?? 'signin');
+if (!in_array($authFlow, ['signup', 'signin'], true)) {
+    $authFlow = 'signin';
+}
+
 // 1. Basic error checks
 if (!isset($_GET['code'])) {
     echo 'Facebook login failed: missing "code" parameter.';
@@ -86,17 +92,28 @@ if (!$email) {
  *   - If not → store details in session and redirect to join.php (Facebook path)
  */
 
-// Example: check if email already exists
-$sql  = "SELECT id, username FROM signup WHERE email = '" . mysqli_real_escape_string($db, $email) . "'";
-$rs   = mysqli_query($db, $sql);
-$user = $rs ? mysqli_fetch_assoc($rs) : null;
+// Check if email already exists (prepared statement)
+$stmt = $db->prepare('SELECT id, username FROM signup WHERE email = ?');
+$stmt->bind_param('s', $email);
+$stmt->execute();
+$result = $stmt->get_result();
+$user = $result ? $result->fetch_assoc() : null;
+$stmt->close();
 
 if ($user) {
-    // Existing user -> log in
+    // If user clicked SIGN UP but account already exists -> show dialog and send back
+    if ($authFlow === 'signup') {
+        unset($_SESSION['facebook_flow']);
+        echo "<script>alert('Account already exists, please Sign in.'); window.location.href='index.php';</script>";
+        exit;
+    }
+
+    // SIGN IN flow -> log in
     $_SESSION['user_id']   = $user['id'];
     $_SESSION['username']  = $user['username'];
     $_SESSION['login_via'] = 'facebook';
 
+    unset($_SESSION['facebook_flow']);
     echo "<script>
         localStorage.setItem('passwordVerified', 'true');
         localStorage.setItem('username', " . json_encode($user['username']) . ");
@@ -104,6 +121,13 @@ if ($user) {
     </script>";
     exit;
 } else {
+    // No user found
+    if ($authFlow === 'signin') {
+        unset($_SESSION['facebook_flow']);
+        echo "<script>alert('Account doesn\\'t exist, please Sign up.'); window.location.href='index.php';</script>";
+        exit;
+    }
+
     // New Facebook user -> send to join.php with prefilled data (similar to LinkedIn flow)
     $_SESSION['facebook_new_user']   = true;
     $_SESSION['facebook_email']      = $email;

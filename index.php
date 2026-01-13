@@ -7,7 +7,119 @@
     <link href="output.css" rel="stylesheet" />
     <script src="scripts/main.js"></script>
     <link rel="icon" sizes="64x64" href="favicon.png" type="image/png" />
+
+    <!-- ✅ FORCE AUTH LAYOUT (works even if Tailwind classes aren't present in output.css) -->
+    <style>
+      /* container for all auth buttons */
+      .oe-auth {
+        width: 100%;
+        max-width: 720px;
+        margin-top: 28px;
+      }
+
+      /* row wrapper */
+      .oe-auth-row {
+        display: flex;
+        flex-direction: column; /* mobile: stacked */
+        gap: 16px;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+
+      /* desktop/tablet: side-by-side */
+      @media (min-width: 768px) {
+        .oe-auth-row {
+          flex-direction: row;
+          flex-wrap: nowrap;
+        }
+      }
+
+      /* each pill button */
+      .oe-pill {
+        width: 100%;
+        max-width: 520px; /* mobile */
+        height: 80px;
+        border-radius: 999px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        text-decoration: none;
+      }
+
+      /* fixed width on desktop so 2 can sit in a row */
+      @media (min-width: 768px) {
+        .oe-pill {
+          width: 330px;
+          max-width: none;
+        }
+      }
+
+      .oe-pill-bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .oe-pill-content {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding-left: 16px;
+        font-size: 16px;
+        font-weight: 800;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        line-height: 1;
+        color: #000;
+        white-space: nowrap;
+      }
+
+      .oe-pill-icon {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        flex: 0 0 auto;
+      }
+
+      /* divider */
+      .oe-divider {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin: 22px 0;
+        width: 100%;
+      }
+      .oe-divider::before,
+      .oe-divider::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.25);
+      }
+      .oe-divider span {
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 12px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      /* keep buttons centered on smaller screens */
+      @media (max-width: 1279px) {
+        .oe-auth-row {
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    </style>
   </head>
+
   <body
     class="flex flex-col items-center justify-start bg-gradient-to-br from-[#171717] to-[#000] font-gilroy"
   >
@@ -31,7 +143,7 @@
           <div
             class="wrapper gap-8 mx-auto max-w-[1440px] px-8 flex flex-col xl:flex-row items-center"
           >
-            <!-- LEFT SIDE: headline + sign-in buttons -->
+            <!-- LEFT SIDE: headline + sign up / sign in buttons -->
             <div
               class="text flex flex-col items-center xl:items-start w-full max-w-[700px] lg:max-w-auto lg:w-3/5"
             >
@@ -43,57 +155,92 @@
               <p
                 class="text-white xl:text-left text-center text-opacity-[0.85] text-[20px] md:text-[23px] font-semibold max-w-[540px]"
               >
-                Sign in to Opinion Elite and unlock exclusive cash rewards
+                Jump into Opinion Elite and unlock exclusive cash rewards
                 reserved just for you.
               </p>
 
-              <div
-                class="flex flex-col items-center xl:items-start gap-4 mt-12"
-              >
-                <!-- Sign up via LinkedIn -->
-                <a
-                  href="linked_in.php"
-                  class="relative w-[300px] h-[80px] flex items-center justify-start rounded-full overflow-hidden pl-4"
-                >
-                  <img
-                    src="imgs/join-button.png"
-                    alt="Sign up via LinkedIn"
-                    class="absolute inset-0 w-full h-full object-cover"
-                  />
-                  <span
-                    class="relative z-[10] flex items-center gap-3 text-[16px] font-bold tracking-[0.03em] leading-none uppercase"
-                  >
-                    <img
-                      src="imgs/form-li-button.png"
-                      alt="LinkedIn"
-                      class="w-[40px] h-[40px] object-contain"
-                    />
-                    SIGN UP VIA LINKEDIN
-                  </span>
-                </a>
+              <!-- ✅ AUTH BUTTONS -->
+              <div class="oe-auth">
 
-                <!-- Sign up via Facebook (UI only for now) -->
-                <a
-                  href="facebook_login.php"
-                  class="relative w-[300px] h-[80px] flex items-center justify-start rounded-full overflow-hidden pl-4 opacity-70 cursor-not-allowed"
-                  title="Facebook sign-in coming soon"
-                >
-                  <img
-                    src="imgs/join-button.png"
-                    alt="Sign up via Facebook"
-                    class="absolute inset-0 w-full h-full object-cover"
-                  />
-                  <span
-                    class="relative z-[10] flex items-center gap-3 text-[16px] font-bold tracking-[0.03em] leading-none uppercase"
-                  >
+                <!-- SIGN UP (side-by-side on desktop) -->
+                <div class="oe-auth-row">
+                  <!-- Sign up via LinkedIn -->
+                  <a href="linked_in.php" class="oe-pill">
                     <img
-                      src="imgs/form-fb-button.png"
-                      alt="Facebook"
-                      class="w-[40px] h-[40px] object-contain"
+                      src="imgs/join-button.png"
+                      alt="Sign up via LinkedIn"
+                      class="oe-pill-bg"
                     />
-                    SIGN UP VIA FACEBOOK
-                  </span>
-                </a>
+                    <span class="oe-pill-content">
+                      <img
+                        src="imgs/form-li-button.png"
+                        alt="LinkedIn"
+                        class="oe-pill-icon"
+                      />
+                      SIGN UP VIA LINKEDIN
+                    </span>
+                  </a>
+
+                  <!-- Sign up via Facebook -->
+                  <a href="facebook_login.php" class="oe-pill">
+                    <img
+                      src="imgs/join-button.png"
+                      alt="Sign up via Facebook"
+                      class="oe-pill-bg"
+                    />
+                    <span class="oe-pill-content">
+                      <img
+                        src="imgs/form-fb-button.png"
+                        alt="Facebook"
+                        class="oe-pill-icon"
+                      />
+                      SIGN UP VIA FACEBOOK
+                    </span>
+                  </a>
+                </div>
+
+                <!-- DIVIDER -->
+                <div class="oe-divider">
+                  <span>Already have an account</span>
+                </div>
+
+                <!-- SIGN IN (side-by-side on desktop) -->
+                <div class="oe-auth-row">
+                  <!-- Sign in via LinkedIn -->
+                  <a href="linked_in.php" class="oe-pill">
+                    <img
+                      src="imgs/join-button.png"
+                      alt="Sign in via LinkedIn"
+                      class="oe-pill-bg"
+                    />
+                    <span class="oe-pill-content">
+                      <img
+                        src="imgs/form-li-button.png"
+                        alt="LinkedIn"
+                        class="oe-pill-icon"
+                      />
+                      SIGN IN VIA LINKEDIN
+                    </span>
+                  </a>
+
+                  <!-- Sign in via Facebook -->
+                  <a href="facebook_login.php" class="oe-pill">
+                    <img
+                      src="imgs/join-button.png"
+                      alt="Sign in via Facebook"
+                      class="oe-pill-bg"
+                    />
+                    <span class="oe-pill-content">
+                      <img
+                        src="imgs/form-fb-button.png"
+                        alt="Facebook"
+                        class="oe-pill-icon"
+                      />
+                      SIGN IN VIA FACEBOOK
+                    </span>
+                  </a>
+                </div>
+
               </div>
 
               <p
@@ -107,9 +254,7 @@
             </div>
 
             <!-- RIGHT SIDE: phone mockup / video -->
-            <div
-              class="hidden xl:flex video w-2/5 relative flex justify-end"
-            >
+            <div class="hidden xl:flex video w-2/5 relative flex justify-end">
               <img
                 class="w-[194px] h-[700px] block mr-[200px] xl:mr-[330px] object-contain"
                 src="imgs/video.png"
@@ -118,13 +263,7 @@
               <div
                 class="rounded-[25px] border-2 border-gray-800 overflow-hidden block w-[330px] h-[740px] absolute top-[-2%]"
               >
-                <video
-                  class="block w-full h-full object-cover"
-                  autoplay
-                  loop
-                  playsinline
-                  muted
-                >
+                <video class="block w-full h-full object-cover" autoplay loop playsinline muted>
                   <source src="video/app-video.mp4" type="video/mp4" />
                 </video>
               </div>

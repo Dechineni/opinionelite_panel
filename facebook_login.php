@@ -2,6 +2,13 @@
 // facebook_login.php
 require __DIR__ . '/facebook_config.php';
 
+// Flow handling: signup vs signin (defaults to signin for backward compatibility)
+$flow = strtolower($_GET['flow'] ?? ($_SESSION['facebook_flow'] ?? 'signin'));
+if (!in_array($flow, ['signup', 'signin'], true)) {
+    $flow = 'signin';
+}
+$_SESSION['facebook_flow'] = $flow;
+
 // CSRF protection: random state stored in session
 $state = bin2hex(random_bytes(16));
 $_SESSION['fb_oauth_state'] = $state;

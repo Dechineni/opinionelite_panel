@@ -36,6 +36,12 @@ if (!isset($_GET['state']) || !isset($_SESSION['linkedin_state']) || $_GET['stat
     exit();
 }
 
+// Determine the requested auth flow (set in linked_in.php)
+$authFlow = strtolower($_SESSION['linkedin_flow'] ?? 'signin');
+if (!in_array($authFlow, ['signup', 'signin'], true)) {
+    $authFlow = 'signin';
+}
+
 // Check for authorization code
 if (!isset($_GET['code'])) {
     echo "<script>alert('Authorization code not received.'); window.location.href='index.php';</script>";
@@ -123,11 +129,28 @@ if ($check->num_rows > 0) {
     $check->fetch();
     $check->close();
 
+    // If user clicked SIGN UP but account already exists -> show dialog and send back
+    if ($authFlow === 'signup') {
+        unset($_SESSION['linkedin_flow']);
+        echo "<script>alert('Account already exists, please Sign in.'); window.location.href='index.php';</script>";
+        exit();
+    }
+
+    // SIGN IN flow
     $usernameForLogin = $existingUsername ?: $username;
+    unset($_SESSION['linkedin_flow']);
     autoLoginAndRedirect($usernameForLogin);
 }
 
+
 $check->close();
+
+// No user found
+if ($authFlow === 'signin') {
+    unset($_SESSION['linkedin_flow']);
+    echo "<script>alert('Account doesn\'t exist, please Sign up.'); window.location.href='index.php';</script>";
+    exit();
+}
 
 // New user: save LinkedIn info in session and send to Join the Elite page
 $_SESSION['linkedin_new_user']   = true;
