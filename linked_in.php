@@ -8,35 +8,30 @@ use Dotenv\Dotenv;
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->safeLoad();
 
-// LinkedIn app credentials
-$client_id = $_ENV['LINKEDIN_CLIENT_ID'] ?? getenv('LINKEDIN_CLIENT_ID');
-$client_secret = $_ENV['LINKEDIN_CLIENT_SECRET'] ?? getenv('LINKEDIN_CLIENT_SECRET');
-
-// Flow handling: signup vs signin (defaults to signin for backward compatibility)
-$flow = strtolower($_GET['flow'] ?? ($_SESSION['linkedin_flow'] ?? 'signin'));
+// ✅ Determine flow: signup or signin (default signup)
+$flow = isset($_GET['flow']) ? strtolower(trim($_GET['flow'])) : '';
 if (!in_array($flow, ['signup', 'signin'], true)) {
-    $flow = 'signin';
+    $flow = 'signup';
 }
 $_SESSION['linkedin_flow'] = $flow;
+
+// LinkedIn app credentials
+$client_id     = $_ENV['LINKEDIN_CLIENT_ID'] ?? getenv('LINKEDIN_CLIENT_ID');
+$client_secret = $_ENV['LINKEDIN_CLIENT_SECRET'] ?? getenv('LINKEDIN_CLIENT_SECRET');
 
 if (!$client_id) {
     echo "LinkedIn client ID is not configured on the server. Please contact support.";
     exit();
 }
 
-/**
- * Build redirect_uri dynamically so it works for:
- *   - prod:  https://.../linkedin-callback.php
- *   - test:  https://.../test/linkedin-callback.php
- *   - local: http://localhost/opinionelite_panel/linkedin-callback.php
- */
-$scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
-$host   = $_SERVER['HTTP_HOST'];
-$dir    = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\'); // '' or '/test' or '/opinionelite_panel'
+$redirect_uri = $_ENV['LINKEDIN_REDIRECT_URI'] ?? getenv('LINKEDIN_REDIRECT_URI');
+if (!$redirect_uri) {
+    // fallback
+    $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
+    $redirect_uri = $protocol . $_SERVER['HTTP_HOST'] . "/linkedin-callback.php";
+}
 
-$redirect_uri = $scheme . '://' . $host . $dir . '/linkedin-callback.php';
-
-// CSRF protection state
+// CSRF state
 $state = bin2hex(random_bytes(16));
 $_SESSION['linkedin_state'] = $state;
 

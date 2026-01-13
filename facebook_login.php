@@ -2,10 +2,10 @@
 // facebook_login.php
 require __DIR__ . '/facebook_config.php';
 
-// Flow handling: signup vs signin (defaults to signin for backward compatibility)
-$flow = strtolower($_GET['flow'] ?? ($_SESSION['facebook_flow'] ?? 'signin'));
+// ✅ Determine flow: signup or signin (default signup)
+$flow = isset($_GET['flow']) ? strtolower(trim($_GET['flow'])) : '';
 if (!in_array($flow, ['signup', 'signin'], true)) {
-    $flow = 'signin';
+    $flow = 'signup';
 }
 $_SESSION['facebook_flow'] = $flow;
 
