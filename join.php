@@ -8,6 +8,39 @@ include('UI/config.php');
 session_start();
 
 /**
+ * ✅ Base prefix for prod/test/local
+ * Prefer the value stored during social login, else detect.
+ */
+$basePrefix = $_SESSION['base_prefix'] ?? '';
+if (!is_string($basePrefix)) $basePrefix = '';
+$basePrefix = rtrim($basePrefix, '/');
+
+if ($basePrefix === '') {
+    $requestUri = $_SERVER['REQUEST_URI'] ?? '';
+    $scriptName = $_SERVER['SCRIPT_NAME'] ?? '';
+
+    if (preg_match('#^/test(/|$)#', $requestUri)) {
+        $basePrefix = '/test';
+    } else {
+        $dir = rtrim(str_replace('\\', '/', dirname($scriptName)), '/');
+        if ($dir !== '' && $dir !== '/' && $dir !== '\\') {
+            $basePrefix = $dir; // e.g. /opinionelite_panel
+        }
+    }
+}
+
+// keep it stored for consistency across pages
+$_SESSION['base_prefix'] = $basePrefix;
+
+/**
+ * Helper: build paths that keep /test or local folder
+ */
+function withBasePrefix(string $basePrefix, string $path): string {
+    $path = '/' . ltrim($path, '/');
+    return $basePrefix === '' ? $path : $basePrefix . $path;
+}
+
+/**
  * Messages for in-page banners
  */
 $signupSuccessMessage = '';
@@ -75,14 +108,13 @@ if (isset($_POST['signup'])) {
         $stmtCheck->close();
 
         if ($emailCount > 0) {
-            // Redirect with error flag for duplicate email banner
-            header('Location: index.php?signup_error=email_exists');
+            // ✅ Redirect to launch page with correct base prefix
+            header('Location: ' . withBasePrefix($basePrefix, 'index.php?signup_error=email_exists'));
             exit;
         }
 
         /**
          * 2) Insert new row using prepared statement
-         *    (this protects us from quotes/apostrophes in values)
          */
         $stmtInsert = $db->prepare(
             "INSERT INTO signup (
@@ -103,7 +135,6 @@ if (isset($_POST['signup'])) {
             ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
         );
 
-        // All 14 fields are strings
         $stmtInsert->bind_param(
             "ssssssssssssss",
             $fname,
@@ -126,46 +157,61 @@ if (isset($_POST['signup'])) {
         $stmtInsert->close();
 
         /**
-         * 3) Send welcome email (same as before)
+         * 3) Send welcome email (non-blocking)
+         * ✅ Uses env vars (recommended)
          */
         $mail = new PHPMailer(true);
 
         try {
+            $smtpHost = $_ENV['SMTP_HOST'] ?? getenv('SMTP_HOST') ?: 'smtp.office365.com';
+            $smtpUser = $_ENV['SMTP_USER'] ?? getenv('SMTP_USER') ?: 'noreply@opinionelite.com';
+            $smtpPass = $_ENV['SMTP_PASS'] ?? getenv('SMTP_PASS') ?: '';
+            $smtpPort = (int)($_ENV['SMTP_PORT'] ?? getenv('SMTP_PORT') ?: 587);
+            $smtpSecure = $_ENV['SMTP_SECURE'] ?? getenv('SMTP_SECURE') ?: 'tls';
+
             // Server settings
             $mail->isSMTP();
-            $mail->Host       = 'smtp.office365.com';
+            $mail->Host       = $smtpHost;
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'noreply@opinionelite.com';  // Microsoft 365 email
-            $mail->Password   = 'kkzzxtbjxmhpkjvm';          // Real password or App Password
-            $mail->SMTPSecure = 'tls';
-            $mail->Port       = 587;
+            $mail->Username   = $smtpUser;
+            $mail->Password   = $smtpPass; // set SMTP_PASS in env
+            $mail->SMTPSecure = $smtpSecure;
+            $mail->Port       = $smtpPort;
 
-            $mail->setFrom('noreply@opinionelite.com', 'Opinion Elite');
+            $mail->setFrom($smtpUser, 'Opinion Elite');
             $mail->addAddress($email, $fname);
             $mail->isHTML(true);
             $mail->Subject = 'Welcome to Opinion Elite!';
             $mail->Body = '
                 <div style="max-width: 600px; margin: auto; padding: 20px; font-family: Arial, sans-serif; background-color: #f4f4f4%;">
+
                   <div style="background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 30px;">
+
                     <h2 style="color: #333333; text-align: center;">Welcome to <span style="color: #f1aa3f;">Opinion Elite</span>!</h2>
+
                     <p style="font-size: 16px; color: #555555;">
                       Hi ' . htmlspecialchars($fname) . ',
                     </p>
+
                     <p style="font-size: 16px; color: #555555; line-height: 1.6;">
                       Signup successfully completed. Once your account is active, you will be able to log in and start participating in our exclusive surveys and earn rewards.
                     </p>
+
                     <div style="text-align: center; margin: 30px 0;">
                       <a href="https://opinionelite.com" style="background-color: #f1aa3f; color: #ffffff; padding: 12px 24px; font-size: 16px; text-decoration: none; border-radius: 5px; display: inline-block;">
                         Visit Opinion Elite
                       </a>
                     </div>
+
                   </div>
                 </div>';
 
-            $mail->send();
+            // If SMTP_PASS isn't set, this might fail; we ignore failures (non-blocking).
+            if (!empty($smtpPass)) {
+                $mail->send();
+            }
         } catch (Exception $e) {
-            // Don't block signup if email fails – just log/ignore quietly in production
-            // echo "❌ Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            // Non-blocking
         }
 
         /**
@@ -184,23 +230,22 @@ if (isset($_POST['signup'])) {
                 $_SESSION['facebook_id']
             );
 
-            // Auto-login social user and go to home
+            // ✅ Auto-login social user and go to home (with base prefix)
+            $homeUrl = withBasePrefix($basePrefix, 'UI/index.php');
+
             echo "<script>
                 localStorage.setItem('passwordVerified', 'true');
                 localStorage.setItem('username', " . json_encode($username) . ");
-                window.location.href = 'UI/index.php';
+                window.location.href = " . json_encode($homeUrl) . ";
             </script>";
             exit;
         } else {
-            // Redirect with success flag for orange banner (direct signup)
-            header('Location: index.php?signup_success=1');
+            // ✅ Redirect with success flag for orange banner (direct signup) with base prefix
+            header('Location: ' . withBasePrefix($basePrefix, 'index.php?signup_success=1'));
             exit;
         }
     } catch (\mysqli_sql_exception $e) {
-        // If something DB-related blows up, show a friendly banner
-        // (and avoid a blank 500 like your friend saw)
         $signupErrorMessage = 'An unexpected error occurred while processing your signup. Please try again, or contact support if the issue persists.';
-        // Optionally log $e->getMessage() on the server if you have logging set up.
     }
 }
 ?>
@@ -280,7 +325,7 @@ if (isset($_POST['signup'])) {
                 educationSelect.appendChild(opt);
               });
 
-              // Fill Income dropdown (already in correct currency + brackets)
+              // Fill Income dropdown
               (data.incomes || []).forEach(function (inc) {
                 const opt = document.createElement('option');
                 opt.value = inc;
@@ -294,7 +339,6 @@ if (isset($_POST['signup'])) {
           })
           .catch(function (err) {
             console.error('Error loading countries.json:', err);
-            // Optional: you could show a small message or fallback here if needed
           });
       });
     </script>
@@ -358,7 +402,7 @@ if (isset($_POST['signup'])) {
                 </div>
               <?php endif; ?>
 
-              <!-- 🔴 ERROR BANNER (duplicate email or unexpected DB error) -->
+              <!-- 🔴 ERROR BANNER -->
               <?php if (!empty($signupErrorMessage)): ?>
                 <div
                   style="
@@ -499,7 +543,6 @@ if (isset($_POST['signup'])) {
                       name="education"
                       required
                     >
-                      <!-- Options filled via JS -->
                     </select>
                   </div>
 
@@ -511,7 +554,6 @@ if (isset($_POST['signup'])) {
                       name="income"
                       required
                     >
-                      <!-- Options filled via JS -->
                     </select>
                   </div>
 
@@ -628,23 +670,16 @@ if (isset($_POST['signup'])) {
                       <option value="Assistant or associate">
                         Assistant or associate
                       </option>
-                      <option
-                        value="C-Level (e.g. CEO, CFO), Owner, Partner, President"
-                      >
+                      <option value="C-Level (e.g. CEO, CFO), Owner, Partner, President">
                         C-Level (e.g. CEO, CFO), Owner, Partner, President
                       </option>
                       <option value="Consultant">Consultant</option>
-                      <option
-                        value="Director (Group Director, Sr. Director, Director)"
-                      >
+                      <option value="Director (Group Director, Sr. Director, Director)">
                         Director (Group Director, Sr. Director, Director)
                       </option>
                       <option value="Intern">Intern</option>
-                      <option
-                        value="Manager (Group Manager, Sr. Manager, Manager, Program Manager)"
-                      >
-                        Manager (Group Manager, Sr. Manager, Manager,
-                        Program Manager)
+                      <option value="Manager (Group Manager, Sr. Manager, Manager, Program Manager)">
+                        Manager (Group Manager, Sr. Manager, Manager, Program Manager)
                       </option>
                       <option value="Vice President (EVP, SVP, AVP, VP)">
                         Vice President (EVP, SVP, AVP, VP)
@@ -673,13 +708,9 @@ if (isset($_POST['signup'])) {
                     >
                   </div>
 
-                  <!-- Checkbox and Description -->
-                  <div
-                    class="col-span-1 sm:col-span-2 flex items-start gap-4 mt-4"
-                  >
-                    <label
-                      class="relative flex items-center cursor-pointer mt-[2px]"
-                    >
+                  <!-- Checkbox -->
+                  <div class="col-span-1 sm:col-span-2 flex items-start gap-4 mt-4">
+                    <label class="relative flex items-center cursor-pointer mt-[2px]">
                       <input
                         type="checkbox"
                         id="terms"
@@ -693,40 +724,22 @@ if (isset($_POST['signup'])) {
                         ✔
                       </span>
                     </label>
-                    <p
-                      class="text-white text-opacity-75 font-medium text-[17px] md:text-[20px]"
-                    >
+                    <p class="text-white text-opacity-75 font-medium text-[17px] md:text-[20px]">
                       I agree to the <a class="underline font-bold" href="">Terms of Use</a> and to receive marketing email
                       messages from Opinion Elite, and I accept the <a class="underline font-bold" href="">Privacy Policy</a>.
                     </p>
                   </div>
                 </div>
-                <div
-                  class="flex flex-wrap items-center justify-center md:justify-start gap-6"
-                >
-                  <button
-                    class="w-[300px] h-[80px] relative my-12"
-                    type="submit"
-                    name="signup"
-                  >
-                    <span
-                      class="relative z-[10] text-[16px] font-bold tracking-[0.03em] leading-none uppercase"
-                      >Join Now</span
-                    >
-                    <img
-                      class="absolute inset-0 z-0"
-                      src="imgs/join-button.png"
-                      alt="Signup"
-                    />
+
+                <div class="flex flex-wrap items-center justify-center md:justify-start gap-6">
+                  <button class="w-[300px] h-[80px] relative my-12" type="submit" name="signup">
+                    <span class="relative z-[10] text-[16px] font-bold tracking-[0.03em] leading-none uppercase">Join Now</span>
+                    <img class="absolute inset-0 z-0" src="imgs/join-button.png" alt="Signup" />
                   </button>
-              </form>
-                  <div
-                    class="flex items-center justify-center gap-6 mx-auto md:mx-0"
-                  >
-                    <!-- FB button currently disabled -->
-                  </div>
                 </div>
-              </div>
+              </form>
+
+            </div>
 
             <div class="hidden xl:flex video w-2/5 relative flex justify-end">
               <img
@@ -737,17 +750,12 @@ if (isset($_POST['signup'])) {
               <div
                 class="rounded-[25px] border-2 border-gray-800 overflow-hidden block w-[330px] h-[740px] absolute top-[-2%]"
               >
-                <video
-                  class="block w-full h-full object-cover"
-                  autoplay
-                  loop
-                  playsinline
-                  muted
-                >
+                <video class="block w-full h-full object-cover" autoplay loop playsinline muted>
                   <source src="video/app-video.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
+
           </div>
         </section>
 
