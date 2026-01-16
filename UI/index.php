@@ -56,7 +56,7 @@ include('header.php');
     </div>
 
     <div class="swiper-slide">
-      <div class="card profile-card" data-profile="" style="cursor:pointer;">
+      <div class="card profile-card" data-profile="Travel Profile" style="cursor:pointer;">
         <img src="images/traval.png" alt="Icon 5" class="icon">
         <h5>Travel Profile</h5>
         <h2>$2.00</h2>
@@ -74,7 +74,7 @@ include('header.php');
     </div>
 
     <div class="swiper-slide">
-      <div class="card profile-card" data-profile="" style="cursor:pointer;">
+      <div class="card profile-card" data-profile="Gaming Profile" style="cursor:pointer;">
         <img src="images/game.png" alt="Icon 5" class="icon">
         <h5>Gaming Profile</h5>
         <h2>$2.00</h2>
