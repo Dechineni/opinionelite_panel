@@ -56,8 +56,15 @@ if (empty($fbAppId) || empty($fbAppSecret)) {
 define('FB_APP_ID', $fbAppId);
 define('FB_APP_SECRET', $fbAppSecret);
 
-// This MUST match your Facebook “Valid OAuth Redirect URIs”
-define('FB_REDIRECT_URI', 'https://opinionelite.com/facebook-callback.php');
+// Build redirect URI dynamically so it works for:
+//   - prod:  https://.../facebook-callback.php
+//   - test:  https://.../test/facebook-callback.php
+//   - local: http://localhost/opinionelite_panel/facebook-callback.php
+// NOTE: Make sure you add BOTH prod and test redirect URIs in Facebook App settings.
+$scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+$host   = $_SERVER['HTTP_HOST'] ?? 'localhost';
+$dir    = rtrim(dirname($_SERVER['SCRIPT_NAME'] ?? ''), '/\\'); // '' or '/test' or '/opinionelite_panel'
+define('FB_REDIRECT_URI', $scheme . '://' . $host . $dir . '/facebook-callback.php');
 
 // Use the graph version your app is on (check in the Facebook app dashboard)
 define('FB_GRAPH_VERSION', 'v21.0');

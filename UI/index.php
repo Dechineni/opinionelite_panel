@@ -40,7 +40,7 @@ include('header.php');
     <div class="swiper-slide">
       <div class="card profile-card" data-profile="Work profile" style="cursor:pointer;">
         <img src="images/busin.png" alt="Icon 3" class="icon">
-        <h5>Business & Employment Profile</h5>
+        <h5>Professional Profile</h5>
         <h2>$2.00</h2>
         <!-- <p>7 MIN</p> -->
       </div>
@@ -49,9 +49,18 @@ include('header.php');
     <div class="swiper-slide">
       <div class="card profile-card" data-profile="Personal Profile" style="cursor:pointer;">
         <img src="images/enter.png" alt="Icon 4" class="icon">
-        <h5>Entertainment (TV/Film) Profile</h5>
+        <h5>Entertainment Profile</h5>
         <h2>$2.00</h2>
         <!-- <p>8 MIN</p> -->
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="card profile-card" data-profile="Travel Profile" style="cursor:pointer;">
+        <img src="images/traval.png" alt="Icon 5" class="icon">
+        <h5>Travel Profile</h5>
+        <h2>$2.00</h2>
+        <!-- <p>6 MIN</p> -->
       </div>
     </div>
     
@@ -59,6 +68,15 @@ include('header.php');
       <div class="card profile-card" data-profile="Auto Profile" style="cursor:pointer;">
         <img src="images/auto.png" alt="Icon 5" class="icon">
         <h5>Automotive Profile</h5>
+        <h2>$2.00</h2>
+        <!-- <p>6 MIN</p> -->
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="card profile-card" data-profile="Gaming Profile" style="cursor:pointer;">
+        <img src="images/game.png" alt="Icon 5" class="icon">
+        <h5>Gaming Profile</h5>
         <h2>$2.00</h2>
         <!-- <p>6 MIN</p> -->
       </div>
