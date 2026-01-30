@@ -1,12 +1,11 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 // UI/get_profile_answers.php
 // Public endpoint (token protected) that returns OP Panel profile answers for a given user.
 
 include_once __DIR__ . '/config.php';
-
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 
 header('Content-Type: application/json');
 
