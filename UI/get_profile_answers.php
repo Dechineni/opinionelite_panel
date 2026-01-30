@@ -1,11 +1,10 @@
 <?php
-ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 // UI/get_profile_answers.php
 // Public endpoint (token protected) that returns OP Panel profile answers for a given user.
 
-include_once __DIR__ . '/config.php';
+require_once __DIR__ . '/config.php';
 
 header('Content-Type: application/json');
 
@@ -60,7 +59,7 @@ $sql = "
   WHERE ua.user_id = ?
 ";
 
-$stmt = $con->prepare($sql);
+$stmt = $db->prepare($sql);
 if (!$stmt) {
   http_response_code(500);
   echo json_encode(['error' => 'DB prepare failed']);
