@@ -1,84 +1,78 @@
-<?php
-include('header.php');
-?>
-<div>
-<div class="container mt-5">
-  <h5 class="text-dark font-weight-bold border-bottom pb-2">Current Surveys</h5>
+<?php include('header.php'); ?>
 
-  <div class="d-flex justify-content-end mb-2">
-    <button class="btn btn-outline-light btn-sm">Refresh</button>
+<div class="container mx-auto px-4 py-6">
+  <h2 class="text-xl font-semibold mb-4">Surveys</h2>
+
+  <div id="surveys-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <!-- cards injected by JS -->
   </div>
 
-  <p>
-    We’re sorry, but we currently do not have any surveys that match your profile. Please keep updating your profile to improve your chances of receiving surveys.
-  </p>
-
-  <!-- <div class="row no-gutters border mt-5">
-    
-    <div class="col-md-10 p-3">
-      <div>
-        <strong class="text-dark">799484</strong> - 
-        <a href="#" class="font-weight-bold text-decoration-none text-dark">Consumer Opinion Survey</a>
-        <span class="text-dark">( 19 minutes )</span>
-      </div>
-      <div class="mt-1">
-        Complete this survey today and earn <strong>$1.25</strong>
-        <a href="#" class="text-primary text-decoration-none">Click here to start</a>
-      </div>
-    </div>
-    
-    <div class="col-md-2 d-flex align-items-center justify-content-center text-white" style="background-color: #fd8e19;">
-      <div class="text-center">
-        <small class="text-uppercase">You Earn</small><br>
-        <strong style="font-size: 1.25rem;">$1.25</strong>
-      </div>
-    </div>
+  <div id="surveys-empty" class="hidden text-slate-600 mt-6">
+    No surveys available for your profile right now.
   </div>
-    
-   <div class="row no-gutters border mt-5">
-    
-    <div class="col-md-10 p-3">
-      <div>
-        <strong class="text-dark">799484</strong> - 
-        <a href="#" class="font-weight-bold text-decoration-none text-dark">Consumer Opinion Survey</a>
-        <span class="text-dark">( 19 minutes )</span>
-      </div>
-      <div class="mt-1">
-        Complete this survey today and earn <strong>$1.25</strong>
-        <a href="#" class="text-primary text-decoration-none">Click here to start</a>
-      </div>
-    </div>
-    
-    <div class="col-md-2 d-flex align-items-center justify-content-center text-white" style="background-color: #fd8e19;">
-      <div class="text-center">
-        <small class="text-uppercase">You Earn</small><br>
-        <strong style="font-size: 1.25rem;">$1.25</strong>
-      </div>
-    </div>
-  </div>
-   <div class="row no-gutters border mt-5">
-    
-    <div class="col-md-10 p-3">
-      <div>
-        <strong class="text-dark">799484</strong> - 
-        <a href="#" class="font-weight-bold text-decoration-none text-dark">Consumer Opinion Survey</a>
-        <span class="text-dark">( 19 minutes )</span>
-      </div>
-      <div class="mt-1">
-        Complete this survey today and earn <strong>$1.25</strong>
-        <a href="#" class="text-primary text-decoration-none">Click here to start</a>
-      </div>
-    </div>
-    
-    <div class="col-md-2 d-flex align-items-center justify-content-center text-white" style="background-color: #fd8e19;">
-      <div class="text-center">
-        <small class="text-uppercase">You Earn</small><br>
-        <strong style="font-size: 1.25rem;">$1.25</strong>
-      </div>
-    </div>
-  </div> -->
-
 </div>
-<?php
-include('footer.php');
-?>
+
+<script>
+  async function loadSurveys() {
+    const username = localStorage.getItem('username');
+    if (!username) {
+      document.getElementById('surveys-empty').classList.remove('hidden');
+      return;
+    }
+
+    const form = new FormData();
+    form.append('username', username);
+
+    const res = await fetch('get_surveys.php', { method: 'POST', body: form });
+    const json = await res.json().catch(() => ({}));
+
+    const items = Array.isArray(json.items) ? json.items : [];
+    const grid = document.getElementById('surveys-grid');
+
+    if (!items.length) {
+      document.getElementById('surveys-empty').classList.remove('hidden');
+      return;
+    }
+
+    grid.innerHTML = items.map(item => {
+      const name = item.surveyName || 'Survey';
+      const link = item.surveyLink || '#';
+      const loi  = item.loi ?? 0;
+      const rew  = item.rewards ?? 0;
+
+      return `
+        <div class="bg-white rounded-lg shadow p-4 border border-slate-200">
+          <div class="text-sm font-semibold text-slate-900 mb-2">${escapeHtml(name)}</div>
+
+          <div class="text-sm text-slate-700 mb-1">
+            <span class="font-medium">LOI:</span> ${escapeHtml(String(loi))}
+          </div>
+
+          <div class="text-sm text-slate-700 mb-3">
+            <span class="font-medium">Rewards:</span> ${escapeHtml(String(rew))}
+          </div>
+
+          <a href="${escapeAttr(link)}"
+             class="inline-block bg-teal-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-teal-700"
+             target="_blank" rel="noopener noreferrer">
+            Start Survey
+          </a>
+        </div>
+      `;
+    }).join('');
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, (c) => ({
+      '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+    }[c]));
+  }
+  function escapeAttr(s) {
+    // basic safety for href
+    return escapeHtml(s);
+  }
+
+  loadSurveys();
+</script>
+
+<?php include('footer.php'); ?>
