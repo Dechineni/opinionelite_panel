@@ -13,9 +13,9 @@ header('Content-Type: application/json');
  *   - X-Api-Key: <token>
  *
  * Configure the expected token in public_html/.env as:
- *   OPPANEL_PROFILE_API_KEY=...
+ *   OP_PANEL_PROFILE_API_KEY=...
  */
-$EXPECTED_KEY = oe_env('OPPANEL_PROFILE_API_KEY', '');
+$EXPECTED_KEY = oe_env('OP_PANEL_PROFILE_API_KEY', '');
 
 $authHeader = $_SERVER['HTTP_AUTHORIZATION'] ?? '';
 $apiKeyHeader = $_SERVER['HTTP_X_API_KEY'] ?? '';

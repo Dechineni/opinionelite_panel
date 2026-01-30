@@ -15,7 +15,7 @@ if ($username === '') {
 }
 
 // These must be configured on Hostinger (.env loaded by UI/config.php)
-$OE_API_BASE = oe_env('OE_API_BASE', 'https://opinion-elite.com');
+$OE_API_BASE = oe_env('OP_ELITE_UI_BASE', 'https://opinion-elite.com');
 $CALLER_KEY  = oe_env('OP_PANEL_CALLER_KEY', '');
 
 if (!$CALLER_KEY) {
