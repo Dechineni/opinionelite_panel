@@ -68,7 +68,7 @@ if (!$conn) {
 $sql = "
   SELECT qa.name AS question_key, ua.answer AS answer_value
   FROM user_answers ua
-  INNER JOIN question_answers qa ON qa.id = ua.question_id
+  INNER JOIN question_answers qa ON qa.question_id = ua.question_id
   WHERE ua.user_id = ?
 ";
 
