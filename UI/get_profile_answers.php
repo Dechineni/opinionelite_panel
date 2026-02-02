@@ -3,7 +3,7 @@
 // Token-protected endpoint: returns OP Panel profile answers for a user.
 // Used server-to-server by OpinionElite UI.
 
-include_once __DIR__ . '/config.php';
+require_once __DIR__ . '/config.php';
 
 header('Content-Type: application/json');
 
