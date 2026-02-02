@@ -1,86 +1,91 @@
 <?php
-
 // UI/get_profile_answers.php
-// Public endpoint (token protected) that returns OP Panel profile answers for a given user.
+// Token-protected endpoint: returns OP Panel profile answers for a user.
+// Used server-to-server by OpinionElite UI.
 
-require_once __DIR__ . '/config.php';
+include_once __DIR__ . '/config.php';
 
 header('Content-Type: application/json');
 
-/**
- * Auth (server-to-server)
- * - Expect a shared secret in either:
- *   - Authorization: Bearer <token>
- *   - X-Api-Key: <token>
- *
- * Configure the expected token in public_html/.env as:
- *   OP_PANEL_PROFILE_API_KEY=...
- */
-$EXPECTED_KEY = oe_env('OP_PANEL_PROFILE_API_KEY', '');
-
-$authHeader = $_SERVER['HTTP_AUTHORIZATION'] ?? '';
-$apiKeyHeader = $_SERVER['HTTP_X_API_KEY'] ?? '';
-
-$token = '';
-if (preg_match('/Bearer\s+(.*)$/i', $authHeader, $m)) {
-  $token = trim($m[1]);
-} elseif (is_string($apiKeyHeader) && trim($apiKeyHeader) !== '') {
-  $token = trim($apiKeyHeader);
-}
-
-if (!$EXPECTED_KEY || $token !== $EXPECTED_KEY) {
+function unauthorized($msg = "Unauthorized") {
   http_response_code(401);
-  echo json_encode(['error' => 'Unauthorized']);
+  echo json_encode(["error" => $msg]);
   exit;
 }
 
-// ---- input ----
-$userId = trim((string)($_GET['user_id'] ?? ''));
+function getBearerToken() {
+  // Works in most environments
+  $hdr = $_SERVER['HTTP_AUTHORIZATION'] ?? '';
 
+  // Some hosts may provide it differently
+  if (!$hdr && function_exists('apache_request_headers')) {
+    $headers = apache_request_headers();
+    if (isset($headers['Authorization'])) $hdr = $headers['Authorization'];
+    if (isset($headers['authorization'])) $hdr = $headers['authorization'];
+  }
+
+  if (!$hdr) return null;
+
+  if (stripos($hdr, 'Bearer ') === 0) {
+    return trim(substr($hdr, 7));
+  }
+  return null;
+}
+
+$expected = oe_env('OP_PANEL_PROFILE_API_KEY', '');
+if (!$expected) {
+  http_response_code(500);
+  echo json_encode(["error" => "Server misconfigured: OP_PANEL_PROFILE_API_KEY not set"]);
+  exit;
+}
+
+$token = getBearerToken();
+if (!$token || !hash_equals($expected, $token)) {
+  unauthorized();
+}
+
+$userId = trim((string)($_GET['user_id'] ?? ''));
 if ($userId === '') {
   http_response_code(400);
-  echo json_encode(['error' => 'Missing user_id']);
+  echo json_encode(["error" => "Missing user_id"]);
+  exit;
+}
+
+// NOTE: in your config.php DB connection variable is $db (mysqli)
+if (!isset($db) || !$db) {
+  http_response_code(500);
+  echo json_encode(["error" => "DB not initialized"]);
   exit;
 }
 
 /**
- * OP Panel DB tables:
- * - user_answers(user_id, question_id, answer)
- * - question_answers(id, name, question)
- *
- * We return answers keyed by question_answers.name
- * (e.g. AGE, SALARY, STANDARD_TRAVEL_COUNTRIES).
+ * Table assumption:
+ * user_answers(user_id, question, answer)
+ * If your columns are different, tell me and I’ll adjust the query.
  */
-$sql = "
-  SELECT qa.name AS question_key, ua.answer AS answer_value
-  FROM user_answers ua
-  INNER JOIN question_answers qa ON qa.id = ua.question_id
-  WHERE ua.user_id = ?
-";
+$sql = "SELECT question, answer FROM user_answers WHERE user_id = ?";
 
 $stmt = $db->prepare($sql);
 if (!$stmt) {
   http_response_code(500);
-  echo json_encode(['error' => 'DB prepare failed']);
+  echo json_encode(["error" => "DB prepare failed"]);
   exit;
 }
 
-$stmt->bind_param('s', $userId);
+$stmt->bind_param("s", $userId);
 $stmt->execute();
 $res = $stmt->get_result();
 
 $answers = [];
 while ($row = $res->fetch_assoc()) {
-  $k = (string)($row['question_key'] ?? '');
-  $v = (string)($row['answer_value'] ?? '');
-  if ($k !== '') {
-    $answers[$k] = $v;
-  }
+  $q = trim((string)($row['question'] ?? ''));
+  $a = (string)($row['answer'] ?? '');
+  if ($q !== '') $answers[$q] = $a;
 }
-
 $stmt->close();
 
+// Force answers to be JSON object {} even when empty
 echo json_encode([
-  'userId' => $userId,
-  'answers' => $answers,
+  "userId" => $userId,
+  "answers" => (object)$answers
 ]);
