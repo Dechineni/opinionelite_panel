@@ -1,78 +1,135 @@
-<?php include('header.php'); ?>
+<?php
+include('config.php');
+include('header.php');
+?>
 
-<div class="container mx-auto px-4 py-6">
-  <h2 class="text-xl font-semibold mb-4">Surveys</h2>
+<style>
+.survey-list-container {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.survey-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+.survey-card {
+    background: #1a1a1a;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 15px;
+    width: 280px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.survey-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ff9800;
+}
+.survey-card p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+.survey-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #ff9800;
+    color: #000;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.survey-card a:hover { background: #e68900; }
 
-  <div id="surveys-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-    <!-- cards injected by JS -->
-  </div>
+.notice {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: #121212;
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: #ddd;
+    font-size: 14px;
+}
+.notice.error {
+    border-color: #a33;
+    color: #ffb3b3;
+}
+</style>
 
-  <div id="surveys-empty" class="hidden text-slate-600 mt-6">
-    No surveys available for your profile right now.
-  </div>
+<div class="survey-list-container">
+    <h1 style="color:#fff;">Surveys</h1>
+    <div id="surveyContainer" class="survey-list"></div>
+    <div id="surveyMessage" class="notice" style="display:none;"></div>
 </div>
 
 <script>
-  async function loadSurveys() {
-    const username = localStorage.getItem('username');
-    if (!username) {
-      document.getElementById('surveys-empty').classList.remove('hidden');
-      return;
-    }
+(function(){
+  const username = (localStorage.getItem("username") || "").trim();
+  const container = document.getElementById("surveyContainer");
+  const msgBox = document.getElementById("surveyMessage");
 
-    const form = new FormData();
-    form.append('username', username);
-
-    const res = await fetch('get_surveys.php', { method: 'POST', body: form });
-    const json = await res.json().catch(() => ({}));
-
-    const items = Array.isArray(json.items) ? json.items : [];
-    const grid = document.getElementById('surveys-grid');
-
-    if (!items.length) {
-      document.getElementById('surveys-empty').classList.remove('hidden');
-      return;
-    }
-
-    grid.innerHTML = items.map(item => {
-      const name = item.surveyName || 'Survey';
-      const link = item.surveyLink || '#';
-      const loi  = item.loi ?? 0;
-      const rew  = item.rewards ?? 0;
-
-      return `
-        <div class="bg-white rounded-lg shadow p-4 border border-slate-200">
-          <div class="text-sm font-semibold text-slate-900 mb-2">${escapeHtml(name)}</div>
-
-          <div class="text-sm text-slate-700 mb-1">
-            <span class="font-medium">LOI:</span> ${escapeHtml(String(loi))}
-          </div>
-
-          <div class="text-sm text-slate-700 mb-3">
-            <span class="font-medium">Rewards:</span> ${escapeHtml(String(rew))}
-          </div>
-
-          <a href="${escapeAttr(link)}"
-             class="inline-block bg-teal-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-teal-700"
-             target="_blank" rel="noopener noreferrer">
-            Start Survey
-          </a>
-        </div>
-      `;
-    }).join('');
+  function showMessage(text, isError=false){
+    msgBox.style.display = "block";
+    msgBox.className = "notice" + (isError ? " error" : "");
+    msgBox.textContent = text;
   }
 
-  function escapeHtml(s) {
-    return String(s).replace(/[&<>"']/g, (c) => ({
-      '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
-    }[c]));
-  }
-  function escapeAttr(s) {
-    // basic safety for href
-    return escapeHtml(s);
+  if (!username) {
+    showMessage("No user found. Please login again.", true);
+    return;
   }
 
-  loadSurveys();
+  // Use GET with user_id to match your working Postman test
+  const url = `get_surveys.php?user_id=${encodeURIComponent(username)}`;
+
+  fetch(url, { cache: "no-store" })
+    .then(async (res) => {
+      const text = await res.text();
+      let json = {};
+      try { json = JSON.parse(text); } catch (e) {
+        throw new Error(`Non-JSON response (${res.status}). Body: ${text.slice(0, 200)}`);
+      }
+      if (!res.ok) {
+        throw new Error(json.error ? `${json.error}${json.detail ? " - " + json.detail : ""}` : `Request failed (${res.status})`);
+      }
+      return json;
+    })
+    .then((data) => {
+      const items = Array.isArray(data.items) ? data.items : [];
+      container.innerHTML = "";
+
+      if (!items.length) {
+        showMessage("No surveys available for your profile right now.");
+        return;
+      }
+
+      msgBox.style.display = "none";
+
+      items.forEach((survey) => {
+        const card = document.createElement("div");
+        card.className = "survey-card";
+
+        card.innerHTML = `
+          <h3>${survey.surveyName || "Survey"}</h3>
+          <p><strong>Supplier:</strong> ${(survey.supplierName || "—")}</p>
+          <p><strong>LOI:</strong> ${(survey.loi ?? "—")}</p>
+          <p><strong>Rewards:</strong> ${(survey.rewards ?? "—")}</p>
+          <a href="${survey.surveyLink}" target="_blank" rel="noopener noreferrer">Start Survey</a>
+        `;
+
+        container.appendChild(card);
+      });
+    })
+    .catch((err) => {
+      container.innerHTML = "";
+      showMessage(err?.message || "Failed to load surveys.", true);
+      console.error("Survey load error:", err);
+    });
+})();
 </script>
 
 <?php include('footer.php'); ?>
