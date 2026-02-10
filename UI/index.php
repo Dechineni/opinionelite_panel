@@ -49,7 +49,7 @@ include('header.php');
     <div class="swiper-slide">
       <div class="card profile-card" data-profile="Personal Profile" style="cursor:pointer;">
         <img src="images/enter.png" alt="Icon 4" class="icon">
-        <h5>Entertainment Profile</h5>
+        <h5>Personal Profile</h5>
         <h2>$2.00</h2>
         <!-- <p>8 MIN</p> -->
       </div>
