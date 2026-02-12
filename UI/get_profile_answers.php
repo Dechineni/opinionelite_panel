@@ -127,7 +127,30 @@ while ($stmt->fetch()) {
 
 $stmt->close();
 
+// ---- Signup context (country/birthday/zipcode etc.) ----
+// Used by OpinionElite UI for additional eligibility checks.
+$signup = [
+  'country'  => null,
+  'birthday' => null,
+];
+
+// NOTE: signup.username stores the user's "username" used across OP Panel.
+$sql2 = "SELECT country, birthday FROM signup WHERE username = ? LIMIT 1";
+$stmt2 = $conn->prepare($sql2);
+if ($stmt2) {
+  $stmt2->bind_param('s', $userId);
+  if ($stmt2->execute()) {
+    $stmt2->bind_result($country, $birthday, $zipcode);
+    if ($stmt2->fetch()) {
+      $signup['country']  = $country !== null ? (string)$country : null;
+      $signup['birthday'] = $birthday !== null ? (string)$birthday : null;
+    }
+  }
+  $stmt2->close();
+}
+
 echo json_encode([
   'userId'  => $userId,
+  'signup'  => $signup,
   'answers' => $answers,
 ]);
