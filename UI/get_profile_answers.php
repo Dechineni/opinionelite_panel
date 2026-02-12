@@ -140,7 +140,7 @@ $stmt2 = $conn->prepare($sql2);
 if ($stmt2) {
   $stmt2->bind_param('s', $userId);
   if ($stmt2->execute()) {
-    $stmt2->bind_result($country, $birthday, $zipcode);
+    $stmt2->bind_result($country, $birthday);
     if ($stmt2->fetch()) {
       $signup['country']  = $country !== null ? (string)$country : null;
       $signup['birthday'] = $birthday !== null ? (string)$birthday : null;
