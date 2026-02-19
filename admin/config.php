@@ -2,8 +2,8 @@
 
 // Database configuration 
 $dbHost     = "localhost"; 
-$dbUsername = "root"; 
-$dbPassword = ""; 
+$dbUsername = "u300474982_opinion"; 
+$dbPassword = "^l/XV[cE6"; 
 $dbName     = "u300474982_opinion"; 
  
 // Create database connection 
