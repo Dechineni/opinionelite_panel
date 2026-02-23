@@ -6,7 +6,7 @@ include('header.php');
 <style>
 .survey-list-container {
     padding: 20px;
-    max-width: 1100px; /* centered, adjust if you want full screen */
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -24,7 +24,7 @@ include('header.php');
     margin-top: 16px;
 }
 
-/* ✅ GRID LAYOUT: left | center | right */
+/* ✅ Perfect center button: 1fr | auto | 1fr */
 .survey-card {
     background: #1a1a1a;
     border: 1px solid #444;
@@ -35,11 +35,14 @@ include('header.php');
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 
     display: grid;
-    grid-template-columns: 1fr auto 180px; /* left grows, center tight, right fixed */
+    grid-template-columns: 1fr auto 1fr; /* ✅ equal side columns */
     align-items: center;
     column-gap: 16px;
 }
 
+.survey-card-left {
+    justify-self: start; /* left aligned */
+}
 .survey-card-left h3 {
     font-size: 18px;
     margin: 0 0 10px 0;
@@ -51,13 +54,15 @@ include('header.php');
 }
 
 .survey-card-center {
+    justify-self: center; /* ✅ true center of whole card */
     display: flex;
     align-items: center;
-    justify-content: center; /* ✅ exact center of the middle column */
+    justify-content: center;
 }
 
 .survey-card-right {
-    text-align: right;      /* ✅ LOI/Rewards on far right */
+    justify-self: end;   /* push to far right edge */
+    text-align: right;
 }
 .survey-card-right p {
     margin: 6px 0;
@@ -120,14 +125,16 @@ include('header.php');
     color: #ffb3b3;
 }
 
-/* Optional: make cards adapt better on small screens */
+/* ✅ Mobile: stack */
 @media (max-width: 720px) {
   .survey-card {
-    grid-template-columns: 1fr; /* stack */
+    grid-template-columns: 1fr;
     row-gap: 12px;
   }
-  .survey-card-right { text-align: left; }
-  .survey-card-center { justify-content: flex-start; }
+  .survey-card-left, .survey-card-center, .survey-card-right {
+    justify-self: start;
+    text-align: left;
+  }
 }
 </style>
 
