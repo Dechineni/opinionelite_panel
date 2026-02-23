@@ -1,6 +1,6 @@
 <?php
-include('config.php');
-include('header.php');
+include('config.php'); 
+include('header.php'); 
 ?>
 
 <style>
@@ -58,78 +58,131 @@ include('header.php');
     border-color: #a33;
     color: #ffb3b3;
 }
+.notice.top-alert {
+    background: #ffb3b3;
+    border: 1px solid #ffb3b3;
+    color: #a33;
+}
 </style>
 
 <div class="survey-list-container">
+
+    <div id="surveyTopMessage" class="notice" style="display:none;"></div>
+  
+    <div style="display:flex; justify-content:space-between; align-items:center;">
     <h1 style="color:#fff;">Surveys</h1>
+
+    <button onclick="refreshSurveys()" style="
+        padding:8px 14px;
+        background:#ff9800;
+        border:none;
+        border-radius:6px;
+        font-weight:bold;
+        cursor:pointer;">
+        Refresh
+    </button>
+</div>
+    <div id="surveyEmptyMessage" class="notice" style="display:none;"></div>
+
     <div id="surveyContainer" class="survey-list"></div>
-    <div id="surveyMessage" class="notice" style="display:none;"></div>
+    
 </div>
 
 <script>
 (function(){
+
   const username = (localStorage.getItem("username") || "").trim();
   const container = document.getElementById("surveyContainer");
-  const msgBox = document.getElementById("surveyMessage");
+  const topmsg = document.getElementById("surveyTopMessage");
+  const emptymsg = document.getElementById("surveyEmptyMessage");
 
-  function showMessage(text, isError=false){
-    msgBox.style.display = "block";
-    msgBox.className = "notice" + (isError ? " error" : "");
-    msgBox.textContent = text;
-  }
+  
+function showTopMessage(text) {
+  topmsg.style.display = "block";
+  topmsg.textContent = text;
+  topmsg.className = "notice top-alert";
+}
+
+function showEmptyMessage(text) {
+  emptymsg.style.display = "block";
+  emptymsg.textContent = text;
+}
+
+function hideMessages() {
+  topmsg.style.display = "none";
+  emptymsg.style.display = "none";
+}
 
   if (!username) {
-    showMessage("No user found. Please login again.", true);
+    showTopMessage("No user found. Please login again.");
     return;
   }
 
-  // Use GET with user_id to match your working Postman test
-  const url = `get_surveys.php?user_id=${encodeURIComponent(username)}`;
+  function loadSurveys(showAlert = false) {
 
-  fetch(url, { cache: "no-store" })
-    .then(async (res) => {
-      const text = await res.text();
-      let json = {};
-      try { json = JSON.parse(text); } catch (e) {
-        throw new Error(`Non-JSON response (${res.status}). Body: ${text.slice(0, 200)}`);
-      }
-      if (!res.ok) {
-        throw new Error(json.error ? `${json.error}${json.detail ? " - " + json.detail : ""}` : `Request failed (${res.status})`);
-      }
-      return json;
-    })
-    .then((data) => {
-      const items = Array.isArray(data.items) ? data.items : [];
-      container.innerHTML = "";
+    const url = `get_surveys.php?user_id=${encodeURIComponent(username)}`;
 
-      if (!items.length) {
-        showMessage("No surveys available for your profile right now.");
-        return;
-      }
+    fetch(url, { cache: "no-store" })
+      .then(async (res) => {
+        const text = await res.text();
+        let json = {};
+        try { json = JSON.parse(text); } 
+        catch (e) { throw new Error("Invalid server response."); }
 
-      msgBox.style.display = "none";
+        if (!res.ok) {
+          throw new Error(json.error || `Request failed (${res.status})`);
+        }
+        return json;
+      })
+      .then((data) => {
+        const items = Array.isArray(data.items) ? data.items : [];
+        container.innerHTML = "";
 
-      items.forEach((survey) => {
-        const card = document.createElement("div");
-        card.className = "survey-card";
+        if (!items.length) {
 
-        card.innerHTML = `
-          <h3>${survey.surveyName || "Survey"}</h3>
-          <p><strong>Supplier:</strong> ${(survey.supplierName || "—")}</p>
-          <p><strong>LOI:</strong> ${(survey.loi ?? "—")}</p>
-          <p><strong>Rewards:</strong> ${(survey.rewards ?? "—")}</p>
-          <a href="${survey.surveyLink}" target="_blank" rel="noopener noreferrer">Start Survey</a>
-        `;
+  if (showAlert) {
+    showTopMessage("No New Surveys");
+  }
 
-        container.appendChild(card);
+  showEmptyMessage("No surveys available for your profile right now.");
+  return;
+}
+
+        hideMessages();
+
+        if (showAlert) {
+          showTopMessage("New Surveys are Added");
+        }
+
+        items.forEach((survey) => {
+          const card = document.createElement("div");
+          card.className = "survey-card";
+
+          card.innerHTML = `
+            <h3>${survey.surveyName || "Survey"}</h3>
+            <p><strong>Supplier:</strong> ${(survey.supplierName || "—")}</p>
+            <p><strong>LOI:</strong> ${(survey.loi ?? "—")}</p>
+            <p><strong>Rewards:</strong> ${(survey.rewards ?? "—")}</p>
+            <a href="${survey.surveyLink}" target="_blank">Start Survey</a>
+          `;
+
+          container.appendChild(card);
+        });
+      })
+      .catch((err) => {
+        container.innerHTML = "";
+        showTopMessage(err?.message || "Failed to load surveys.");
       });
-    })
-    .catch((err) => {
-      container.innerHTML = "";
-      showMessage(err?.message || "Failed to load surveys.", true);
-      console.error("Survey load error:", err);
-    });
+  }
+
+  //  This must be OUTSIDE loadSurveys
+  window.refreshSurveys = function() {
+    loadSurveys(true);
+  };
+
+  // Initial load
+  loadSurveys(false);
+
 })();
 </script>
-
 <?php include('footer.php'); ?>
