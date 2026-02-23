@@ -19,35 +19,53 @@ include('header.php');
 
 .survey-list {
     display: flex;
-    flex-direction: column; /* ✅ one below the other */
+    flex-direction: column;
     gap: 16px;
     margin-top: 16px;
 }
 
+/* ✅ GRID LAYOUT: left | center | right */
 .survey-card {
     background: #1a1a1a;
     border: 1px solid #444;
     border-radius: 10px;
     padding: 18px;
-    width: 100%; /* ✅ full width */
+    width: 100%;
     color: #fff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+
+    display: grid;
+    grid-template-columns: 1fr auto 180px; /* left grows, center tight, right fixed */
+    align-items: center;
+    column-gap: 16px;
 }
 
-.survey-card h3 {
+.survey-card-left h3 {
     font-size: 18px;
     margin: 0 0 10px 0;
     color: #ff9800;
 }
+.survey-card-left p {
+    margin: 6px 0;
+    font-size: 14px;
+}
 
-.survey-card p {
+.survey-card-center {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* ✅ exact center of the middle column */
+}
+
+.survey-card-right {
+    text-align: right;      /* ✅ LOI/Rewards on far right */
+}
+.survey-card-right p {
     margin: 6px 0;
     font-size: 14px;
 }
 
 .survey-card a {
     display: inline-block;
-    margin-top: 12px;
     padding: 10px 16px;
     background: #ff9800;
     color: #000;
@@ -55,7 +73,6 @@ include('header.php');
     border-radius: 6px;
     font-weight: bold;
 }
-
 .survey-card a:hover { background: #e68900; }
 
 .refresh-btn {
@@ -102,6 +119,16 @@ include('header.php');
     border-color: #a33;
     color: #ffb3b3;
 }
+
+/* Optional: make cards adapt better on small screens */
+@media (max-width: 720px) {
+  .survey-card {
+    grid-template-columns: 1fr; /* stack */
+    row-gap: 12px;
+  }
+  .survey-card-right { text-align: left; }
+  .survey-card-center { justify-content: flex-start; }
+}
 </style>
 
 <div class="survey-list-container">
@@ -128,7 +155,6 @@ include('header.php');
   const topMsg = document.getElementById("surveyTopMessage");
   const emptyMsg = document.getElementById("surveyEmptyMessage");
 
-  // Keep last signature so we can detect changes
   let lastSignature = null;
 
   function showTopMessage(text, type = "info") {
@@ -136,7 +162,6 @@ include('header.php');
     topMsg.className = `notice top ${type}`;
     topMsg.textContent = text;
 
-    // auto-hide after a few seconds (optional UX)
     clearTimeout(showTopMessage._t);
     showTopMessage._t = setTimeout(() => {
       topMsg.style.display = "none";
@@ -168,8 +193,6 @@ include('header.php');
   }
 
   function computeSignature(items) {
-    // Use stable fields to detect change; surveyLink is best unique key.
-    // Sort to make signature order-independent.
     const keys = items.map(i => String(i.surveyLink || "")).sort();
     return JSON.stringify(keys);
   }
@@ -190,11 +213,19 @@ include('header.php');
       const rewardsText = formatRewards(survey.rewards);
 
       card.innerHTML = `
-        <h3>${survey.surveyName || "Survey"}</h3>
-        <p><strong>Supplier:</strong> ${survey.supplierName || "—"}</p>
-        <p><strong>LOI:</strong> ${loiText}</p>
-        <p><strong>Rewards:</strong> ${rewardsText}</p>
-        <a href="${survey.surveyLink}" target="_blank" rel="noopener noreferrer">Start Survey</a>
+        <div class="survey-card-left">
+          <h3>${survey.surveyName || "Survey"}</h3>
+          <p><strong>Supplier:</strong> ${survey.supplierName || "—"}</p>
+        </div>
+
+        <div class="survey-card-center">
+          <a href="${survey.surveyLink}" target="_blank" rel="noopener noreferrer">Start Survey</a>
+        </div>
+
+        <div class="survey-card-right">
+          <p><strong>LOI:</strong> ${loiText}</p>
+          <p><strong>Rewards:</strong> ${rewardsText}</p>
+        </div>
       `;
 
       container.appendChild(card);
@@ -219,7 +250,6 @@ include('header.php');
       .then((data) => {
         const items = Array.isArray(data.items) ? data.items : [];
 
-        // If empty
         if (!items.length) {
           clearCards();
           showEmptyMessage("No surveys available for your profile right now.");
@@ -228,7 +258,6 @@ include('header.php');
             showTopMessage("No New Surveys", "info");
           }
 
-          // Reset signature so next time if surveys appear, it counts as new
           lastSignature = computeSignature([]);
           return;
         }
@@ -238,13 +267,11 @@ include('header.php');
 
         const newSig = computeSignature(items);
 
-        // First load: set baseline, don't show "new surveys"
         if (lastSignature === null) {
           lastSignature = newSig;
           return;
         }
 
-        // Refresh: show alert only if list changed
         if (showRefreshAlert) {
           if (newSig !== lastSignature) {
             showTopMessage("New Surveys are Added", "success");
@@ -263,12 +290,10 @@ include('header.php');
       });
   }
 
-  // Expose refresh button handler
   window.refreshSurveys = function() {
     loadSurveys({ showRefreshAlert: true });
   };
 
-  // Initial load (no refresh alert)
   loadSurveys({ showRefreshAlert: false });
 
 })();
