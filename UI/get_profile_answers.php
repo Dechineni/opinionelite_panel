@@ -1,7 +1,5 @@
 <?php
 // UI/get_profile_answers.php
-// Token-protected endpoint that returns OP Panel profile answers for a given user.
-
 header('Content-Type: application/json');
 
 // Log errors to file (safe); do not display in production
@@ -13,20 +11,9 @@ ini_set('display_startup_errors', '0');
 
 require_once __DIR__ . '/config.php';
 
-/**
- * Auth (server-to-server)
- * Accept either:
- *  - Authorization: Bearer <token>
- *  - X-Api-Key: <token>
- *
- * Token expected in .env:
- *  OP_PANEL_PROFILE_API_KEY=...
- */
 function read_env_value($key, $default = '') {
-  // Prefer your project helper if it exists
   if (function_exists('oe_env')) return oe_env($key, $default);
 
-  // Fall back to getenv / $_ENV / $_SERVER
   $v = getenv($key);
   if ($v !== false && $v !== null && $v !== '') return $v;
 
@@ -36,6 +23,7 @@ function read_env_value($key, $default = '') {
   return $default;
 }
 
+// ---- Auth ----
 $EXPECTED_KEY = trim((string) read_env_value('OP_PANEL_PROFILE_API_KEY', ''));
 
 $authHeader   = $_SERVER['HTTP_AUTHORIZATION'] ?? '';
@@ -55,18 +43,14 @@ if ($EXPECTED_KEY === '' || !hash_equals($EXPECTED_KEY, $token)) {
 }
 
 // ---- input ----
-$userId = trim((string)($_GET['user_id'] ?? ''));
-if ($userId === '') {
+$userIdParam = trim((string)($_GET['user_id'] ?? ''));
+if ($userIdParam === '') {
   http_response_code(400);
   echo json_encode(['error' => 'Missing user_id']);
   exit;
 }
 
-/**
- * IMPORTANT:
- * config.php may define DB connection as $db OR $con.
- * Support both.
- */
+// ---- DB conn ----
 $conn = null;
 if (isset($db) && $db instanceof mysqli) $conn = $db;
 if (!$conn && isset($con) && $con instanceof mysqli) $conn = $con;
@@ -77,12 +61,64 @@ if (!$conn) {
   exit;
 }
 
-/**
- * ✅ Correct join:
- * question_id repeats per profile, so join must include profile.
- *
- * Also order by submitted_at desc so the latest answer wins if duplicates exist.
- */
+// ---- Resolve identifier: if numeric, treat it as signup.id and map to username ----
+$username = $userIdParam;
+$signupId = null;
+
+if (preg_match('/^\d+$/', $userIdParam)) {
+  $signupId = (int)$userIdParam;
+  $sqlU = "SELECT username FROM signup WHERE id = ? LIMIT 1";
+  $stmtU = $conn->prepare($sqlU);
+  if (!$stmtU) {
+    http_response_code(500);
+    echo json_encode(['error' => 'DB prepare failed (resolve user by signup id)']);
+    exit;
+  }
+  $stmtU->bind_param('i', $signupId);
+  if (!$stmtU->execute()) {
+    http_response_code(500);
+    echo json_encode(['error' => 'DB execute failed (resolve user by signup id)']);
+    $stmtU->close();
+    exit;
+  }
+  $stmtU->bind_result($uname);
+  if ($stmtU->fetch()) {
+    $username = trim((string)$uname);
+  } else {
+    $username = '';
+  }
+  $stmtU->close();
+
+  if ($username === '') {
+    http_response_code(404);
+    echo json_encode(['error' => 'User not found for the given signup id']);
+    exit;
+  }
+}
+
+// ---- Load signup context (id/country/birthday) ----
+$signup = [
+  'id'       => null,
+  'country'  => null,
+  'birthday' => null,
+];
+
+$sql2 = "SELECT id, country, birthday FROM signup WHERE username = ? LIMIT 1";
+$stmt2 = $conn->prepare($sql2);
+if ($stmt2) {
+  $stmt2->bind_param('s', $username);
+  if ($stmt2->execute()) {
+    $stmt2->bind_result($sid, $country, $birthday);
+    if ($stmt2->fetch()) {
+      $signup['id']       = $sid !== null ? (int)$sid : null;
+      $signup['country']  = $country !== null ? (string)$country : null;
+      $signup['birthday'] = $birthday !== null ? (string)$birthday : null;
+    }
+  }
+  $stmt2->close();
+}
+
+// ---- Fetch profile answers ----
 $sql = "
   SELECT
     qa.name AS question_key,
@@ -102,7 +138,7 @@ if (!$stmt) {
   exit;
 }
 
-$stmt->bind_param('s', $userId);
+$stmt->bind_param('s', $username);
 
 if (!$stmt->execute()) {
   http_response_code(500);
@@ -111,7 +147,6 @@ if (!$stmt->execute()) {
   exit;
 }
 
-// Bind results (works without mysqlnd/get_result)
 $stmt->bind_result($questionKey, $answerValue);
 
 $answers = [];
@@ -119,7 +154,7 @@ while ($stmt->fetch()) {
   $k = trim((string)$questionKey);
   $v = (string)$answerValue;
 
-  // because we ORDER BY newest first, only set if not already set
+  // newest first, keep first occurrence only
   if ($k !== '' && !array_key_exists($k, $answers)) {
     $answers[$k] = $v;
   }
@@ -127,30 +162,11 @@ while ($stmt->fetch()) {
 
 $stmt->close();
 
-// ---- Signup context (country/birthday/zipcode etc.) ----
-// Used by OpinionElite UI for additional eligibility checks.
-$signup = [
-  'country'  => null,
-  'birthday' => null,
-];
-
-// NOTE: signup.username stores the user's "username" used across OP Panel.
-$sql2 = "SELECT country, birthday FROM signup WHERE username = ? LIMIT 1";
-$stmt2 = $conn->prepare($sql2);
-if ($stmt2) {
-  $stmt2->bind_param('s', $userId);
-  if ($stmt2->execute()) {
-    $stmt2->bind_result($country, $birthday);
-    if ($stmt2->fetch()) {
-      $signup['country']  = $country !== null ? (string)$country : null;
-      $signup['birthday'] = $birthday !== null ? (string)$birthday : null;
-    }
-  }
-  $stmt2->close();
-}
-
 echo json_encode([
-  'userId'  => $userId,
-  'signup'  => $signup,
-  'answers' => $answers,
+  // keep original input echoed back (could be username or numeric)
+  'userId'   => $userIdParam,
+  // include resolved username so server-side consumers can use it if needed
+  'username' => $username,
+  'signup'   => $signup,
+  'answers'  => $answers,
 ]);
