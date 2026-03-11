@@ -149,15 +149,13 @@
               </p>
             </div>
 
-            <!-- RIGHT SIDE: phone mockup / video -->
-            <div class="hidden xl:flex video w-2/5 relative flex justify-end">
-              <img class="w-[194px] h-[700px] block mr-[200px] xl:mr-[330px] object-contain" src="imgs/video.png" alt="Video" />
-              <div class="rounded-[25px] border-2 border-gray-800 overflow-hidden block w-[330px] h-[740px] absolute top-[-2%]">
-                <video class="block w-full h-full object-cover" autoplay loop playsinline muted>
-                  <source src="video/app-video.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <div class="hidden xl:flex w-2/5 justify-center">
+  <img 
+    src="imgs/survey-girl.png"
+    alt="Survey Girl"
+    class="max-w-[420px] h-auto object-contain"
+  />
+</div>
           </div>
         </section>
 
