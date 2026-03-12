@@ -151,8 +151,8 @@
 
             <div class="hidden xl:flex w-2/5 justify-center">
   <img 
-    src="imgs/survey-girl.png"
-    alt="Survey Girl"
+    src="imgs/survey-boy.png"
+    alt="Survey Boy"
     class="max-w-[420px] h-auto object-contain"
   />
 </div>
