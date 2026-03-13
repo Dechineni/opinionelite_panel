@@ -79,17 +79,25 @@ include('header.php');
             </label>
           </div>
         </div>
-
+     
+        <div class="d-flex justify-content-center gap-3">
         <button
           type="submit"
           name="confirm_delete"
           id="deleteSubmit"
-          class="btn btn-orange w-100"
+          class="btn btn-orange"
           disabled
         >
           Submit
         </button>
-      </form>
+        
+        <button
+          type="cancelDelete"
+          class="btn btn-secondary"
+          onclick="window.location.href='index.php';"
+        >
+          Cancel
+        </button>
         </div>
     </div>
     </div>
@@ -124,6 +132,14 @@ include('header.php');
         deleteSubmit.disabled = !deleteChoice.checked;
       });
     }
+
+    const cancelDelete = document.getElementById('cancelDelete');
+    if (cancelDelete) {
+      cancelDelete.addEventListener('click', function () {
+        deleteChoice.checked = false;
+        deleteSubmit.disabled = true;
+    });
+}
   });
 </script>
 
