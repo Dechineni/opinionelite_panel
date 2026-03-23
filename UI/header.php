@@ -230,11 +230,37 @@
         width: 90%;
       }
     }
+    
+    .navbar-nav .nav-link {
+      position: relative;
+    }
 
+    /* Active tab color */
+    .navbar-nav .nav-link.active {
+      color: #ff9900 !important;
+    }
+
+    /* White underline for selected tab */
+    .navbar-nav .nav-link.active::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: white;
+      bottom: -4px;
+      left: 0;
+    }
+
+    /* Hover effect */
+    .navbar-nav .nav-link:hover {
+      color: #ff9900 !important;
+    }
   </style>
 </head>
 <body>
-
+<?php
+$currentPage = basename($_SERVER['PHP_SELF']);
+?>
 <!-- ✅ Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
@@ -250,13 +276,13 @@
       <!-- Left side links -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item ms-3">
-          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+          <a class="nav-link <?php if($currentPage == 'index.php'){ echo 'active'; } ?>" href="index.php">Home</a>
         </li>
         <li class="nav-item ms-3">
-          <a class="nav-link" href="surveys.php">Surveys</a>
+          <a class="nav-link <?php if($currentPage == 'surveys.php'){ echo 'active'; } ?>" href="surveys.php">Surveys</a>
         </li>
         <li class="nav-item ms-3">
-          <a class="nav-link" href="rewards.php">Rewards</a>
+          <a class="nav-link <?php if($currentPage=='rewards.php'){echo 'active';} ?>" href="rewards.php">Rewards</a>
         </li>
       </ul>
 
