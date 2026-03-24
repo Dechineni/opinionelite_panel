@@ -12,7 +12,7 @@ if (!$username) {
 
 $username = mysqli_real_escape_string($db, $username);
 
-$query = "SELECT firstname,lastname,email, birthday FROM signup WHERE username = '$username' LIMIT 1";
+$query = "SELECT firstname,lastname,email, birthday, country FROM signup WHERE username = '$username' LIMIT 1";
 $result = mysqli_query($db, $query);
 
 if ($result && mysqli_num_rows($result) === 1) {
