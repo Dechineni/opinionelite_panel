@@ -21,6 +21,10 @@
                 <i class="fa-solid fa-envelope me-2"></i>
                 <span id="user-email" style="color: #fff;">Loading...</span>
               </li>
+              <li class="mb-2" style="color: #ff9900;">
+                <i class="fa-solid fa-globe me-2"></i>
+                <span id="user-country" style="color: #fff;">Loading...</span>
+              </li>
             </ul>
 
             <!-- Social Icons -->
@@ -48,6 +52,7 @@
             document.getElementById('welcome-msg').textContent = `Welcome, ${user.firstname} ${user.lastname}`;
             document.getElementById('user-email').textContent = user.email;
             document.getElementById('user-dob').textContent = user.birthday;
+            document.getElementById('user-country').textContent = user.country;
           } else {
             document.getElementById('welcome-msg').textContent = `User not found`;
           }
